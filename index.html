@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>O que fazer em Recife</title>
 <meta name="description" content="Agenda diária do Recife, Olinda e litoral: shows, frevo e prévias, feiras, teatro, o que fazer, onde comer, tomar café e beber.">
-<meta name="theme-color" content="#E8452C">
+<meta name="theme-color" content="#13294B">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Eventos Recife">
@@ -39,7 +39,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; --color-bad: #FF6B6B; color-scheme: dark; }
-  :root:not([data-theme="light"]) .ag:not([data-theme="claro"]) { --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
+  :root:not([data-theme="light"]) .ag:not([data-theme="claro"]) { --ag-coral: #A9C8EE; --ag-on: #0E1A30; --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
 }
 :root[data-theme="dark"] { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; }
 html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
@@ -85,16 +85,16 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 <body>
 <style>
 #dash-root { --dash-gutter: clamp(12px, 3vw, 32px); }
-.ag { --ag-coral: #E8452C; --ag-sol: #F2A900; --ag-mar: #0F8B8D; --ag-azul: #2D5BD3; --ag-tint: color-mix(in srgb, var(--ag-coral) 10%, transparent); }
+.ag { --ag-coral: #13294B; --ag-on: #FFFFFF; --ag-rosa: #E85D75; --ag-sol: #F2A900; --ag-mar: #0F8B8D; --ag-azul: #2D5BD3; --ag-tint: color-mix(in srgb, var(--ag-coral) 10%, transparent); }
 .ag { font-family: var(--font-anthropic-sans); max-width: 1180px; margin-inline: auto; }
 .ag[data-theme] { background: var(--color-bg); color: var(--color-fg); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
 .ag[data-theme="claro"] { --color-bg: #FFF9F2; --color-fg: #1F1B16; --color-fg-muted: #6B6158; --color-panel: #FFFFFF; --color-border-line: #EADFD3; color-scheme: light; }
-.ag[data-theme="escuro"] { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
+.ag[data-theme="escuro"] { --ag-coral: #A9C8EE; --ag-on: #0E1A30; --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
 .ag-top { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--cds-gap-sm); flex-wrap: wrap; }
 .ag-theme { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
 .ag-theme button { font: inherit; font-size: var(--cds-font-size-caption); background: var(--color-panel); color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
-.ag-theme button[aria-pressed="true"] { background: var(--ag-coral); color: #fff; }
-.ag-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; color: var(--ag-coral); font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.ag-theme button[aria-pressed="true"] { background: var(--ag-coral); color: var(--ag-on); }
+.ag-head h1 { font-family: var(--font-anthropic-serif); font-weight: 600; color: var(--ag-coral); letter-spacing: -.01em; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
 .ag-take { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); font-size: var(--cds-font-size-body); }
 .ag-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-sm); margin-bottom: var(--cds-gap-md); }
 .ag-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-top: 4px solid var(--tile, var(--ag-coral)); border-radius: var(--cds-radius); padding: var(--cds-pad-md); cursor: pointer; text-align: left; font: inherit; color: inherit; }
@@ -111,7 +111,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag-filters label { font-size: var(--cds-font-size-caption); display: inline-flex; gap: var(--cds-gap-xs); align-items: center; color: var(--color-fg-muted); }
 .ag-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-sm); }
 .ag-chips button { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
-.ag-chips button[aria-pressed="true"] { background: var(--ag-coral); color: #fff; border-color: var(--ag-coral); }
+.ag-chips button[aria-pressed="true"] { background: var(--ag-coral); color: var(--ag-on); border-color: var(--ag-coral); }
 .ag-chips button:hover { border-color: var(--ag-coral); }
 .ag-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin-bottom: var(--cds-gap-md); }
 .ag-card { border-left: 4px solid var(--card, var(--ag-coral)); }
@@ -136,7 +136,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag td.acts { white-space: nowrap; width: 1%; }
 .ag-act { font: inherit; font-size: var(--cds-font-size-caption); display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: 4px 10px; margin: 0 4px 4px 0; cursor: pointer; text-decoration: none; min-height: 2rem; }
 .ag-act:hover { border-color: var(--ag-coral); }
-.ag-act.on { background: var(--ag-coral); border-color: var(--ag-coral); color: #fff; }
+.ag-act.on { background: var(--ag-coral); border-color: var(--ag-coral); color: var(--ag-on); }
 .ag-act.wa { color: #128C4A; }
 .ag[data-theme="escuro"] .ag-act.wa { color: #3DDC84; }
 .ag-past { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
@@ -167,7 +167,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     </div>
     <p class="ag-take dash-skeleton" data-source="hoje">—</p>
     <div class="ag-tiles">
-      <button class="ag-tile" style="--tile: var(--ag-coral)" data-go="hoje"><span class="n dash-skeleton" data-source="resumo" data-field="eventos_hoje" data-row="0">—</span><span class="l">Eventos hoje</span></button>
+      <button class="ag-tile" style="--tile: var(--ag-rosa)" data-go="hoje"><span class="n dash-skeleton" data-source="resumo" data-field="eventos_hoje" data-row="0">—</span><span class="l">Eventos hoje</span></button>
       <button class="ag-tile" style="--tile: var(--ag-mar)" data-go="hoje" data-free="1"><span class="n dash-skeleton" data-source="resumo" data-field="gratis_hoje" data-row="0">—</span><span class="l">Grátis hoje</span></button>
       <button class="ag-tile" style="--tile: var(--ag-sol)" data-go="comer"><span class="n dash-skeleton" data-source="resumo" data-field="abertos_comer" data-row="0">—</span><span class="l">Restaurantes e cafés abertos</span></button>
       <button class="ag-tile" style="--tile: var(--ag-azul)" data-go="proximos"><span class="n dash-skeleton" data-source="resumo" data-field="proximos_30" data-row="0">—</span><span class="l">Eventos nos próximos 30 dias</span></button>
@@ -254,7 +254,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
       <select id="beber-tipo" aria-label="Estilo"></select>
       <label><input type="checkbox" id="beber-open"> Só abertos hoje</label>
     </div>
-    <div class="ag-card" id="card-beber" style="--card: var(--ag-coral)">
+    <div class="ag-card" id="card-beber" style="--card: var(--ag-rosa)">
       <h2>Onde beber</h2>
       <p class="ag-count" id="beber-count"></p>
       <table id="tbl-beber" data-source="beber" data-row-key="id">
