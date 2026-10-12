@@ -143,20 +143,13 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag-save-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
 .ag-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-lg); }
 .ag tr[hidden] { display: none !important; }
-.ag tr.ag-colf th { padding: 2px var(--cds-pad-xs) var(--cds-pad-xs); border-bottom: 1px solid var(--color-border-line); }
-.ag tr.ag-colf input { width: 100%; min-width: 4.5rem; box-sizing: border-box; font: inherit; font-size: var(--cds-font-size-caption); padding: 3px 6px; border: 1px solid var(--color-border-line); border-radius: 6px; background: var(--color-panel); color: var(--color-fg); }
-.ag tr.ag-colf input:not(:placeholder-shown) { border-color: var(--ag-coral); }
 .ag td.src a { color: var(--color-fg-muted); }
 .ag td.src a:hover { color: var(--ag-azul); }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 @media (max-width: 680px) {
   .ag table, .ag tbody, .ag tr, .ag td { display: block; width: auto; }
-  .ag thead { display: block; }
-  .ag thead tr:first-child { display: none; }
-  .ag tr.ag-colf { display: flex; flex-wrap: wrap; gap: 4px; border: 0; padding: 0 0 var(--cds-pad-sm); }
-  .ag tr.ag-colf th { display: block; flex: 1 1 40%; padding: 0; border: 0; }
-  .ag tr.ag-colf th:empty { display: none; }
-  .ag tr { border-bottom: 1px solid var(--color-border-line); padding: var(--cds-pad-sm) 0; }
+  .ag thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+        .ag tr { border-bottom: 1px solid var(--color-border-line); padding: var(--cds-pad-sm) 0; }
   .ag td { border: 0; padding: 2px 0; }
   .ag td.hide-sm { display: none; }
 }
@@ -199,7 +192,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="hoje-q" placeholder="Buscar evento, local…" aria-label="Buscar">
       <select id="hoje-cidade" aria-label="Cidade"></select>
-      <label><input type="checkbox" id="hoje-free"> Só grátis</label>
+      <select id="hoje-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
     </div>
     <div class="ag-card" id="card-hoje">
       <h2>Eventos de hoje</h2>
@@ -224,7 +217,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="fazer-q" placeholder="Buscar praia, parque, passeio…" aria-label="Buscar">
       <select id="fazer-regiao" aria-label="Região"></select>
-      <label><input type="checkbox" id="fazer-free"> Só grátis</label>
+      <select id="fazer-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
     </div>
     <div class="ag-card" id="card-fazer" style="--card: var(--ag-mar)">
       <h2>Coisas para fazer no Recife e Região Metropolitana</h2>
@@ -276,6 +269,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="prox-q" placeholder="Buscar artista, festa, local…" aria-label="Buscar">
       <select id="prox-cidade" aria-label="Cidade"></select>
+      <select id="prox-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
     </div>
     <div class="ag-card" id="card-proximos" style="--card: var(--ag-azul)">
       <h2 id="prox-title">Próximos 30 dias</h2>
@@ -336,11 +330,11 @@ dash.calc('resumo', {
   const safeHref = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : '');
 
   const state = {
-    hoje: { cat: 'Todos', q: '', cidade: '', free: false },
-    fazer: { cat: 'Todos', q: '', regiao: '', free: false },
+    hoje: { cat: 'Todos', q: '', cidade: '', preco: '' },
+    fazer: { cat: 'Todos', q: '', regiao: '', preco: '' },
     comer: { cat: 'Todas', q: '', tipo: '', open: true, categoria: '' },
     beber: { cat: 'Todas', q: '', tipo: '', open: false },
-    prox: { cat: 'Todos', q: '', cidade: '' },
+    prox: { cat: 'Todos', q: '', cidade: '', preco: '' },
     mon: { cat: 'Todos' },
   };
   let tab = 'hoje';
@@ -368,7 +362,7 @@ dash.calc('resumo', {
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
-    if (b.dataset.free) { state.hoje.free = true; $('hoje-free').checked = true; }
+    if (b.dataset.free) { state.hoje.preco = 'gratis'; $('hoje-preco').value = 'gratis'; }
     show(b.dataset.go);
   }));
 
@@ -490,9 +484,10 @@ dash.calc('resumo', {
   const bindSearch = (id, st) => $(id).addEventListener('input', (e) => { st.q = e.target.value; draw(); });
   bindSearch('hoje-q', state.hoje); bindSearch('fazer-q', state.fazer); bindSearch('comer-q', state.comer); bindSearch('beber-q', state.beber); bindSearch('prox-q', state.prox);
   $('hoje-cidade').addEventListener('change', (e) => { state.hoje.cidade = e.target.value; draw(); });
-  $('hoje-free').addEventListener('change', (e) => { state.hoje.free = e.target.checked; draw(); });
+  $('hoje-preco').addEventListener('change', (e) => { state.hoje.preco = e.target.value; draw(); });
   $('fazer-regiao').addEventListener('change', (e) => { state.fazer.regiao = e.target.value; draw(); });
-  $('fazer-free').addEventListener('change', (e) => { state.fazer.free = e.target.checked; draw(); });
+  $('fazer-preco').addEventListener('change', (e) => { state.fazer.preco = e.target.value; draw(); });
+  $('prox-preco').addEventListener('change', (e) => { state.prox.preco = e.target.value; draw(); });
   $('comer-tipo').addEventListener('change', (e) => { state.comer.tipo = e.target.value; draw(); });
   $('comer-cat').addEventListener('change', (e) => { state.comer.categoria = e.target.value; draw(); });
   $('comer-open').addEventListener('change', (e) => { state.comer.open = e.target.checked; draw(); });
@@ -563,37 +558,13 @@ dash.calc('resumo', {
     if (u) { const h = new URL(u).hostname; return { nome: HOSTS[h] || h.replace(/^www\./, ''), url: u }; }
     return { nome: 'Busca diária', url: '' };
   }
+  // Grátis: campo gratis quando existe; senão, o texto do preço
+  const ehGratis = (r) => (typeof r.gratis === 'boolean' ? r.gratis : /gr[aá]tis|livre|gratuit/i.test(String(r.preco || '')) && !/R\$/.test(String(r.preco || '')));
+  // Pago: campo gratis=false ou preço com valor/ingresso; "Ver link"/"Consultar" não entram em nenhum dos dois
+  const ehPago = (r) => (typeof r.gratis === 'boolean' ? !r.gratis : /R\$|ingress|passe|a partir/i.test(String(r.preco || '')));
+  const precoOk = (sel, r) => !sel || (sel === 'gratis' ? ehGratis(r) : ehPago(r));
   const fonteCell = (tr, r) => { const f = fonteOf(r); cell(tr, f.nome, 'src mut', f.url); };
 
-  // Filtro por coluna: uma linha de campos sob o cabeçalho de cada tabela
-  const colF = {};
-  function addColFilters(id) {
-    const t = $(id); const head = t.tHead; const fr = document.createElement('tr'); fr.className = 'ag-colf';
-    [...head.rows[0].cells].forEach((th, i) => {
-      const c = document.createElement('th');
-      if (th.dataset.field) {
-        const inp = document.createElement('input'); inp.type = 'search';
-        inp.placeholder = th.textContent; inp.setAttribute('aria-label', 'Filtrar coluna ' + th.textContent);
-        inp.addEventListener('input', () => { (colF[id] = colF[id] || {})[i] = norm(inp.value.trim()); draw(); });
-        c.appendChild(inp);
-      }
-      fr.appendChild(c);
-    });
-    head.appendChild(fr);
-  }
-  function applyColFilters(id, countId, unidade) {
-    const f = colF[id] || {}; const keys = Object.keys(f).filter((k) => f[k]);
-    let n = 0; let tot = 0;
-    [...$(id).tBodies[0].rows].forEach((tr) => {
-      if (tr.querySelector('.ag-empty')) return;
-      tot++;
-      const ok = keys.every((k) => norm(tr.cells[k] ? tr.cells[k].textContent : '').includes(f[k]));
-      tr.hidden = !ok; if (ok) n++;
-    });
-    if (keys.length && countId) $(countId).textContent += ` · ${n} com o filtro das colunas`;
-  }
-  const FILTRAVEIS = [['tbl-hoje', 'hoje-count'], ['tbl-fazer', 'fazer-count'], ['tbl-comer', 'comer-count'], ['tbl-beber', 'beber-count'], ['tbl-prox', 'prox-count'], ['tbl-mon', null], ['tbl-fechados', null]];
-  FILTRAVEIS.forEach(([id]) => addColFilters(id));
 
   function drawHoje() {
     const d = dash.data('hoje');
@@ -613,7 +584,7 @@ dash.calc('resumo', {
     const q = norm(st.q);
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
-      && (!st.free || r.gratis === true)
+      && precoOk(st.preco, r)
       && (!q || norm([r.nome, r.local, r.descricao, r.endereco].join(' ')).includes(q)))
       .sort((a, b) => String(a.horario).localeCompare(String(b.horario)));
     $('hoje-count').textContent = `${vis.length} de ${rows.length} eventos`;
@@ -657,13 +628,13 @@ dash.calc('resumo', {
     const q = norm(st.q);
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.tipo === st.cat)
       && (!st.regiao || r.regiao === st.regiao)
-      && (!st.free || r.preco === 'Grátis')
+      && precoOk(st.preco, r)
       && (!q || norm([r.nome, r.onde, r.dica, r.tipo].join(' ')).includes(q)));
     $('fazer-count').textContent = `${vis.length} de ${rows.length} opções`;
     tb.replaceChildren(...vis.map((r) => {
       const tr = document.createElement('tr'); tr.dataset.key = r.id;
       cell(tr, r.nome, 'nm'); cell(tr, r.regiao, 'mut'); cell(tr, r.onde); cell(tr, r.quando || '', 'tn'); cell(tr, r.horario, 'tn');
-      cell(tr, r.preco, r.preco === 'Grátis' ? 'free' : ''); cell(tr, r.dica, 'mut'); fonteCell(tr, r);
+      cell(tr, r.preco, ehGratis(r) ? 'free' : ''); cell(tr, r.dica, 'mut'); fonteCell(tr, r);
       return tr;
     }));
     if (!vis.length) tb.replaceChildren(emptyRow(8));
@@ -750,6 +721,7 @@ dash.calc('resumo', {
     const vis = rows.filter((r) => r.data >= ini && r.data <= fim
       && (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
+      && precoOk(st.preco, r)
       && (!q || norm([r.nome, r.local, r.cidade].join(' ')).includes(q)))
       .sort((a, b) => (a.data + a.horario).localeCompare(b.data + b.horario));
     $('prox-count').textContent = `${vis.length} eventos`;
@@ -796,7 +768,6 @@ dash.calc('resumo', {
     if (tab === 'beber') drawBeber();
     if (PROX.includes(tab)) { drawProx(); drawMon(); }
     drawSalvos();
-    FILTRAVEIS.forEach(([id, c]) => applyColFilters(id, c));
   }
 
   dash.onData(draw);
