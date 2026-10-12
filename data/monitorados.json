@@ -1,0 +1,191 @@
+[
+ {
+  "id": "eddie",
+  "tipo": "Artista",
+  "nome": "Eddie",
+  "situacao": "Sem data anunciada no Recife até 12/11",
+  "onde_buscar": "iHoje, Sympla, Shotgun, Instagram da banda"
+ },
+ {
+  "id": "otto",
+  "tipo": "Artista",
+  "nome": "Otto",
+  "situacao": "Sem data anunciada no Recife até 12/11",
+  "onde_buscar": "iHoje, Sympla, Instagram do artista"
+ },
+ {
+  "id": "academia-berlinda",
+  "tipo": "Artista",
+  "nome": "Academia da Berlinda",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "iHoje, Sympla, Instagram da banda"
+ },
+ {
+  "id": "alma-arte-cafe",
+  "tipo": "Lugar",
+  "nome": "Alma Arte Café (Olinda)",
+  "situacao": "5 shows no período: João Suplicy hoje, Belchior 80 em 24/10, Mestre Ambrósio em 6 e 7/11",
+  "onde_buscar": "ihoje.com/local/olinda/alma-arte-cafe, Sympla"
+ },
+ {
+  "id": "bar-do-ro",
+  "tipo": "Lugar",
+  "nome": "Bar do Rô (Olinda)",
+  "situacao": "Achado: R. de São João, 345, Amparo, Olinda; abre qui a dom 11h–23h. Também na aba Onde beber",
+  "onde_buscar": "Instagram do bar"
+ },
+ {
+  "id": "pitombeira",
+  "tipo": "Clube de frevo",
+  "nome": "Pitombeira dos Quatro Cantos",
+  "situacao": "Ensaios a cada 15 dias desde 7/9; Samba da Pitomba em 24/10; sede nova no Carmo prevista para novembro",
+  "onde_buscar": "Diario de Pernambuco, Portal de Prefeitura, Instagram do clube"
+ },
+ {
+  "id": "elefante",
+  "tipo": "Clube de frevo",
+  "nome": "Elefante de Olinda",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Prefeitura de Olinda (prévias), Instagram do clube"
+ },
+ {
+  "id": "vassourinhas-olinda",
+  "tipo": "Clube de frevo",
+  "nome": "Vassourinhas de Olinda",
+  "situacao": "Eventos na sede: Samba do Bonfim 17/10, Samba do Malandro 18/10, Prévia Chapadinhos 1/11",
+  "onde_buscar": "iHoje (Clube Vassourinhas de Olinda)"
+ },
+ {
+  "id": "vassourinhas-recife",
+  "tipo": "Clube de frevo",
+  "nome": "Clube Vassourinhas do Recife",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Instagram do clube"
+ },
+ {
+  "id": "macuca",
+  "tipo": "Clube de frevo",
+  "nome": "Macuca",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Instagram do bloco"
+ },
+ {
+  "id": "eu-acho-e-pouco",
+  "tipo": "Clube de frevo",
+  "nome": "Eu Acho é Pouco",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Instagram do bloco"
+ },
+ {
+  "id": "homem-meia-noite",
+  "tipo": "Clube de frevo",
+  "nome": "Homem da Meia-Noite",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Prefeitura de Olinda, Instagram"
+ },
+ {
+  "id": "ceroula",
+  "tipo": "Clube de frevo",
+  "nome": "Ceroula de Olinda",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Instagram do bloco"
+ },
+ {
+  "id": "galo",
+  "tipo": "Clube de frevo",
+  "nome": "Galo da Madrugada",
+  "situacao": "Camarotes do Carnaval 2027 (6/2) à venda; prévias ainda não anunciadas",
+  "onde_buscar": "iHoje, Instagram do Galo"
+ },
+ {
+  "id": "bloco-saudade",
+  "tipo": "Clube de frevo",
+  "nome": "Bloco da Saudade",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Instagram do bloco"
+ },
+ {
+  "id": "teatro-guararapes",
+  "tipo": "Lugar",
+  "nome": "Teatro Guararapes (Centro de Convenções)",
+  "situacao": "Tim Bernardes em 17/10",
+  "onde_buscar": "Folha PE (agenda de shows), Cecon Tickets, Songkick"
+ },
+ {
+  "id": "classic-hall",
+  "tipo": "Lugar",
+  "nome": "Classic Hall (antigo Chevrolet Hall)",
+  "situacao": "Halloween da Pabllo 23/10, Djavan 31/10, Vintage Culture 6/11",
+  "onde_buscar": "iHoje, Folha PE, Songkick"
+ },
+ {
+  "id": "feira-na-laje",
+  "tipo": "Lugar",
+  "nome": "Feira na Laje",
+  "situacao": "Feira itinerante (Parque Santana e outros); sem edição anunciada até 12/11",
+  "onde_buscar": "Instagram da feira, Viva Parques, Folha PE"
+ },
+ {
+  "id": "fazendinha",
+  "tipo": "Lugar",
+  "nome": "Fazendinha",
+  "situacao": "Não identificada nas buscas; confirmar qual Fazendinha",
+  "onde_buscar": "Instagram (confirmar @)"
+ },
+ {
+  "id": "teatro-riomar",
+  "tipo": "Lugar",
+  "nome": "Teatro RioMar",
+  "situacao": "Alex Cohen 17/10",
+  "onde_buscar": "iHoje, Uhuu"
+ },
+ {
+  "id": "santa-isabel",
+  "tipo": "Lugar",
+  "nome": "Teatro de Santa Isabel",
+  "situacao": "Rebuliço no Cabaré das Palhaças 8/11, Piazzolla 12/11",
+  "onde_buscar": "Sympla, Prefeitura do Recife"
+ },
+ {
+  "id": "teatro-parque",
+  "tipo": "Lugar",
+  "nome": "Teatro do Parque",
+  "situacao": "Eliana Pittman 16/10, Virgínia Rodrigues 12/11",
+  "onde_buscar": "iHoje, Folha PE"
+ },
+ {
+  "id": "luiz-mendonca",
+  "tipo": "Lugar",
+  "nome": "Teatro Luiz Mendonça (Dona Lindu)",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "Inti (teatroluizmendonca.byinti.com)"
+ },
+ {
+  "id": "concha-ufpe",
+  "tipo": "Lugar",
+  "nome": "Concha Acústica da UFPE",
+  "situacao": "Luedji Luna 17/10, Manguetown 30/10, Don L 7/11",
+  "onde_buscar": "Folha PE, iHoje"
+ },
+ {
+  "id": "dona-lindu",
+  "tipo": "Lugar",
+  "nome": "Parque Dona Lindu",
+  "situacao": "Clássicos do Brasil 6 a 8/11",
+  "onde_buscar": "iHoje, Folha PE"
+ },
+ {
+  "id": "caixa-cultural",
+  "tipo": "Lugar",
+  "nome": "Caixa Cultural Recife",
+  "situacao": "Sem data anunciada até 12/11",
+  "onde_buscar": "caixacultural.gov.br, Sympla"
+ },
+ {
+  "id": "cel",
+  "tipo": "Lugar",
+  "nome": "Casa Estação da Luz (Olinda)",
+  "situacao": "Chico Chico 18/10",
+  "onde_buscar": "iHoje"
+ }
+]

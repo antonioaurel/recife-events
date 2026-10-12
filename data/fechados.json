@@ -1,0 +1,27 @@
+[
+ {
+  "id": "irb",
+  "nome": "Instituto Ricardo Brennand",
+  "motivo": "Abre de terça a domingo; Degas/Borges volta amanhã."
+ },
+ {
+  "id": "oficina",
+  "nome": "Oficina Francisco Brennand",
+  "motivo": "Abre de terça a domingo."
+ },
+ {
+  "id": "esculturas",
+  "nome": "Parque das Esculturas",
+  "motivo": "Fechado no feriado; reabre terça 10h–17h."
+ },
+ {
+  "id": "jardim-botanico",
+  "nome": "Jardim Botânico do Recife",
+  "motivo": "Fechado no feriado."
+ },
+ {
+  "id": "museus-municipais",
+  "nome": "Museus municipais (MAMAM, Museu da Cidade, Paço do Frevo, Arte Popular)",
+  "motivo": "Museus e teatros do Recife fecham às segundas."
+ }
+]
