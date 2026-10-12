@@ -108,6 +108,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag-filters input[type=search], .ag-filters select { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-height: 2.25rem; }
 .ag-filters input[type=search] { flex: 1 1 12rem; }
 .ag-filters input[type=checkbox] { accent-color: var(--ag-coral); }
+.ag-preco { display: inline-flex; gap: var(--cds-gap-sm); }
 .ag-filters label { font-size: var(--cds-font-size-caption); display: inline-flex; gap: var(--cds-gap-xs); align-items: center; color: var(--color-fg-muted); }
 .ag-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-sm); }
 .ag-chips button { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
@@ -192,7 +193,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="hoje-q" placeholder="Buscar evento, local…" aria-label="Buscar">
       <select id="hoje-cidade" aria-label="Cidade"></select>
-      <select id="hoje-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
+      <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="hoje-gratis" checked> Grátis</label><label><input type="checkbox" id="hoje-pago" checked> Pagos</label></span>
     </div>
     <div class="ag-card" id="card-hoje">
       <h2>Eventos de hoje</h2>
@@ -217,7 +218,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="fazer-q" placeholder="Buscar praia, parque, passeio…" aria-label="Buscar">
       <select id="fazer-regiao" aria-label="Região"></select>
-      <select id="fazer-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
+      <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="fazer-gratis" checked> Grátis</label><label><input type="checkbox" id="fazer-pago" checked> Pagos</label></span>
     </div>
     <div class="ag-card" id="card-fazer" style="--card: var(--ag-mar)">
       <h2>Coisas para fazer no Recife e Região Metropolitana</h2>
@@ -269,7 +270,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="prox-q" placeholder="Buscar artista, festa, local…" aria-label="Buscar">
       <select id="prox-cidade" aria-label="Cidade"></select>
-      <select id="prox-preco" aria-label="Preço"><option value="">Grátis e pagos</option><option value="gratis">Só grátis</option><option value="pago">Só pagos</option></select>
+      <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="prox-gratis" checked> Grátis</label><label><input type="checkbox" id="prox-pago" checked> Pagos</label></span>
     </div>
     <div class="ag-card" id="card-proximos" style="--card: var(--ag-azul)">
       <h2 id="prox-title">Próximos 30 dias</h2>
@@ -330,11 +331,11 @@ dash.calc('resumo', {
   const safeHref = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : '');
 
   const state = {
-    hoje: { cat: 'Todos', q: '', cidade: '', preco: '' },
-    fazer: { cat: 'Todos', q: '', regiao: '', preco: '' },
+    hoje: { cat: 'Todos', q: '', cidade: '', gratis: true, pago: true },
+    fazer: { cat: 'Todos', q: '', regiao: '', gratis: true, pago: true },
     comer: { cat: 'Todas', q: '', tipo: '', open: true, categoria: '' },
     beber: { cat: 'Todas', q: '', tipo: '', open: false },
-    prox: { cat: 'Todos', q: '', cidade: '', preco: '' },
+    prox: { cat: 'Todos', q: '', cidade: '', gratis: true, pago: true },
     mon: { cat: 'Todos' },
   };
   let tab = 'hoje';
@@ -362,7 +363,7 @@ dash.calc('resumo', {
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
-    if (b.dataset.free) { state.hoje.preco = 'gratis'; $('hoje-preco').value = 'gratis'; }
+    if (b.dataset.free) { state.hoje.gratis = true; state.hoje.pago = false; $('hoje-gratis').checked = true; $('hoje-pago').checked = false; }
     show(b.dataset.go);
   }));
 
@@ -484,10 +485,11 @@ dash.calc('resumo', {
   const bindSearch = (id, st) => $(id).addEventListener('input', (e) => { st.q = e.target.value; draw(); });
   bindSearch('hoje-q', state.hoje); bindSearch('fazer-q', state.fazer); bindSearch('comer-q', state.comer); bindSearch('beber-q', state.beber); bindSearch('prox-q', state.prox);
   $('hoje-cidade').addEventListener('change', (e) => { state.hoje.cidade = e.target.value; draw(); });
-  $('hoje-preco').addEventListener('change', (e) => { state.hoje.preco = e.target.value; draw(); });
+  [['hoje', state.hoje], ['fazer', state.fazer], ['prox', state.prox]].forEach(([k, st]) => {
+    $(k + '-gratis').addEventListener('change', (e) => { st.gratis = e.target.checked; draw(); });
+    $(k + '-pago').addEventListener('change', (e) => { st.pago = e.target.checked; draw(); });
+  });
   $('fazer-regiao').addEventListener('change', (e) => { state.fazer.regiao = e.target.value; draw(); });
-  $('fazer-preco').addEventListener('change', (e) => { state.fazer.preco = e.target.value; draw(); });
-  $('prox-preco').addEventListener('change', (e) => { state.prox.preco = e.target.value; draw(); });
   $('comer-tipo').addEventListener('change', (e) => { state.comer.tipo = e.target.value; draw(); });
   $('comer-cat').addEventListener('change', (e) => { state.comer.categoria = e.target.value; draw(); });
   $('comer-open').addEventListener('change', (e) => { state.comer.open = e.target.checked; draw(); });
@@ -562,7 +564,8 @@ dash.calc('resumo', {
   const ehGratis = (r) => (typeof r.gratis === 'boolean' ? r.gratis : /gr[aá]tis|livre|gratuit/i.test(String(r.preco || '')) && !/R\$/.test(String(r.preco || '')));
   // Pago: campo gratis=false ou preço com valor/ingresso; "Ver link"/"Consultar" não entram em nenhum dos dois
   const ehPago = (r) => (typeof r.gratis === 'boolean' ? !r.gratis : /R\$|ingress|passe|a partir/i.test(String(r.preco || '')));
-  const precoOk = (sel, r) => !sel || (sel === 'gratis' ? ehGratis(r) : ehPago(r));
+  // Marcado Grátis mostra os grátis; Pagos, os pagos; preço desconhecido só aparece com os dois marcados
+  const precoOk = (st, r) => (ehGratis(r) ? st.gratis : ehPago(r) ? st.pago : st.gratis && st.pago);
   const fonteCell = (tr, r) => { const f = fonteOf(r); cell(tr, f.nome, 'src mut', f.url); };
 
 
@@ -584,7 +587,7 @@ dash.calc('resumo', {
     const q = norm(st.q);
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
-      && precoOk(st.preco, r)
+      && precoOk(st, r)
       && (!q || norm([r.nome, r.local, r.descricao, r.endereco].join(' ')).includes(q)))
       .sort((a, b) => String(a.horario).localeCompare(String(b.horario)));
     $('hoje-count').textContent = `${vis.length} de ${rows.length} eventos`;
@@ -628,7 +631,7 @@ dash.calc('resumo', {
     const q = norm(st.q);
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.tipo === st.cat)
       && (!st.regiao || r.regiao === st.regiao)
-      && precoOk(st.preco, r)
+      && precoOk(st, r)
       && (!q || norm([r.nome, r.onde, r.dica, r.tipo].join(' ')).includes(q)));
     $('fazer-count').textContent = `${vis.length} de ${rows.length} opções`;
     tb.replaceChildren(...vis.map((r) => {
@@ -721,7 +724,7 @@ dash.calc('resumo', {
     const vis = rows.filter((r) => r.data >= ini && r.data <= fim
       && (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
-      && precoOk(st.preco, r)
+      && precoOk(st, r)
       && (!q || norm([r.nome, r.local, r.cidade].join(' ')).includes(q)))
       .sort((a, b) => (a.data + a.horario).localeCompare(b.data + b.horario));
     $('prox-count').textContent = `${vis.length} eventos`;
