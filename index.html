@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eventos Recife – agenda do dia</title>
+<title>O que fazer em Recife</title>
 <meta name="description" content="Agenda diária do Recife, Olinda e litoral: shows, frevo e prévias, feiras, teatro, o que fazer, onde comer, tomar café e beber.">
 <meta name="theme-color" content="#E8452C">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Eventos Recife">
-<meta property="og:title" content="Eventos Recife – agenda do dia">
+<meta property="og:title" content="O que fazer em Recife">
 <meta property="og:description" content="Shows, frevo, feiras, teatro, onde comer e beber no Recife, Olinda e litoral. Atualizado todo dia.">
 <meta property="og:url" content="https://antonioaurel.github.io/recife-events/">
-<meta property="og:image" content="https://antonioaurel.github.io/recife-events/og.png">
+<meta property="og:image" content="https://antonioaurel.github.io/recife-events/og.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Eventos Recife">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Eventos Recife – agenda do dia">
+<meta name="twitter:title" content="O que fazer em Recife">
 <meta name="twitter:description" content="Shows, frevo, feiras, teatro, onde comer e beber no Recife, Olinda e litoral.">
-<meta name="twitter:image" content="https://antonioaurel.github.io/recife-events/og.png">
+<meta name="twitter:image" content="https://antonioaurel.github.io/recife-events/og.png?v=2">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +46,8 @@ html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
 body { padding: 16px clamp(12px, 3vw, 32px) 40px; font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.45; -webkit-text-size-adjust: 100%; }
 .dash-skeleton { opacity: .45; }
 a { color: inherit; }
+.ag-me { display: inline-block; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-decoration: none; margin: -2px 0 var(--cds-gap-sm); }
+.ag-me:hover { color: var(--ag-coral); text-decoration: underline; }
 </style>
 <script>
 window.dash = (() => {
@@ -163,7 +165,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 <div class="ag">
   <header class="ag-head" id="topo">
     <div class="ag-top">
-      <h1>Eventos Recife</h1>
+      <div><h1>Eventos Recife</h1><a class="ag-me" href="https://antonioaurel.github.io/">antonioaurel.github.io</a></div>
       <div class="ag-theme" role="group" aria-label="Fundo da tela">
         <button type="button" data-theme-set="auto" aria-pressed="true">Automático</button>
         <button type="button" data-theme-set="claro" aria-pressed="false">☀︎ Claro</button>
