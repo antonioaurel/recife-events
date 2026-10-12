@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eventos Recife – agenda do dia</title>
+<meta name="description" content="Agenda diária do Recife, Olinda e litoral: shows, frevo e prévias, feiras, teatro, o que fazer, onde comer, tomar café e beber.">
+<meta name="theme-color" content="#E8452C">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Eventos Recife">
+<meta property="og:title" content="Eventos Recife – agenda do dia">
+<meta property="og:description" content="Shows, frevo, feiras, teatro, onde comer e beber no Recife, Olinda e litoral. Atualizado todo dia.">
+<meta property="og:url" content="https://antonioaurel.github.io/recife-events/">
+<meta property="og:image" content="https://antonioaurel.github.io/recife-events/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eventos Recife">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eventos Recife – agenda do dia">
+<meta name="twitter:description" content="Shows, frevo, feiras, teatro, onde comer e beber no Recife, Olinda e litoral.">
+<meta name="twitter:image" content="https://antonioaurel.github.io/recife-events/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font-anthropic-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-anthropic-serif: "Fraunces", Georgia, serif;
+  --cds-font-size-caption: .8125rem; --cds-font-size-body: .9375rem; --cds-font-size-heading: 1.0625rem; --cds-font-size-title: 1.75rem;
+  --cds-font-weight-medium: 600;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 18px;
+  --cds-gap-xs: 6px; --cds-gap-sm: 10px; --cds-gap-md: 16px; --cds-gap-lg: 28px;
+  --cds-radius: 10px; --cds-dur-slow: .4s;
+  --color-bg: #FFF9F2; --color-fg: #1F1B16; --color-fg-muted: #6B6158; --color-panel: #FFFFFF; --color-border-line: #EADFD3; --color-bad: #C62828;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; --color-bad: #FF6B6B; color-scheme: dark; }
+  :root:not([data-theme="light"]) .ag:not([data-theme="claro"]) { --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
+}
+:root[data-theme="dark"] { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; }
+html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
+body { padding: 16px clamp(12px, 3vw, 32px) 40px; font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-body); line-height: 1.45; -webkit-text-size-adjust: 100%; }
+.dash-skeleton { opacity: .45; }
+a { color: inherit; }
+</style>
+<script>
+window.dash = (() => {
+  const DS = ['hoje', 'fazer', 'comer', 'beber', 'fechados', 'proximos', 'monitorados'];
+  const store = {}; const calcs = {}; const cbs = [];
+  DS.forEach((id) => { store[id] = { status: 'loading', data: [] }; });
+  const fire = () => cbs.forEach((f) => { try { f(); } catch (e) { console.error(e); } });
+  DS.forEach((id) => {
+    fetch('data/' + id + '.json', { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((d) => { store[id] = { status: 'ok', data: Array.isArray(d) ? d : [] }; }, () => { store[id] = { status: 'error', data: [] }; })
+      .finally(fire);
+  });
+  fetch('data/meta.json', { cache: 'no-cache' }).then((r) => r.json()).then((m) => {
+    const el = document.getElementById('ag-upd'); if (!el || !m.updated) return;
+    el.textContent = 'Atualizado em ' + new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'America/Recife' }).format(new Date(m.updated)) + '.';
+  }).catch(() => {});
+  return {
+    data(id) {
+      if (store[id]) return store[id];
+      const c = calcs[id]; if (!c) return { status: 'loading', data: [] };
+      const ins = c.inputs.map((i) => store[i]);
+      if (ins.some((x) => x.status === 'error')) return { status: 'error', data: [] };
+      if (ins.every((x) => x.status === 'ok')) return { status: 'ok', data: c.fn(...ins.map((x) => x.data)) };
+      return { status: 'loading', data: [] };
+    },
+    calc(id, c) { calcs[id] = c; },
+    onData(f) { cbs.push(f); },
+    setLink(n) { try { history.replaceState(null, '', '#' + n); } catch (e) { /* ok */ } },
+  };
+})();
+window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
+</script>
+</head>
+<body>
+<style>
+#dash-root { --dash-gutter: clamp(12px, 3vw, 32px); }
+.ag { --ag-coral: #E8452C; --ag-sol: #F2A900; --ag-mar: #0F8B8D; --ag-azul: #2D5BD3; --ag-tint: color-mix(in srgb, var(--ag-coral) 10%, transparent); }
+.ag { font-family: var(--font-anthropic-sans); max-width: 1180px; margin-inline: auto; }
+.ag[data-theme] { background: var(--color-bg); color: var(--color-fg); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.ag[data-theme="claro"] { --color-bg: #FFF9F2; --color-fg: #1F1B16; --color-fg-muted: #6B6158; --color-panel: #FFFFFF; --color-border-line: #EADFD3; color-scheme: light; }
+.ag[data-theme="escuro"] { --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
+.ag-top { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.ag-theme { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
+.ag-theme button { font: inherit; font-size: var(--cds-font-size-caption); background: var(--color-panel); color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.ag-theme button[aria-pressed="true"] { background: var(--ag-coral); color: #fff; }
+.ag-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; color: var(--ag-coral); font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.ag-take { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); font-size: var(--cds-font-size-body); }
+.ag-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-sm); margin-bottom: var(--cds-gap-md); }
+.ag-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-top: 4px solid var(--tile, var(--ag-coral)); border-radius: var(--cds-radius); padding: var(--cds-pad-md); cursor: pointer; text-align: left; font: inherit; color: inherit; }
+.ag-tile .n { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; display: block; min-height: 1.2em; }
+.ag-tile .l { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ag-tabs { display: flex; gap: var(--cds-gap-xs); overflow-x: auto; border-bottom: 1px solid var(--color-border-line); margin-bottom: var(--cds-gap-md); }
+.ag-tabs button { font: inherit; background: none; border: 0; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; white-space: nowrap; }
+.ag-tabs button[aria-selected="true"] { color: var(--ag-coral); border-bottom-color: var(--ag-coral); font-weight: var(--cds-font-weight-medium); }
+.ag-page[hidden] { display: none; }
+.ag-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; margin-bottom: var(--cds-gap-sm); }
+.ag-filters input[type=search], .ag-filters select { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-height: 2.25rem; }
+.ag-filters input[type=search] { flex: 1 1 12rem; }
+.ag-filters input[type=checkbox] { accent-color: var(--ag-coral); }
+.ag-filters label { font-size: var(--cds-font-size-caption); display: inline-flex; gap: var(--cds-gap-xs); align-items: center; color: var(--color-fg-muted); }
+.ag-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-sm); }
+.ag-chips button { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.ag-chips button[aria-pressed="true"] { background: var(--ag-coral); color: #fff; border-color: var(--ag-coral); }
+.ag-chips button:hover { border-color: var(--ag-coral); }
+.ag-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin-bottom: var(--cds-gap-md); }
+.ag-card { border-left: 4px solid var(--card, var(--ag-coral)); }
+.ag-card h2, .ag-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.ag-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+.ag-count { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+.ag table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.ag th { text-align: left; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.ag td { padding: var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.ag td.nm { font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); }
+.ag td.nm a { color: var(--ag-azul); text-decoration-color: color-mix(in srgb, var(--ag-azul) 40%, transparent); }
+.ag tbody tr:hover { background: var(--ag-tint); }
+.ag td.mut { color: var(--color-fg-muted); }
+.ag td.nm-d { font-weight: var(--cds-font-weight-medium); color: var(--ag-coral); }
+.ag td.tn { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ag .free { color: var(--ag-mar); font-weight: var(--cds-font-weight-medium); }
+.ag .closed { color: var(--color-bad); }
+.ag-day { color: var(--ag-coral); margin: var(--cds-gap-md) 0 var(--cds-gap-xs); font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.ag-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md) 0; }
+.ag-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 6rem; }
+.ag-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.ag td.acts { white-space: nowrap; width: 1%; }
+.ag-act { font: inherit; font-size: var(--cds-font-size-caption); display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: 4px 10px; margin: 0 4px 4px 0; cursor: pointer; text-decoration: none; min-height: 2rem; }
+.ag-act:hover { border-color: var(--ag-coral); }
+.ag-act.on { background: var(--ag-coral); border-color: var(--ag-coral); color: #fff; }
+.ag-act.wa { color: #128C4A; }
+.ag[data-theme="escuro"] .ag-act.wa { color: #3DDC84; }
+.ag-past { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ag-save-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+.ag-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-lg); }
+.ag tr[hidden] { display: none !important; }
+.ag tr.ag-colf th { padding: 2px var(--cds-pad-xs) var(--cds-pad-xs); border-bottom: 1px solid var(--color-border-line); }
+.ag tr.ag-colf input { width: 100%; min-width: 4.5rem; box-sizing: border-box; font: inherit; font-size: var(--cds-font-size-caption); padding: 3px 6px; border: 1px solid var(--color-border-line); border-radius: 6px; background: var(--color-panel); color: var(--color-fg); }
+.ag tr.ag-colf input:not(:placeholder-shown) { border-color: var(--ag-coral); }
+.ag td.src a { color: var(--color-fg-muted); }
+.ag td.src a:hover { color: var(--ag-azul); }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 680px) {
+  .ag table, .ag tbody, .ag tr, .ag td { display: block; width: auto; }
+  .ag thead { display: block; }
+  .ag thead tr:first-child { display: none; }
+  .ag tr.ag-colf { display: flex; flex-wrap: wrap; gap: 4px; border: 0; padding: 0 0 var(--cds-pad-sm); }
+  .ag tr.ag-colf th { display: block; flex: 1 1 40%; padding: 0; border: 0; }
+  .ag tr.ag-colf th:empty { display: none; }
+  .ag tr { border-bottom: 1px solid var(--color-border-line); padding: var(--cds-pad-sm) 0; }
+  .ag td { border: 0; padding: 2px 0; }
+  .ag td.hide-sm { display: none; }
+}
+</style>
+
+<div class="ag">
+  <header class="ag-head" id="topo">
+    <div class="ag-top">
+      <h1>Eventos Recife</h1>
+      <div class="ag-theme" role="group" aria-label="Fundo da tela">
+        <button type="button" data-theme-set="auto" aria-pressed="true">Automático</button>
+        <button type="button" data-theme-set="claro" aria-pressed="false">☀︎ Claro</button>
+        <button type="button" data-theme-set="escuro" aria-pressed="false">☾ Escuro</button>
+      </div>
+    </div>
+    <p class="ag-take dash-skeleton" data-source="hoje">—</p>
+    <div class="ag-tiles">
+      <button class="ag-tile" style="--tile: var(--ag-coral)" data-go="hoje"><span class="n dash-skeleton" data-source="resumo" data-field="eventos_hoje" data-row="0">—</span><span class="l">Eventos hoje</span></button>
+      <button class="ag-tile" style="--tile: var(--ag-mar)" data-go="hoje" data-free="1"><span class="n dash-skeleton" data-source="resumo" data-field="gratis_hoje" data-row="0">—</span><span class="l">Grátis hoje</span></button>
+      <button class="ag-tile" style="--tile: var(--ag-sol)" data-go="comer"><span class="n dash-skeleton" data-source="resumo" data-field="abertos_comer" data-row="0">—</span><span class="l">Restaurantes e cafés abertos</span></button>
+      <button class="ag-tile" style="--tile: var(--ag-azul)" data-go="proximos"><span class="n dash-skeleton" data-source="resumo" data-field="proximos_30" data-row="0">—</span><span class="l">Eventos nos próximos 30 dias</span></button>
+    </div>
+  </header>
+
+  <nav class="ag-tabs" role="tablist">
+    <button role="tab" data-tab="hoje" id="tab-hoje">Hoje</button>
+    <button role="tab" data-tab="amanha" id="tab-amanha">Amanhã</button>
+    <button role="tab" data-tab="fds" id="tab-fds">Fim de semana</button>
+    <button role="tab" data-tab="proximos" id="tab-proximos">30 dias</button>
+    <button role="tab" data-tab="p60" id="tab-p60">60 dias</button>
+    <button role="tab" data-tab="ano" id="tab-ano">Até o fim do ano</button>
+    <button role="tab" data-tab="fazer" id="tab-fazer">Coisas para fazer</button>
+    <button role="tab" data-tab="comer" id="tab-comer">Onde comer</button>
+    <button role="tab" data-tab="beber" id="tab-beber">Onde beber</button>
+    <button role="tab" data-tab="salvos" id="tab-salvos">★ Salvos</button>
+  </nav>
+
+  <section class="ag-page" id="hoje" role="tabpanel">
+    <div class="ag-chips" id="hoje-chips"></div>
+    <div class="ag-filters">
+      <input type="search" id="hoje-q" placeholder="Buscar evento, local…" aria-label="Buscar">
+      <select id="hoje-cidade" aria-label="Cidade"></select>
+      <label><input type="checkbox" id="hoje-free"> Só grátis</label>
+    </div>
+    <div class="ag-card" id="card-hoje">
+      <h2>Eventos de hoje</h2>
+      <p class="ag-count" id="hoje-count"></p>
+      <table id="tbl-hoje" data-source="hoje" data-row-key="id">
+        <thead><tr><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="preco">Preço</th><th data-field="descricao">Descrição</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="ag-card" id="card-fechados" style="--card: var(--ag-sol)">
+      <h2>Fechados hoje</h2>
+      <p class="ag-note">Atrações que não abrem neste dia.</p>
+      <table id="tbl-fechados" data-source="fechados" data-row-key="id">
+        <thead><tr><th data-field="nome">Atração</th><th data-field="motivo">Motivo</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ag-page" id="fazer" role="tabpanel" hidden>
+    <div class="ag-chips" id="fazer-chips"></div>
+    <div class="ag-filters">
+      <input type="search" id="fazer-q" placeholder="Buscar praia, parque, passeio…" aria-label="Buscar">
+      <select id="fazer-regiao" aria-label="Região"></select>
+      <label><input type="checkbox" id="fazer-free"> Só grátis</label>
+    </div>
+    <div class="ag-card" id="card-fazer" style="--card: var(--ag-mar)">
+      <h2>Coisas para fazer no Recife e Região Metropolitana</h2>
+      <p class="ag-count" id="fazer-count"></p>
+      <table id="tbl-fazer" data-source="fazer" data-row-key="id">
+        <thead><tr><th data-field="nome">O quê</th><th data-field="regiao">Região</th><th data-field="onde">Onde</th><th data-field="quando">Quando</th><th data-field="horario">Horário</th><th data-field="preco">Preço</th><th data-field="dica">Dica</th><th data-field="fonte">Fonte</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ag-page" id="comer" role="tabpanel" hidden>
+    <div class="ag-chips" id="comer-chips"></div>
+    <div class="ag-filters">
+      <input type="search" id="comer-q" placeholder="Buscar restaurante, café, bairro, cozinha…" aria-label="Buscar">
+      <select id="comer-cat" aria-label="Categoria"><option value="">Restaurantes e cafés</option><option value="Restaurante">Só restaurantes</option><option value="Café">Só cafés e café da manhã</option></select>
+      <select id="comer-tipo" aria-label="Cozinha"></select>
+      <label><input type="checkbox" id="comer-open" checked> Só abertos hoje</label>
+    </div>
+    <div class="ag-card" id="card-comer" style="--card: var(--ag-sol)">
+      <h2>Onde comer</h2>
+      <p class="ag-count" id="comer-count"></p>
+      <table id="tbl-comer" data-source="comer" data-row-key="id">
+        <thead><tr><th data-field="nome">Restaurante</th><th data-field="bairro">Bairro</th><th data-field="tipo">Cozinha</th><th data-field="horario_hoje">Hoje</th><th data-field="faixa">Faixa</th><th data-field="nota">Nota</th><th data-field="destaque">Destaque</th><th data-field="endereco">Endereço</th><th data-field="fonte">Fonte</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ag-page" id="beber" role="tabpanel" hidden>
+    <div class="ag-chips" id="beber-chips"></div>
+    <div class="ag-filters">
+      <input type="search" id="beber-q" placeholder="Buscar bar, bairro, estilo…" aria-label="Buscar">
+      <select id="beber-tipo" aria-label="Estilo"></select>
+      <label><input type="checkbox" id="beber-open"> Só abertos hoje</label>
+    </div>
+    <div class="ag-card" id="card-beber" style="--card: var(--ag-coral)">
+      <h2>Onde beber</h2>
+      <p class="ag-count" id="beber-count"></p>
+      <table id="tbl-beber" data-source="beber" data-row-key="id">
+        <thead><tr><th data-field="nome">Bar</th><th data-field="bairro">Bairro</th><th data-field="tipo">Estilo</th><th data-field="horario_hoje">Hoje</th><th data-field="faixa">Faixa</th><th data-field="destaque">Destaque</th><th data-field="endereco">Endereço</th><th data-field="fonte">Fonte</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ag-page" id="proximos" role="tabpanel" hidden>
+    <div class="ag-chips" id="prox-chips"></div>
+    <div class="ag-filters">
+      <input type="search" id="prox-q" placeholder="Buscar artista, festa, local…" aria-label="Buscar">
+      <select id="prox-cidade" aria-label="Cidade"></select>
+    </div>
+    <div class="ag-card" id="card-proximos" style="--card: var(--ag-azul)">
+      <h2 id="prox-title">Próximos 30 dias</h2>
+      <p class="ag-count" id="prox-count"></p>
+      <table id="tbl-prox" data-source="proximos" data-row-key="id">
+        <thead><tr><th data-field="data">Data</th><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="categoria">Tipo</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="ag-card" id="card-monitorados" style="--card: var(--ag-sol)">
+      <h2>Artistas, lugares e clubes acompanhados</h2>
+      <p class="ag-note">A busca diária procura a agenda de cada um. Peça para incluir ou tirar nomes.</p>
+      <div class="ag-chips" id="mon-chips"></div>
+      <table id="tbl-mon" data-source="monitorados" data-row-key="id">
+        <thead><tr><th data-field="nome">Nome</th><th data-field="tipo">Tipo</th><th data-field="situacao">Próximas datas</th><th data-field="onde_buscar">Onde a busca procura</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="ag-page" id="salvos" role="tabpanel" hidden>
+    <div class="ag-card" id="card-salvos" style="--card: var(--ag-coral)">
+      <h2>Eventos salvos</h2>
+      <p class="ag-save-note" id="salvos-note">Toque em ☆ Salvar em qualquer evento de Hoje ou dos Próximos 30 dias. Use 💬 WhatsApp para mandar um lembrete (pode enviar para você mesmo) e 📅 Agenda para um alerta no horário.</p>
+      <table id="tbl-salvos">
+        <thead><tr><th>Quando</th><th>Evento</th><th>Local</th><th>Preço</th><th aria-label="Ações"></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="ag-foot">Fontes: iHoje, Sympla, Diario de Pernambuco, Portal de Prefeitura, Prefeitura de Olinda, Partiu Cinema, Melhores Destinos, guias “Onde comer em Recife” (360meridianos, Viaje na Viagem) e Google Maps (restaurantes e bares), além da agenda dos artistas, lugares e clubes de frevo acompanhados. Preços e horários podem mudar; confirme no link do evento. O perfil “Recife que cabe no bolso” não é lido automaticamente porque o Instagram bloqueia acesso sem login. <span id="ag-upd"></span></p>
+</div>
+
+<script>
+dash.calc('resumo', {
+  inputs: ['hoje', 'comer', 'proximos'],
+  title: 'Resumo do dia',
+  description: 'Conta eventos de hoje, os gratuitos, restaurantes abertos e eventos até 30 dias depois de hoje.',
+  fn: (hoje, comer, proximos) => {
+    const dia = hoje.length ? hoje[0].data : null;
+    const limite = dia ? new Date(Date.parse(dia) + 31 * 864e5).toISOString().slice(0, 10) : null;
+    return [{
+      eventos_hoje: hoje.length,
+      gratis_hoje: hoje.filter((r) => r.gratis === true).length,
+      abertos_comer: comer.filter((r) => r.aberto_hoje === true).length,
+      proximos_30: proximos.filter((r) => dia && r.data > dia && r.data < limite).length,
+    }];
+  },
+});
+</script>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const fmtDia = (iso, opts) => new Intl.DateTimeFormat('pt-BR', Object.assign({ timeZone: 'UTC' }, opts)).format(new Date(iso + 'T12:00:00Z'));
+  const safeHref = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : '');
+
+  const state = {
+    hoje: { cat: 'Todos', q: '', cidade: '', free: false },
+    fazer: { cat: 'Todos', q: '', regiao: '', free: false },
+    comer: { cat: 'Todas', q: '', tipo: '', open: true, categoria: '' },
+    beber: { cat: 'Todas', q: '', tipo: '', open: false },
+    prox: { cat: 'Todos', q: '', cidade: '' },
+    mon: { cat: 'Todos' },
+  };
+  let tab = 'hoje';
+
+  // Theme: automático segue o tema do app; claro/escuro forçam o fundo da página
+  const root = document.querySelector('.ag');
+  const setTheme = (t) => {
+    if (t === 'auto') root.removeAttribute('data-theme'); else root.dataset.theme = t;
+    document.querySelectorAll('[data-theme-set]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.themeSet === t)));
+  };
+  document.querySelectorAll('[data-theme-set]').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.themeSet)));
+
+  // Tabs and links
+  const tabs = ['hoje', 'amanha', 'fds', 'proximos', 'p60', 'ano', 'fazer', 'comer', 'beber', 'salvos'];
+  const PROX = ['amanha', 'fds', 'proximos', 'p60', 'ano'];
+  const sections = ['hoje', 'proximos', 'fazer', 'comer', 'beber', 'salvos'];
+  const show = (name, link = true) => {
+    if (!tabs.includes(name)) return;
+    tab = name;
+    const sec = PROX.includes(name) ? 'proximos' : name;
+    sections.forEach((t) => { $(t).hidden = t !== sec; });
+    tabs.forEach((t) => { $('tab-' + t).setAttribute('aria-selected', String(t === name)); });
+    if (link) dash.setLink(name);
+    draw();
+  };
+  document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
+    if (b.dataset.free) { state.hoje.free = true; $('hoje-free').checked = true; }
+    show(b.dataset.go);
+  }));
+
+  // ---- Eventos salvos (privados de cada pessoa) + lembretes ----
+  let saved = {};
+  let ref = null;
+  let mode = 'iniciando';
+  let chain = Promise.resolve();
+  const keyOf = (origem, id) => origem + '-' + id;
+  const pad = (n) => String(n).padStart(2, '0');
+  const parseHora = (h) => { const m = /^(\d{1,2}):(\d{2})/.exec(String(h || '')); return m ? [Number(m[1]), Number(m[2])] : null; };
+  const quandoTxt = (it) => {
+    const dia = fmtDia(it.data, { weekday: 'short', day: '2-digit', month: '2-digit' });
+    return it.horario ? `${dia} · ${it.horario}` : dia;
+  };
+  const waHref = (it) => {
+    const linhas = [`⏰ Lembrete: ${it.nome}`, `📅 ${fmtDia(it.data, { weekday: 'long', day: 'numeric', month: 'long' })}${it.horario ? ' · ' + it.horario : ''}`, `📍 ${it.local}${it.cidade ? ', ' + it.cidade : ''}`];
+    if (it.preco) linhas.push(`💲 ${it.preco}`);
+    if (safeHref(it.link)) linhas.push(it.link);
+    return 'https://wa.me/?text=' + encodeURIComponent(linhas.join('\n'));
+  };
+  const calHref = (it) => {
+    const d = it.data.replace(/-/g, '');
+    const h = parseHora(it.horario);
+    let dates;
+    if (h) {
+      const ini = `${d}T${pad(h[0])}${pad(h[1])}00`;
+      const fimH = (h[0] + 2) % 24;
+      const fimD = h[0] + 2 >= 24 ? new Date(Date.parse(it.data + 'T12:00:00Z') + 864e5).toISOString().slice(0, 10).replace(/-/g, '') : d;
+      dates = `${ini}/${fimD}T${pad(fimH)}${pad(h[1])}00`;
+    } else {
+      const next = new Date(Date.parse(it.data + 'T12:00:00Z') + 864e5).toISOString().slice(0, 10).replace(/-/g, '');
+      dates = `${d}/${next}`;
+    }
+    const p = new URLSearchParams({ action: 'TEMPLATE', text: it.nome, dates, ctz: 'America/Recife', location: [it.local, it.cidade].filter(Boolean).join(', '), details: [it.preco ? 'Preço: ' + it.preco : '', safeHref(it.link)].filter(Boolean).join('\n') });
+    return 'https://calendar.google.com/calendar/render?' + p.toString();
+  };
+  const LS = 'agenda-recife-salvos';
+  const persist = () => {
+    if (!ref) { try { localStorage.setItem(LS, JSON.stringify(saved)); } catch (e) { /* sem armazenamento */ } return; }
+    const snapshot = JSON.parse(JSON.stringify(saved));
+    chain = chain.then(() => ref.set({ itens: snapshot })).catch(() => {
+      ref = null; mode = 'local'; updateNote();
+    });
+  };
+  const toggleSave = (it) => {
+    if (saved[it.key]) delete saved[it.key]; else saved[it.key] = it;
+    persist(); draw();
+  };
+  const updateNote = () => {
+    const n = $('salvos-note');
+    if (mode === 'local') n.textContent = 'Os salvos ficam guardados neste navegador (não passam para outro aparelho). Use 📅 Agenda ou 💬 WhatsApp para não perder o lembrete.';
+  };
+  const btn = (label, cls, onClick, title) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'ag-act ' + (cls || ''); b.textContent = label;
+    if (title) b.title = title;
+    b.addEventListener('click', (e) => { e.stopPropagation(); onClick(); });
+    return b;
+  };
+  const linkBtn = (label, cls, href, title) => {
+    const a = document.createElement('a'); a.className = 'ag-act ' + (cls || ''); a.textContent = label; a.href = href; a.target = '_blank'; a.rel = 'noopener';
+    if (title) a.title = title;
+    return a;
+  };
+  const actionsCell = (tr, it) => {
+    const td = document.createElement('td'); td.className = 'acts';
+    const on = !!saved[it.key];
+    td.append(
+      btn(on ? '★ Salvo' : '☆ Salvar', on ? 'on' : '', () => toggleSave(it), on ? 'Remover dos salvos' : 'Salvar evento'),
+      linkBtn('💬 WhatsApp', 'wa', waHref(it), 'Enviar lembrete pelo WhatsApp'),
+      linkBtn('📅 Agenda', '', calHref(it), 'Adicionar ao Google Agenda com alerta'),
+    );
+    tr.appendChild(td);
+  };
+  const itemFrom = (origem, r) => ({ key: keyOf(origem, r.id), origem, id: r.id, nome: r.nome, data: r.data, horario: r.horario || '', local: r.local || '', cidade: r.cidade || '', preco: r.preco || '', link: safeHref(r.link) });
+
+  (async () => {
+    try {
+      const use = window.claude && window.claude.use;
+      if (!use) { mode = 'local'; try { saved = JSON.parse(localStorage.getItem(LS) || '{}') || {}; } catch (e) { saved = {}; } updateNote(); draw(); return; }
+      const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+      const uid = user ? await user.id() : null;
+      if (!db || !uid) { mode = 'local'; updateNote(); return; }
+      ref = db.doc('data/users/' + uid + '/agenda-salvos');
+      mode = 'conta';
+      ref.onSnapshot((snap) => {
+        const d = snap.exists ? snap.data() : null;
+        saved = d && d.itens && typeof d.itens === 'object' ? JSON.parse(JSON.stringify(d.itens)) : {};
+        draw();
+      }, () => { ref = null; mode = 'local'; updateNote(); });
+    } catch (e) { mode = 'local'; updateNote(); }
+  })();
+
+  function drawSalvos() {
+    const tb = $('tbl-salvos').tBodies[0];
+    const hj = dash.data('hoje');
+    const hoje = hj.status === 'ok' && hj.data.length ? hj.data[0].data : new Date().toISOString().slice(0, 10);
+    const itens = Object.values(saved).filter((it) => it && typeof it.nome === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(String(it.data)))
+      .sort((a, b) => (a.data + a.horario).localeCompare(b.data + b.horario));
+    $('tab-salvos').textContent = itens.length ? `★ Salvos (${itens.length})` : '★ Salvos';
+    if (!itens.length) {
+      const tr = document.createElement('tr'); const td = document.createElement('td');
+      td.colSpan = 5; td.className = 'ag-empty'; td.textContent = 'Nenhum evento salvo ainda.'; tr.appendChild(td);
+      tb.replaceChildren(tr); return;
+    }
+    tb.replaceChildren(...itens.map((it) => {
+      const tr = document.createElement('tr');
+      const q = cell(tr, quandoTxt(it), 'tn');
+      if (it.data < hoje) { const s = document.createElement('div'); s.className = 'ag-past'; s.textContent = 'Já passou'; q.appendChild(s); }
+      cell(tr, it.nome, 'nm', it.link);
+      cell(tr, [it.local, it.cidade].filter(Boolean).join(', '));
+      cell(tr, it.preco, 'tn');
+      actionsCell(tr, it);
+      return tr;
+    }));
+  }
+
+  // Controls
+  const bindSearch = (id, st) => $(id).addEventListener('input', (e) => { st.q = e.target.value; draw(); });
+  bindSearch('hoje-q', state.hoje); bindSearch('fazer-q', state.fazer); bindSearch('comer-q', state.comer); bindSearch('beber-q', state.beber); bindSearch('prox-q', state.prox);
+  $('hoje-cidade').addEventListener('change', (e) => { state.hoje.cidade = e.target.value; draw(); });
+  $('hoje-free').addEventListener('change', (e) => { state.hoje.free = e.target.checked; draw(); });
+  $('fazer-regiao').addEventListener('change', (e) => { state.fazer.regiao = e.target.value; draw(); });
+  $('fazer-free').addEventListener('change', (e) => { state.fazer.free = e.target.checked; draw(); });
+  $('comer-tipo').addEventListener('change', (e) => { state.comer.tipo = e.target.value; draw(); });
+  $('comer-cat').addEventListener('change', (e) => { state.comer.categoria = e.target.value; draw(); });
+  $('comer-open').addEventListener('change', (e) => { state.comer.open = e.target.checked; draw(); });
+  $('beber-tipo').addEventListener('change', (e) => { state.beber.tipo = e.target.value; draw(); });
+  $('beber-open').addEventListener('change', (e) => { state.beber.open = e.target.checked; draw(); });
+  $('prox-cidade').addEventListener('change', (e) => { state.prox.cidade = e.target.value; draw(); });
+
+  // Cidades agrupadas: Recife, Litoral Norte e Litoral Sul (praias), mais outras que aparecerem nos dados
+  const LIT_NORTE = ['Olinda', 'Paulista', 'Igarassu', 'Itamaracá', 'Itapissuma', 'Goiana'];
+  const LIT_SUL = ['Jaboatão', 'Cabo de Santo Agostinho', 'Ipojuca', 'Sirinhaém', 'Rio Formoso', 'Tamandaré', 'Barreiros', 'São José da Coroa Grande'];
+  const ROTULO = { Ipojuca: 'Ipojuca (Porto de Galinhas)', Tamandaré: 'Tamandaré (Carneiros)', Jaboatão: 'Jaboatão (Piedade)' };
+  const fillCidade = (sel, rows, current) => {
+    const tem = new Set(rows.map((r) => r.cidade));
+    const opt = (v, l) => new Option(l, v);
+    const grupo = (label, cidades, val) => {
+      const g = document.createElement('optgroup'); g.label = label;
+      g.append(opt(val, `${label} – todas`), ...cidades.map((c) => opt(c, (ROTULO[c] || c) + (tem.has(c) ? '' : ' · sem eventos'))));
+      return g;
+    };
+    const outras = [...tem].filter((c) => c && c !== 'Recife' && !LIT_NORTE.includes(c) && !LIT_SUL.includes(c)).sort();
+    sel.replaceChildren(opt('', 'Todas as cidades'), opt('Recife', 'Recife'), grupo('Litoral Norte', LIT_NORTE, 'grp:norte'), grupo('Litoral Sul', LIT_SUL, 'grp:sul'), ...outras.map((c) => opt(c, c)));
+    sel.value = current || '';
+    if (sel.value !== (current || '')) sel.value = '';
+  };
+  const cidadeOk = (sel, c) => !sel || (sel === 'grp:norte' ? LIT_NORTE.includes(c) : sel === 'grp:sul' ? LIT_SUL.includes(c) : c === sel);
+
+  const fillSelect = (sel, values, allLabel, current) => {
+    const opts = [new Option(allLabel, '')].concat(values.map((v) => new Option(v, v)));
+    sel.replaceChildren(...opts);
+    sel.value = values.includes(current) ? current : '';
+  };
+  const chips = (box, values, allLabel, st) => {
+    const all = [allLabel].concat(values);
+    box.replaceChildren(...all.map((v) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = v;
+      b.setAttribute('aria-pressed', String(st.cat === v));
+      b.addEventListener('click', () => { st.cat = v; draw(); });
+      return b;
+    }));
+  };
+  const uniq = (rows, k) => [...new Set(rows.map((r) => r[k]).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+
+  const cell = (tr, text, cls, href) => {
+    const td = document.createElement('td');
+    if (cls) td.className = cls;
+    const h = safeHref(href);
+    if (h) {
+      const a = document.createElement('a');
+      a.href = h; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = text;
+      td.appendChild(a);
+    } else {
+      td.textContent = text;
+    }
+    tr.appendChild(td);
+    return td;
+  };
+  const failed = (el) => { const d = document.createElement('div'); d.className = 'ag-fail'; d.textContent = 'Failed to load'; el.replaceChildren(d); };
+  const clearSk = (src) => document.querySelectorAll(`.dash-skeleton[data-source="${src}"]`).forEach((e) => e.classList.remove('dash-skeleton'));
+
+  // Fonte de cada linha: campo fonte/fonte_link, ou o site do link do evento
+  const HOSTS = { 'ihoje.com': 'iHoje', 'www.partiucinema.com.br': 'Partiu Cinema', 'partiucinema.com.br': 'Partiu Cinema', 'teatroluizmendonca.byinti.com': 'Teatro Luiz Mendonça', 'www.sympla.com.br': 'Sympla', 'www.instagram.com': 'Instagram' };
+  function fonteOf(r) {
+    if (r.fonte) return { nome: r.fonte, url: safeHref(r.fonte_link) };
+    const u = safeHref(r.link);
+    if (u) { const h = new URL(u).hostname; return { nome: HOSTS[h] || h.replace(/^www\./, ''), url: u }; }
+    return { nome: 'Busca diária', url: '' };
+  }
+  const fonteCell = (tr, r) => { const f = fonteOf(r); cell(tr, f.nome, 'src mut', f.url); };
+
+  // Filtro por coluna: uma linha de campos sob o cabeçalho de cada tabela
+  const colF = {};
+  function addColFilters(id) {
+    const t = $(id); const head = t.tHead; const fr = document.createElement('tr'); fr.className = 'ag-colf';
+    [...head.rows[0].cells].forEach((th, i) => {
+      const c = document.createElement('th');
+      if (th.dataset.field) {
+        const inp = document.createElement('input'); inp.type = 'search';
+        inp.placeholder = th.textContent; inp.setAttribute('aria-label', 'Filtrar coluna ' + th.textContent);
+        inp.addEventListener('input', () => { (colF[id] = colF[id] || {})[i] = norm(inp.value.trim()); draw(); });
+        c.appendChild(inp);
+      }
+      fr.appendChild(c);
+    });
+    head.appendChild(fr);
+  }
+  function applyColFilters(id, countId, unidade) {
+    const f = colF[id] || {}; const keys = Object.keys(f).filter((k) => f[k]);
+    let n = 0; let tot = 0;
+    [...$(id).tBodies[0].rows].forEach((tr) => {
+      if (tr.querySelector('.ag-empty')) return;
+      tot++;
+      const ok = keys.every((k) => norm(tr.cells[k] ? tr.cells[k].textContent : '').includes(f[k]));
+      tr.hidden = !ok; if (ok) n++;
+    });
+    if (keys.length && countId) $(countId).textContent += ` · ${n} com o filtro das colunas`;
+  }
+  const FILTRAVEIS = [['tbl-hoje', 'hoje-count'], ['tbl-fazer', 'fazer-count'], ['tbl-comer', 'comer-count'], ['tbl-beber', 'beber-count'], ['tbl-prox', 'prox-count'], ['tbl-mon', null], ['tbl-fechados', null]];
+  FILTRAVEIS.forEach(([id]) => addColFilters(id));
+
+  function drawHoje() {
+    const d = dash.data('hoje');
+    const tb = $('tbl-hoje').tBodies[0];
+    const take = document.querySelector('.ag-take');
+    if (d.status === 'error') { take.textContent = ''; clearSk('hoje'); failed(tb); return; }
+    if (d.status !== 'ok') return;
+    clearSk('hoje');
+    const rows = d.data;
+    const dia = rows.length ? rows[0].data : null;
+    take.textContent = dia
+      ? `${fmtDia(dia, { weekday: 'long', day: 'numeric', month: 'long' })}: ${rows.length} eventos no Recife e Região Metropolitana, ${rows.filter((r) => r.gratis === true).length} grátis.`
+      : '';
+    const st = state.hoje;
+    chips($('hoje-chips'), uniq(rows, 'categoria'), 'Todos', st);
+    fillCidade($('hoje-cidade'), rows, st.cidade);
+    const q = norm(st.q);
+    const vis = rows.filter((r) => (st.cat === 'Todos' || r.categoria === st.cat)
+      && cidadeOk(st.cidade, r.cidade)
+      && (!st.free || r.gratis === true)
+      && (!q || norm([r.nome, r.local, r.descricao, r.endereco].join(' ')).includes(q)))
+      .sort((a, b) => String(a.horario).localeCompare(String(b.horario)));
+    $('hoje-count').textContent = `${vis.length} de ${rows.length} eventos`;
+    tb.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.horario, 'tn');
+      cell(tr, r.nome, 'nm', r.link);
+      cell(tr, r.local);
+      cell(tr, r.cidade, 'mut hide-sm');
+      cell(tr, r.preco, r.gratis ? 'free' : '');
+      cell(tr, r.descricao, 'mut');
+      fonteCell(tr, r);
+      actionsCell(tr, itemFrom('hoje', r));
+      return tr;
+    }));
+    if (!vis.length) tb.replaceChildren(emptyRow(8));
+  }
+  function emptyRow(n) {
+    const tr = document.createElement('tr'); const td = document.createElement('td');
+    td.colSpan = n; td.className = 'ag-empty'; td.textContent = 'Nada com esses filtros.'; tr.appendChild(td); return tr;
+  }
+
+  function drawFechados() {
+    const d = dash.data('fechados'); const tb = $('tbl-fechados').tBodies[0];
+    if (d.status === 'error') { failed(tb); return; }
+    if (d.status !== 'ok') return;
+    tb.replaceChildren(...d.data.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.nome, 'nm'); cell(tr, r.motivo, 'mut');
+      return tr;
+    }));
+  }
+
+  function drawFazer() {
+    const d = dash.data('fazer'); const tb = $('tbl-fazer').tBodies[0];
+    if (d.status === 'error') { failed(tb); return; }
+    if (d.status !== 'ok') return;
+    const rows = d.data; const st = state.fazer;
+    chips($('fazer-chips'), uniq(rows, 'tipo'), 'Todos', st);
+    fillSelect($('fazer-regiao'), uniq(rows, 'regiao'), 'Todas as regiões', st.regiao);
+    const q = norm(st.q);
+    const vis = rows.filter((r) => (st.cat === 'Todos' || r.tipo === st.cat)
+      && (!st.regiao || r.regiao === st.regiao)
+      && (!st.free || r.preco === 'Grátis')
+      && (!q || norm([r.nome, r.onde, r.dica, r.tipo].join(' ')).includes(q)));
+    $('fazer-count').textContent = `${vis.length} de ${rows.length} opções`;
+    tb.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.nome, 'nm'); cell(tr, r.regiao, 'mut'); cell(tr, r.onde); cell(tr, r.quando || '', 'tn'); cell(tr, r.horario, 'tn');
+      cell(tr, r.preco, r.preco === 'Grátis' ? 'free' : ''); cell(tr, r.dica, 'mut'); fonteCell(tr, r);
+      return tr;
+    }));
+    if (!vis.length) tb.replaceChildren(emptyRow(8));
+  }
+
+  function drawComer() {
+    const d = dash.data('comer'); const tb = $('tbl-comer').tBodies[0];
+    if (d.status === 'error') { failed(tb); return; }
+    if (d.status !== 'ok') return;
+    const rows = d.data; const st = state.comer;
+    chips($('comer-chips'), uniq(rows, 'zona'), 'Todas', st);
+    fillSelect($('comer-tipo'), uniq(rows, 'tipo'), 'Todos os tipos', st.tipo);
+    const q = norm(st.q);
+    const vis = rows.filter((r) => (st.cat === 'Todas' || r.zona === st.cat)
+      && (!st.tipo || r.tipo === st.tipo)
+      && (!st.categoria || String(r.categoria || 'Restaurante').includes(st.categoria))
+      && (!st.open || r.aberto_hoje === true)
+      && (!q || norm([r.nome, r.bairro, r.tipo, r.endereco, r.destaque].join(' ')).includes(q)))
+      .sort((a, b) => (b.aberto_hoje - a.aberto_hoje) || (b.nota - a.nota));
+    $('comer-count').textContent = `${vis.length} de ${rows.length} lugares`;
+    tb.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.nome, 'nm'); cell(tr, r.bairro); cell(tr, r.tipo, 'mut');
+      cell(tr, r.horario_hoje, r.aberto_hoje ? 'tn' : 'tn closed'); cell(tr, r.faixa, 'tn');
+      cell(tr, String(r.nota), 'tn hide-sm'); cell(tr, r.destaque || '', 'mut'); cell(tr, r.endereco, 'mut'); fonteCell(tr, r);
+      return tr;
+    }));
+    if (!vis.length) tb.replaceChildren(emptyRow(9));
+  }
+
+  function drawBeber() {
+    const d = dash.data('beber'); const tb = $('tbl-beber').tBodies[0];
+    if (d.status === 'error') { failed(tb); return; }
+    if (d.status !== 'ok') return;
+    const rows = d.data; const st = state.beber;
+    chips($('beber-chips'), uniq(rows, 'zona'), 'Todas', st);
+    fillSelect($('beber-tipo'), uniq(rows, 'tipo'), 'Todos os estilos', st.tipo);
+    const q = norm(st.q);
+    const vis = rows.filter((r) => (st.cat === 'Todas' || r.zona === st.cat)
+      && (!st.tipo || r.tipo === st.tipo)
+      && (!st.open || r.aberto_hoje === true)
+      && (!q || norm([r.nome, r.bairro, r.tipo, r.endereco, r.destaque].join(' ')).includes(q)))
+      .sort((a, b) => (b.aberto_hoje - a.aberto_hoje) || (b.nota - a.nota));
+    $('beber-count').textContent = `${vis.length} de ${rows.length} bares`;
+    tb.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.nome, 'nm'); cell(tr, r.bairro); cell(tr, r.tipo, 'mut');
+      cell(tr, r.horario_hoje, r.aberto_hoje ? 'tn' : 'tn closed'); cell(tr, r.faixa, 'tn');
+      cell(tr, r.destaque || '', 'mut'); cell(tr, r.endereco, 'mut'); fonteCell(tr, r);
+      return tr;
+    }));
+    if (!vis.length) tb.replaceChildren(emptyRow(8));
+  }
+
+  function drawProx() {
+    const d = dash.data('proximos'); const h = dash.data('hoje'); const box = $('tbl-prox').tBodies[0];
+    if (d.status === 'error') { failed(box); return; }
+    if (d.status !== 'ok' || h.status !== 'ok') return;
+    const rows = d.data; const st = state.prox;
+    const dia = h.data.length ? h.data[0].data : new Date().toISOString().slice(0, 10);
+    const addD = (iso, n) => new Date(Date.parse(iso + 'T12:00:00Z') + n * 864e5).toISOString().slice(0, 10);
+    const wd = (iso) => new Date(iso + 'T12:00:00Z').getUTCDay();
+    let ini = addD(dia, 1); let fim;
+    let titulo;
+    if (tab === 'amanha') {
+      fim = ini;
+      const t = fmtDia(ini, { weekday: 'long', day: 'numeric', month: 'long' });
+      titulo = 'Amanhã – ' + t;
+    } else if (tab === 'fds') {
+      let k = 1; while (![5, 6, 0].includes(wd(addD(dia, k)))) k++;
+      ini = addD(dia, k); fim = ini; while (wd(fim) !== 0) fim = addD(fim, 1);
+      titulo = `Fim de semana – ${fmtDia(ini, { weekday: 'short', day: 'numeric' })} a ${fmtDia(fim, { weekday: 'short', day: 'numeric', month: 'long' })}`;
+    } else if (tab === 'p60') {
+      fim = addD(dia, 60); titulo = 'Próximos 60 dias';
+    } else if (tab === 'ano') {
+      fim = dia.slice(0, 4) + '-12-31'; titulo = 'Até o fim do ano';
+    } else {
+      fim = addD(dia, 30); titulo = 'Próximos 30 dias';
+    }
+    $('prox-title').textContent = titulo;
+    chips($('prox-chips'), uniq(rows, 'categoria'), 'Todos', st);
+    fillCidade($('prox-cidade'), rows, st.cidade);
+    const q = norm(st.q);
+    const vis = rows.filter((r) => r.data >= ini && r.data <= fim
+      && (st.cat === 'Todos' || r.categoria === st.cat)
+      && cidadeOk(st.cidade, r.cidade)
+      && (!q || norm([r.nome, r.local, r.cidade].join(' ')).includes(q)))
+      .sort((a, b) => (a.data + a.horario).localeCompare(b.data + b.horario));
+    $('prox-count').textContent = `${vis.length} eventos`;
+    const curto = (iso) => { const t = fmtDia(iso, { weekday: 'short', day: '2-digit', month: '2-digit' }); return t.charAt(0).toUpperCase() + t.slice(1); };
+    box.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, curto(r.data), 'tn nm-d'); cell(tr, r.horario, 'tn'); cell(tr, r.nome, 'nm', r.link); cell(tr, r.local);
+      cell(tr, r.cidade, 'mut'); cell(tr, r.categoria, 'mut hide-sm'); cell(tr, r.preco, 'tn'); fonteCell(tr, r);
+      actionsCell(tr, itemFrom('prox', r));
+      return tr;
+    }));
+    if (!vis.length) box.replaceChildren(emptyRow(9));
+  }
+
+  function drawMon() {
+    const d = dash.data('monitorados'); const tb = $('tbl-mon').tBodies[0];
+    if (d.status === 'error') { failed(tb); return; }
+    if (d.status !== 'ok') return;
+    const st = state.mon;
+    chips($('mon-chips'), uniq(d.data, 'tipo'), 'Todos', st);
+    const vis = d.data.filter((r) => st.cat === 'Todos' || r.tipo === st.cat);
+    tb.replaceChildren(...vis.map((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = r.id;
+      cell(tr, r.nome, 'nm'); cell(tr, r.tipo, 'mut'); cell(tr, r.situacao); cell(tr, r.onde_buscar, 'mut hide-sm');
+      return tr;
+    }));
+  }
+
+  function drawTiles() {
+    const r = dash.data('resumo');
+    if (r.status !== 'ok' || !r.data.length) return;
+    clearSk('resumo');
+    const v = r.data[0];
+    document.querySelectorAll('[data-source="resumo"]').forEach((el) => {
+      const x = v[el.dataset.field];
+      el.textContent = x == null ? '—' : d3.format(',')(x);
+    });
+  }
+
+  function draw() {
+    drawTiles(); drawHoje(); drawFechados();
+    if (tab === 'fazer') drawFazer();
+    if (tab === 'comer') drawComer();
+    if (tab === 'beber') drawBeber();
+    if (PROX.includes(tab)) { drawProx(); drawMon(); }
+    drawSalvos();
+    FILTRAVEIS.forEach(([id, c]) => applyColFilters(id, c));
+  }
+
+  dash.onData(draw);
+  const start = location.hash.slice(1);
+  show(tabs.includes(start) ? start : 'hoje', false);
+})();
+</script>
+
+</body>
+</html>
