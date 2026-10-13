@@ -309,6 +309,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
   <section class="ag-page" id="fontes" role="tabpanel" hidden>
     <p class="ag-note">Todo dia de manhã uma tarefa do Claude lê estas fontes e atualiza o site: às 5h20 os perfis de Instagram (no computador do Antonio) e às 5h54 os sites. Cada item das listas mostra, na coluna Fonte, de onde veio. Também são acompanhados os artistas, lugares e clubes de frevo da aba 30 dias.</p>
     <div class="ag-fontes">
+      <div class="ag-card ag-fonte" id="fontes-lugares" style="--card: var(--ag-mar)" hidden><h2>Museus (cadastro de lugares)</h2><ul></ul></div>
       <div class="ag-card ag-fonte" style="--card: var(--ag-azul)">
         <h2>Agenda geral</h2>
         <ul><li><a href="https://ihoje.com/recife/eventos" target="_blank" rel="noopener">iHoje – Recife</a></li><li><a href="https://ihoje.com/olinda/eventos" target="_blank" rel="noopener">iHoje – Olinda</a></li><li><a href="https://www.mapacultural.pe.gov.br/eventos/" target="_blank" rel="noopener">Mapa Cultural de Pernambuco</a></li><li><a href="https://www.sympla.com.br/eventos/recife-pe" target="_blank" rel="noopener">Sympla – Recife</a></li><li><a href="https://shotgun.live/" target="_blank" rel="noopener">Shotgun</a></li><li><a href="https://www.diariodepernambuco.com.br/" target="_blank" rel="noopener">Diario de Pernambuco</a></li><li><a href="https://portaldeprefeitura.com.br/" target="_blank" rel="noopener">Portal de Prefeitura</a></li><li><a href="https://www.olinda.pe.gov.br/" target="_blank" rel="noopener">Prefeitura de Olinda</a></li><li><a href="https://www.folhape.com.br/cultura/" target="_blank" rel="noopener">Folha PE</a></li><li><a href="https://algomais.com/" target="_blank" rel="noopener">Revista Algomais</a></li><li><a href="https://agendaculturaldorecife.blogspot.com/" target="_blank" rel="noopener">Agenda Cultural do Recife (blog)</a></li><li><a href="https://www.instagram.com/visitrecife/" target="_blank" rel="noopener">@visitrecife</a></li><li><a href="https://www.instagram.com/culturadorecife/" target="_blank" rel="noopener">@culturadorecife</a></li><li><a href="https://www.instagram.com/teatroriomarrecife/" target="_blank" rel="noopener">@teatroriomarrecife</a></li><li><a href="https://www.instagram.com/agendaculturaldorecife/" target="_blank" rel="noopener">@agendaculturaldorecife</a></li><li><a href="https://www.instagram.com/recifequecabenobolso/" target="_blank" rel="noopener">@recifequecabenobolso</a></li></ul>
@@ -834,6 +835,24 @@ dash.calc('resumo', {
     drawSalvos();
   }
 
+
+  // Cadastro de lugares (data/lugares.json): sites e Instagram de cada museu
+  fetch('data/lugares.json', { cache: 'no-cache' }).then((r) => r.json()).then((L) => {
+    const box = $('fontes-lugares'); if (!box || !L || !Array.isArray(L.places)) return;
+    const ul = box.querySelector('ul');
+    L.places.forEach((p) => {
+      const li = document.createElement('li');
+      li.append(document.createTextNode(p.name + ' '));
+      [[p.website, 'site'], [p.instagram, 'Instagram']].forEach(([u, t]) => {
+        const h = safeHref(u); if (!h) return;
+        const a = document.createElement('a'); a.href = h; a.target = '_blank'; a.rel = 'noopener'; a.textContent = t;
+        li.append(' · ', a);
+      });
+      if (p.status && p.status !== 'aberto') { const em = document.createElement('em'); em.textContent = ' (' + p.status + ')'; li.append(em); }
+      ul.appendChild(li);
+    });
+    box.hidden = false;
+  }).catch(() => {});
   dash.onData(draw);
   const start = location.hash.slice(1);
   show(tabs.includes(start) ? start : 'hoje', false);
