@@ -570,5 +570,57 @@
   "quando": "Todos os dias",
   "fonte": "Google Maps",
   "fonte_link": "https://www.google.com/maps/search/?api=1&query=Praia%20do%20Capit%C3%A3o%2C%20Igarassu"
+ },
+ {
+  "id": "cine-fundacao",
+  "regiao": "Recife",
+  "tipo": "Cinema",
+  "nome": "Cinema da Fundação (Museu, Derby e Porto)",
+  "onde": "Museu: Casa Forte · Derby · Porto: Cais do Apolo, 222, 16º andar",
+  "quando": "Ter a dom",
+  "horario": "Cerca de 4 sessões por dia",
+  "preco": "Ingresso popular",
+  "dica": "Cinema de arte. Em cartaz no início de outubro: Ran (Kurosawa), NAZA, Virtuosas e Morte e Vida Madalena; confira a semana no site.",
+  "fonte": "Cinema da Fundação",
+  "fonte_link": "https://cinemadafundacao.com.br/filmes-2/"
+ },
+ {
+  "id": "cine-rosa-e-silva",
+  "regiao": "Recife – Zona Norte",
+  "tipo": "Cinema",
+  "nome": "Moviemax Rosa e Silva",
+  "onde": "Av. Rosa e Silva, Aflitos",
+  "quando": "Todos os dias",
+  "horario": "14:00 a 21:00 (13/10)",
+  "preco": "Ver link",
+  "dica": "Em 13/10: Se Eu Fosse Você 3, Tadeo e a Lâmpada Mágica, Verity, Minha Melhor Amiga, Digger e Coração Selvagem. Recebe festivais de cinema francês e italiano.",
+  "fonte": "AdoroCinema",
+  "fonte_link": "https://www.adorocinema.com/programacao/cinema-F0107/"
+ },
+ {
+  "id": "cine-uci-recife",
+  "regiao": "Recife – Zona Sul",
+  "tipo": "Cinema",
+  "nome": "UCI Kinoplex De Lux Shopping Recife",
+  "onde": "Shopping Recife, Boa Viagem",
+  "quando": "Todos os dias",
+  "horario": "13:40 a 22:00 (13/10)",
+  "preco": "Ver link",
+  "dica": "Em 13/10: Se Eu Fosse Você 3, Tadeo e a Lâmpada Mágica, Outra Mamãe, Verity, Galinha Pintadinha e Minha Melhor Amiga.",
+  "fonte": "AdoroCinema",
+  "fonte_link": "https://www.adorocinema.com/programacao/cinema-G0GV7/"
+ },
+ {
+  "id": "cine-uci-tacaruna",
+  "regiao": "Recife – Centro",
+  "tipo": "Cinema",
+  "nome": "UCI Kinoplex Shopping Tacaruna",
+  "onde": "Shopping Tacaruna, Santo Amaro",
+  "quando": "Todos os dias",
+  "horario": "Ver programação",
+  "preco": "Ver link",
+  "dica": "Programação no link (não consegui abrir hoje).",
+  "fonte": "AdoroCinema",
+  "fonte_link": "https://www.adorocinema.com/programacao/cinema-A0370/"
  }
 ]
