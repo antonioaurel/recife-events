@@ -142,6 +142,9 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag[data-theme="escuro"] .ag-act.wa { color: #3DDC84; }
 .ag-past { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
 .ag-save-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+.ag-fontes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: var(--cds-gap-md); }
+.ag-fonte ul { margin: 0; padding-left: 1.1em; font-size: var(--cds-font-size-caption); line-height: 1.7; }
+.ag-fonte a { color: var(--ag-coral); }
 .ag-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-lg); }
 .ag tr[hidden] { display: none !important; }
 .ag td.src a { color: var(--color-fg-muted); }
@@ -186,6 +189,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <button role="tab" data-tab="comer" id="tab-comer">Onde comer</button>
     <button role="tab" data-tab="beber" id="tab-beber">Onde beber</button>
     <button role="tab" data-tab="salvos" id="tab-salvos">★ Salvos</button>
+    <button role="tab" data-tab="fontes" id="tab-fontes">Fontes</button>
   </nav>
 
   <section class="ag-page" id="hoje" role="tabpanel">
@@ -302,7 +306,45 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     </div>
   </section>
 
-  <p class="ag-foot">Fontes: iHoje, Sympla, Diario de Pernambuco, Portal de Prefeitura, Prefeitura de Olinda, Partiu Cinema, Melhores Destinos, guias “Onde comer em Recife” (360meridianos, Viaje na Viagem) e Google Maps (restaurantes e bares), além da agenda dos artistas, lugares e clubes de frevo acompanhados. Preços e horários podem mudar; confirme no link do evento. O perfil “Recife que cabe no bolso” não é lido automaticamente porque o Instagram bloqueia acesso sem login. <span id="ag-upd"></span></p>
+  <section class="ag-page" id="fontes" role="tabpanel" hidden>
+    <p class="ag-note">Todo dia de manhã uma tarefa do Claude lê estas fontes e atualiza o site: às 5h20 os perfis de Instagram (no computador do Antonio) e às 5h54 os sites. Cada item das listas mostra, na coluna Fonte, de onde veio. Também são acompanhados os artistas, lugares e clubes de frevo da aba 30 dias.</p>
+    <div class="ag-fontes">
+      <div class="ag-card ag-fonte" style="--card: var(--ag-azul)">
+        <h2>Agenda geral</h2>
+        <ul><li><a href="https://ihoje.com/recife/eventos" target="_blank" rel="noopener">iHoje – Recife</a></li><li><a href="https://ihoje.com/olinda/eventos" target="_blank" rel="noopener">iHoje – Olinda</a></li><li><a href="https://www.mapacultural.pe.gov.br/eventos/" target="_blank" rel="noopener">Mapa Cultural de Pernambuco</a></li><li><a href="https://www.sympla.com.br/eventos/recife-pe" target="_blank" rel="noopener">Sympla – Recife</a></li><li><a href="https://shotgun.live/" target="_blank" rel="noopener">Shotgun</a></li><li><a href="https://www.diariodepernambuco.com.br/" target="_blank" rel="noopener">Diario de Pernambuco</a></li><li><a href="https://portaldeprefeitura.com.br/" target="_blank" rel="noopener">Portal de Prefeitura</a></li><li><a href="https://www.olinda.pe.gov.br/" target="_blank" rel="noopener">Prefeitura de Olinda</a></li><li><a href="https://www.folhape.com.br/cultura/" target="_blank" rel="noopener">Folha PE</a></li><li><a href="https://algomais.com/" target="_blank" rel="noopener">Revista Algomais</a></li><li><a href="https://agendaculturaldorecife.blogspot.com/" target="_blank" rel="noopener">Agenda Cultural do Recife (blog)</a></li><li><a href="https://www.instagram.com/visitrecife/" target="_blank" rel="noopener">@visitrecife</a></li><li><a href="https://www.instagram.com/culturadorecife/" target="_blank" rel="noopener">@culturadorecife</a></li><li><a href="https://www.instagram.com/teatroriomarrecife/" target="_blank" rel="noopener">@teatroriomarrecife</a></li><li><a href="https://www.instagram.com/agendaculturaldorecife/" target="_blank" rel="noopener">@agendaculturaldorecife</a></li><li><a href="https://www.instagram.com/recifequecabenobolso/" target="_blank" rel="noopener">@recifequecabenobolso</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-sol)">
+        <h2>Feiras</h2>
+        <ul><li><a href="https://www.instagram.com/feiradaaurora/" target="_blank" rel="noopener">@feiradaaurora</a></li><li><a href="https://www.instagram.com/feirabomjesus/" target="_blank" rel="noopener">@feirabomjesus</a></li><li><a href="https://www.instagram.com/feiradolindu/" target="_blank" rel="noopener">@feiradolindu</a></li><li><a href="https://guia.melhoresdestinos.com.br/compras-recife.html" target="_blank" rel="noopener">Melhores Destinos – compras no Recife</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-rosa)">
+        <h2>Teatro</h2>
+        <ul><li><a href="https://www.instagram.com/teatrodoparqueoficial/" target="_blank" rel="noopener">@teatrodoparqueoficial</a></li><li><a href="https://www.instagram.com/apolohermilo/" target="_blank" rel="noopener">@apolohermilo</a></li><li><a href="https://www.instagram.com/teatrodesantaisabel/" target="_blank" rel="noopener">@teatrodesantaisabel</a></li><li><a href="https://www.instagram.com/teatroriomarrecife/" target="_blank" rel="noopener">@teatroriomarrecife</a></li><li><a href="https://teatroluizmendonca.byinti.com/" target="_blank" rel="noopener">Teatro Luiz Mendonça (ingressos)</a></li><li><a href="https://www.folhape.com.br/cultura/" target="_blank" rel="noopener">Teatro Guararapes e Classic Hall (via Folha PE)</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-mar)">
+        <h2>Museus e exposições</h2>
+        <ul><li><a href="https://www.instagram.com/museudacidadedorecife/" target="_blank" rel="noopener">@museudacidadedorecife</a></li><li><a href="https://www.instagram.com/institutorb/" target="_blank" rel="noopener">@institutorb</a></li><li><a href="https://www.instagram.com/mamamrecife/" target="_blank" rel="noopener">@mamamrecife</a></li><li><a href="https://www.instagram.com/fundajoficial/" target="_blank" rel="noopener">@fundajoficial</a></li><li><a href="https://www.instagram.com/pacodofrevo/" target="_blank" rel="noopener">@pacodofrevo</a></li><li><a href="https://www.instagram.com/museudotremrec/" target="_blank" rel="noopener">@museudotremrec</a></li><li><a href="https://www.instagram.com/torremalakoff/" target="_blank" rel="noopener">@torremalakoff</a></li><li><a href="https://www.instagram.com/amparosessenta/" target="_blank" rel="noopener">@amparosessenta</a></li><li><a href="https://www.instagram.com/murillolagreca/" target="_blank" rel="noopener">@murillolagreca</a></li><li><a href="https://www.instagram.com/museu.mamulengo/" target="_blank" rel="noopener">@museu.mamulengo</a></li><li><a href="https://www.instagram.com/mercadoeufrasiobarbosa/" target="_blank" rel="noopener">@mercadoeufrasiobarbosa</a></li><li><a href="https://www.instagram.com/instituto_arqueologico/" target="_blank" rel="noopener">@instituto_arqueologico</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-azul)">
+        <h2>Cinema</h2>
+        <ul><li><a href="https://cinemadafundacao.com.br/filmes-2/" target="_blank" rel="noopener">Cinema da Fundação</a></li><li><a href="https://www.adorocinema.com/programacao/cinema-F0107/" target="_blank" rel="noopener">Moviemax Rosa e Silva (AdoroCinema)</a></li><li><a href="https://www.adorocinema.com/programacao/cinema-G0GV7/" target="_blank" rel="noopener">UCI Kinoplex De Lux Shopping Recife (AdoroCinema)</a></li><li><a href="https://www.adorocinema.com/programacao/cinema-A0370/" target="_blank" rel="noopener">UCI Kinoplex Shopping Tacaruna (AdoroCinema)</a></li><li><a href="https://www.partiucinema.com.br/cidade/recife" target="_blank" rel="noopener">Partiu Cinema – Recife</a></li><li><a href="https://cenanauta.com.br/filmes/" target="_blank" rel="noopener">Cenanauta – estreias do mês</a></li><li><a href="https://www.filmeb.com.br/quadro-lancamento" target="_blank" rel="noopener">Filme B – quadro de lançamentos</a></li><li><a href="https://www.instagram.com/cinemasaoluizpe/" target="_blank" rel="noopener">@cinemasaoluizpe</a></li><li><a href="https://www.instagram.com/cinepeoficial/" target="_blank" rel="noopener">@cinepeoficial</a></li><li><a href="https://www.instagram.com/cinema.ufpe/" target="_blank" rel="noopener">@cinema.ufpe</a></li><li><a href="https://www.instagram.com/moviemaxrosaesilva/" target="_blank" rel="noopener">@moviemaxrosaesilva</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-rosa)">
+        <h2>Shows, apresentações e festas</h2>
+        <ul><li><a href="https://www.instagram.com/casaestacaodaluz/" target="_blank" rel="noopener">@casaestacaodaluz</a></li><li><a href="https://www.instagram.com/pacodofrevo/" target="_blank" rel="noopener">@pacodofrevo</a></li><li><a href="https://www.instagram.com/pocodasartess/" target="_blank" rel="noopener">@pocodasartess</a></li><li><a href="https://ihoje.com/local/olinda/alma-arte-cafe" target="_blank" rel="noopener">Alma Arte Café (iHoje)</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-mar)">
+        <h2>Parques</h2>
+        <ul><li><a href="https://www.instagram.com/livrariadojardim/" target="_blank" rel="noopener">@livrariadojardim</a></li><li><a href="https://www.instagram.com/espacocienciape/" target="_blank" rel="noopener">@espacocienciape</a></li></ul>
+      </div>
+      <div class="ag-card ag-fonte" style="--card: var(--ag-sol)">
+        <h2>Onde comer, tomar café e beber</h2>
+        <ul><li><a href="https://www.google.com/maps" target="_blank" rel="noopener">Google Maps (horários do dia e notas)</a></li><li><a href="https://www.360meridianos.com/dica/onde-comer-em-recife" target="_blank" rel="noopener">360meridianos – onde comer em Recife</a></li><li><a href="https://www.viajenaviagem.com/destino/recife/" target="_blank" rel="noopener">Viaje na Viagem – Recife</a></li><li><a href="https://guia.melhoresdestinos.com.br/" target="_blank" rel="noopener">Melhores Destinos – Recife</a></li><li><a href="https://www.duogourmet.com.br/" target="_blank" rel="noopener">Duo Gourmet</a></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <p class="ag-foot">Veja todas as fontes na aba <a href="#fontes" data-goto-fontes>Fontes</a>. Preços e horários podem mudar; confirme no link do evento. <span id="ag-upd"></span></p>
 </div>
 
 <script>
@@ -357,9 +399,9 @@ dash.calc('resumo', {
   document.querySelectorAll('[data-theme-set]').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.themeSet, true)));
 
   // Tabs and links
-  const tabs = ['hoje', 'amanha', 'fds', 'proximos', 'p60', 'ano', 'fazer', 'comer', 'beber', 'salvos'];
+  const tabs = ['hoje', 'amanha', 'fds', 'proximos', 'p60', 'ano', 'fazer', 'comer', 'beber', 'salvos', 'fontes'];
   const PROX = ['amanha', 'fds', 'proximos', 'p60', 'ano'];
-  const sections = ['hoje', 'proximos', 'fazer', 'comer', 'beber', 'salvos'];
+  const sections = ['hoje', 'proximos', 'fazer', 'comer', 'beber', 'salvos', 'fontes'];
   const show = (name, link = true) => {
     if (!tabs.includes(name)) return;
     tab = name;
@@ -370,6 +412,7 @@ dash.calc('resumo', {
     draw();
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  document.querySelectorAll('[data-goto-fontes]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); show('fontes'); window.scrollTo(0, 0); }));
   document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
     if (b.dataset.free) { state.hoje.gratis = true; state.hoje.pago = false; $('hoje-gratis').checked = true; $('hoje-pago').checked = false; }
     show(b.dataset.go);
