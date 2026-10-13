@@ -93,6 +93,20 @@ def abertos(dados, data, pular=()):
     return linhas
 
 
+def dias_texto(dias):
+    """['ter','qua','qui','sex','dom'] -> 'de terça a sexta e domingo'."""
+    grupos, atual = [], []
+    for x in DIAS:
+        if x in dias:
+            atual.append(x)
+        elif atual:
+            grupos.append(atual); atual = []
+    if atual:
+        grupos.append(atual)
+    partes = [NOMES[g[0]] if len(g) == 1 else (f'{NOMES[g[0]]} e {NOMES[g[1]]}' if len(g) == 2 else f'de {NOMES[g[0]]} a {NOMES[g[-1]]}') for g in grupos]
+    return ' e '.join(partes)
+
+
 def fechados(dados, data):
     """Lugares do cadastro fechados nessa data (folga semanal ou fechamento/reforma)."""
     d = DIAS[datetime.date.fromisoformat(data).weekday()]
@@ -101,8 +115,11 @@ def fechados(dados, data):
         if p['situacao'] == 'fechado':
             motivo = p['status'][0].upper() + p['status'][1:]
         elif not (p['horarios'].get(d) or []):
-            abre = [x for x in DIAS if p['horarios'].get(x)]
-            motivo = f"Não abre {'aos' if d in ('sab', 'dom') else 'às'} {NOMES[d]}s" + (f"; abre {NOMES[abre[0]]} a {NOMES[abre[-1]]}" if abre else '')
+            motivo = f"Não abre {'aos' if d in ('sab', 'dom') else 'às'} {NOMES[d]}s"
+            dias_abre = dias_texto([x for x in DIAS if p['horarios'].get(x)])
+            if dias_abre:
+                motivo += f'; abre {dias_abre}'
+
         else:
             continue
         linhas.append({'id': 'fechado-' + p['id'], 'nome': p['name'], 'motivo': motivo})
