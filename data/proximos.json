@@ -1,57 +1,5 @@
 [
  {
-  "horario": "09:00",
-  "preco": "Grátis (terça)",
-  "link": "",
-  "id": "bienal-oficina-1013",
-  "data": "2026-10-13",
-  "categoria": "Exposição",
-  "nome": "36ª Bienal de São Paulo itinerante – grátis às terças",
-  "local": "Oficina Francisco Brennand",
-  "cidade": "Recife",
-  "fonte": "Portal de Prefeitura",
-  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
- },
- {
-  "horario": "10:00",
-  "preco": "Grátis",
-  "link": "",
-  "id": "esculturas-1013",
-  "data": "2026-10-13",
-  "categoria": "Exposição",
-  "nome": "Parque das Esculturas Francisco Brennand reabre",
-  "local": "Parque das Esculturas (Marco Zero, de barco)",
-  "cidade": "Recife",
-  "fonte": "Portal de Prefeitura",
-  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
- },
- {
-  "horario": "13:00",
-  "preco": "A partir de R$ 30",
-  "link": "",
-  "id": "degas-borges-1013",
-  "data": "2026-10-13",
-  "categoria": "Exposição",
-  "nome": "Degas/Borges – Instituto Ricardo Brennand reabre",
-  "local": "Instituto Ricardo Brennand",
-  "cidade": "Recife",
-  "fonte": "Portal de Prefeitura",
-  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
- },
- {
-  "horario": "14:00",
-  "preco": "Livre",
-  "link": "",
-  "id": "feira-bv-1013",
-  "data": "2026-10-13",
-  "categoria": "Feira",
-  "nome": "Feira de Boa Viagem",
-  "local": "Praça de Boa Viagem",
-  "cidade": "Recife",
-  "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
- },
- {
   "id": "estreia-street-fighter-pre",
   "data": "2026-10-14",
   "categoria": "Cinema",
@@ -62,7 +10,113 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Pré-estreia da nova adaptação do videogame, ambientada em 1993, com Andrew Koji e Noah Centineo."
+ },
+ {
+  "id": "expo-paco-do-frevo",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Visite o Paço do Frevo",
+  "local": "Paço do Frevo",
+  "cidade": "Recife",
+  "horario": "",
+  "preco": "Ver link",
+  "link": "https://bileto.sympla.com.br/event/114751",
+  "resumo": "Museu do frevo no Bairro do Recife, com exposições, estandartes e a história do ritmo.",
+  "data_fim": "2026-10-31",
+  "fonte": "Sympla",
+  "fonte_link": "https://www.sympla.com.br/eventos/recife-pe"
+ },
+ {
+  "id": "expo-bienal",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "36ª Bienal de São Paulo itinerante",
+  "local": "Oficina Francisco Brennand",
+  "cidade": "Recife",
+  "horario": "09:00 a 17:00",
+  "preco": "R$ 50 / R$ 25",
+  "link": "",
+  "resumo": "Obras de 14 artistas com referências pernambucanas na Oficina Brennand. Última semana; última entrada às 16h.",
+  "data_fim": "2026-10-18",
+  "fonte": "Portal de Prefeitura",
+  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+ },
+ {
+  "id": "expo-rua",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Exposição fotográfica \"Rua\", de Rogério Alves",
+  "local": "Rua da Imperatriz, Boa Vista",
+  "cidade": "Recife",
+  "horario": "Ao ar livre",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Fotos de artistas, performances e cenas urbanas expostas ao ar livre na Rua da Imperatriz.",
+  "data_fim": "2026-11-10",
+  "fonte": "Portal de Prefeitura",
+  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+ },
+ {
+  "id": "cartaz-moviemax",
+  "data": "2026-10-14",
+  "categoria": "Cinema",
+  "nome": "Em cartaz: Moviemax Rosa e Silva",
+  "local": "Moviemax Rosa e Silva",
+  "cidade": "Recife",
+  "horario": "Tarde e noite",
+  "preco": "Ver link",
+  "link": "https://www.adorocinema.com/programacao/cinema-F0107/",
+  "resumo": "Se Eu Fosse Você 3, Tadeo e a Lâmpada Mágica, Verity, Minha Melhor Amiga, Digger e Coração Selvagem. A programação muda na quinta.",
+  "data_fim": "2026-10-14",
+  "fonte": "AdoroCinema",
+  "fonte_link": "https://www.adorocinema.com/programacao/cinema-F0107/"
+ },
+ {
+  "id": "cartaz-uci-recife",
+  "data": "2026-10-14",
+  "categoria": "Cinema",
+  "nome": "Em cartaz: UCI Shopping Recife",
+  "local": "UCI Kinoplex De Lux Shopping Recife",
+  "cidade": "Recife",
+  "horario": "Tarde e noite",
+  "preco": "Ver link",
+  "link": "https://www.adorocinema.com/programacao/cinema-G0GV7/",
+  "resumo": "Se Eu Fosse Você 3, Tadeo e a Lâmpada Mágica, Outra Mamãe, Verity, Galinha Pintadinha e Minha Melhor Amiga. A programação muda na quinta.",
+  "data_fim": "2026-10-14",
+  "fonte": "AdoroCinema",
+  "fonte_link": "https://www.adorocinema.com/programacao/cinema-G0GV7/"
+ },
+ {
+  "id": "expo-degas-borges",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Degas/Borges",
+  "local": "Instituto Ricardo Brennand",
+  "cidade": "Recife",
+  "horario": "Ter–qua 13h–17h; qui–dom 10h–17h",
+  "preco": "A partir de R$ 30",
+  "link": "",
+  "resumo": "40 esculturas em bronze de Degas, em parceria com o Masp, em diálogo com fotografias de Sofia Borges.",
+  "data_fim": "2027-01-10",
+  "fonte": "Portal de Prefeitura",
+  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+ },
+ {
+  "id": "cartaz-fundacao",
+  "data": "2026-10-14",
+  "categoria": "Cinema",
+  "nome": "Em cartaz: Cinema da Fundação",
+  "local": "Cinema da Fundação (Museu, Derby e Porto)",
+  "cidade": "Recife",
+  "horario": "Ver programação",
+  "preco": "Ingresso popular",
+  "link": "https://cinemadafundacao.com.br/filmes-2/",
+  "resumo": "Cinema de arte: Ran (Kurosawa), NAZA, Virtuosas e Morte e Vida Madalena. Confira a semana no site.",
+  "data_fim": "2026-10-18",
+  "fonte": "Cinema da Fundação",
+  "fonte_link": "https://cinemadafundacao.com.br/filmes-2/"
  },
  {
   "id": "estreia-street-fighter",
@@ -75,7 +129,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Adaptação do clássico jogo de luta, ambientada em 1993, com Andrew Koji e Noah Centineo (Paramount).",
+  "data_fim": "2026-10-21"
  },
  {
   "id": "estreia-dentro-da-baleia",
@@ -88,7 +144,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Filme com Josh Brolin e Austin Abrams (20th Century/Disney).",
+  "data_fim": "2026-10-21"
  },
  {
   "id": "estreia-zona-zero",
@@ -101,7 +159,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Terror coreano de Yeon Sang-ho, diretor de Invasão Zumbi.",
+  "data_fim": "2026-10-21"
  },
  {
   "id": "estreia-jogos-vorazes",
@@ -114,7 +174,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Os cinco filmes da franquia Jogos Vorazes voltam às salas na mesma data.",
+  "data_fim": "2026-10-21"
  },
  {
   "id": "estreia-space-jam",
@@ -127,128 +189,38 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Relançamento do clássico com Michael Jordan e os Looney Tunes.",
+  "data_fim": "2026-10-21"
  },
  {
-  "id": "o-ultimo-baile-com-s4tan-pre-halloween-16-out-sexta-feira-Bm",
-  "data": "2026-10-16",
-  "categoria": "Festa",
-  "nome": "O Último Baile com S4TAN – Pré-Halloween",
-  "local": "Clube Metrópole",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/o-ultimo-baile-com-s4tan-pre-halloween-16-out-sexta-feira-Bmn7flD02poL"
- },
- {
-  "id": "bololo-v3-2026-Bmn7flMl5117",
-  "data": "2026-10-16",
-  "categoria": "Festa",
-  "nome": "Bololô v3.2026",
-  "local": "Cachaçaria Carvalheira",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/bololo-v3-2026-Bmn7flMl5117"
- },
- {
-  "id": "baile-retro-circulo-militar-do-recife-Bmn7flHyKT9o",
-  "data": "2026-10-16",
-  "categoria": "Festa",
-  "nome": "Baile Retrô",
-  "local": "Círculo Militar do Recife",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/baile-retro-circulo-militar-do-recife-Bmn7flHyKT9o"
- },
- {
-  "id": "35-baile-do-forrobodo-edicao-especial-Bmn7flHEqALT",
-  "data": "2026-10-16",
-  "categoria": "Show",
-  "nome": "35º Baile do Forrobodó",
-  "local": "Empório Barrozo",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/35-baile-do-forrobodo-edicao-especial-Bmn7flHEqALT"
- },
- {
-  "id": "espetaculo-abba-elvis-92ZMKjm827S",
-  "data": "2026-10-16",
+  "id": "invencao-do-nordeste",
+  "data": "2026-10-15",
   "categoria": "Teatro",
-  "nome": "Espetáculo ABBA & Elvis",
-  "local": "Teatro IMIP",
+  "nome": "A invenção do Nordeste",
+  "local": "Caixa Cultural Recife",
   "cidade": "Recife",
   "horario": "",
   "preco": "Ver link",
-  "link": "https://ihoje.com/events/espetaculo-abba-elvis-92ZMKjm827S"
+  "link": "https://bileto.sympla.com.br/event/128377",
+  "resumo": "Espetáculo na Caixa Cultural Recife, de 15 a 17 de outubro.",
+  "data_fim": "2026-10-17",
+  "fonte": "Sympla",
+  "fonte_link": "https://www.sympla.com.br/eventos/recife-pe"
  },
  {
-  "id": "show-eliana-pittman-canta-jorge-aragao-e-grandes-sucessos-92",
-  "data": "2026-10-16",
-  "categoria": "Show",
-  "nome": "Eliana Pittman canta Jorge Aragão",
-  "local": "Cine Teatro do Parque",
+  "id": "riomar-carol-delgado",
+  "data": "2026-10-15",
+  "categoria": "Teatro",
+  "nome": "Carol Delgado – Energia Feminina",
+  "local": "Teatro RioMar",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/show-eliana-pittman-canta-jorge-aragao-e-grandes-sucessos-92ZMKo9APz1"
- },
- {
-  "id": "matheus-de-bezerra-e-itallo-franca-Bmn7flD01RiK",
-  "data": "2026-10-16",
-  "categoria": "Show",
-  "nome": "Matheus de Bezerra e Ítallo França",
-  "local": "Terra Café Bar",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/matheus-de-bezerra-e-itallo-franca-Bmn7flD01RiK"
- },
- {
-  "id": "alfazema-sessions-no-brilho-Bmn7flMiP2J1",
-  "data": "2026-10-16",
-  "categoria": "Festa",
-  "nome": "Alfazema Sessions",
-  "local": "Brilho Cultural",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/alfazema-sessions-no-brilho-Bmn7flMiP2J1"
- },
- {
-  "id": "underfest-v6-Bmn7flMiPjQc",
-  "data": "2026-10-16",
-  "categoria": "Show",
-  "nome": "Underfest V6",
-  "local": "R. do Sossego, 1344",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/underfest-v6-Bmn7flMiPjQc"
- },
- {
-  "id": "sexta-live-retroback-why-not-Bmn7flMd8fje",
-  "data": "2026-10-16",
-  "categoria": "Show",
-  "nome": "Sexta Live: Retroback & Why Not",
-  "local": "Downtown Pub",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/sexta-live-retroback-why-not-Bmn7flMd8fje"
- },
- {
-  "id": "ca-s-sobremesa-pitty-Bmn7flMegmIm",
-  "data": "2026-10-16",
-  "categoria": "Festa",
-  "nome": "CAØS Sobremesa – Pitty",
-  "local": "IRAQ",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/ca-s-sobremesa-pitty-Bmn7flMegmIm"
+  "horario": "21:00",
+  "preco": "A partir de R$ 40",
+  "link": "",
+  "resumo": "Stand-up de Carol Delgado que aposta na identificação e na interação com a plateia.",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
  },
  {
   "horario": "14:00",
@@ -261,7 +233,104 @@
   "local": "Praça de Boa Viagem",
   "cidade": "Recife",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira diária de artesanato e comidas típicas na praça em frente à praia."
+ },
+ {
+  "id": "baile-retro-circulo-militar-do-recife-Bmn7flHyKT9o",
+  "data": "2026-10-16",
+  "categoria": "Festa",
+  "nome": "Baile Retrô",
+  "local": "Círculo Militar do Recife",
+  "cidade": "Recife",
+  "horario": "17:00",
+  "preco": "Ver link",
+  "link": "https://ihoje.com/events/baile-retro-circulo-militar-do-recife-Bmn7flHyKT9o",
+  "resumo": "Baile Retrô no Círculo Militar do Recife."
+ },
+ {
+  "id": "35-baile-do-forrobodo-edicao-especial-Bmn7flHEqALT",
+  "data": "2026-10-16",
+  "categoria": "Show",
+  "nome": "35º Baile do Forrobodó",
+  "local": "Empório Barrozo",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "R$ 33,75 – R$ 67,50",
+  "link": "https://ihoje.com/events/35-baile-do-forrobodo-edicao-especial-Bmn7flHEqALT",
+  "resumo": "35ª edição do Baile do Forrobodó, noite de forró com show completo do Trio Dona Zefa (pela primeira vez no baile) e DJ."
+ },
+ {
+  "id": "espetaculo-abba-elvis-92ZMKjm827S",
+  "data": "2026-10-16",
+  "categoria": "Teatro",
+  "nome": "Espetáculo ABBA & Elvis",
+  "local": "Teatro IMIP",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "R$ 100 – R$ 240",
+  "link": "https://ihoje.com/events/espetaculo-abba-elvis-92ZMKjm827S",
+  "resumo": "Viagem aos anos 50, 60 e 70 com dois tributos argentinos a ABBA e Elvis Presley, com figurinos, coreografias e banda ao vivo (Los Kalas)."
+ },
+ {
+  "id": "show-eliana-pittman-canta-jorge-aragao-e-grandes-sucessos-92",
+  "data": "2026-10-16",
+  "categoria": "Show",
+  "nome": "Eliana Pittman canta Jorge Aragão",
+  "local": "Cine Teatro do Parque",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "A partir de R$ 110",
+  "link": "https://ihoje.com/events/show-eliana-pittman-canta-jorge-aragao-e-grandes-sucessos-92ZMKo9APz1",
+  "resumo": "Eliana Pittman faz show inédito no Recife do álbum Nem Lágrima Nem Dor, tributo a Jorge Aragão, com banda completa e sucessos da carreira."
+ },
+ {
+  "id": "matheus-de-bezerra-e-itallo-franca-Bmn7flD01RiK",
+  "data": "2026-10-16",
+  "categoria": "Show",
+  "nome": "Matheus de Bezerra e Ítallo França",
+  "local": "Terra Café Bar",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "R$ 44",
+  "link": "https://ihoje.com/events/matheus-de-bezerra-e-itallo-franca-Bmn7flD01RiK",
+  "resumo": "Show de Matheus de Bezerra (Recife) e Ítallo França (Alagoas), nomes da nova música brasileira, numa noite de encontro musical entre PE e AL."
+ },
+ {
+  "id": "alfazema-sessions-no-brilho-Bmn7flMiP2J1",
+  "data": "2026-10-16",
+  "categoria": "Festa",
+  "nome": "Alfazema Sessions",
+  "local": "Brilho Cultural",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 0 – R$ 23",
+  "link": "https://ihoje.com/events/alfazema-sessions-no-brilho-Bmn7flMiP2J1",
+  "resumo": "Noite com Bon Sucesso Samba Clube e Alfazema Sessions, juntando samba, groove e pista no Centro do Recife. Lote gratuito limitado até 23h."
+ },
+ {
+  "id": "underfest-v6-Bmn7flMiPjQc",
+  "data": "2026-10-16",
+  "categoria": "Show",
+  "nome": "Underfest V6",
+  "local": "R. do Sossego, 1344",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "Grátis – R$ 13,99",
+  "link": "https://ihoje.com/events/underfest-v6-Bmn7flMiPjQc",
+  "resumo": "Sexta edição do Underfest na Rua do Sossego."
+ },
+ {
+  "id": "sexta-live-retroback-why-not-Bmn7flMd8fje",
+  "data": "2026-10-16",
+  "categoria": "Show",
+  "nome": "Sexta Live: Retroback & Why Not",
+  "local": "Downtown Pub",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 25",
+  "link": "https://ihoje.com/events/sexta-live-retroback-why-not-Bmn7flMd8fje",
+  "resumo": "Sexta Live do Downtown Pub com as bandas Retroback e Why Not (pop rock) e DJ Sapo nos intervalos."
  },
  {
   "id": "liambaverso-Bmn7flMnlwtE",
@@ -271,85 +340,59 @@
   "local": "Liamba Reggae Bar",
   "cidade": "Olinda",
   "horario": "21:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/liambaverso-Bmn7flMnlwtE"
+  "preco": "R$ 0 – R$ 13",
+  "link": "https://ihoje.com/events/liambaverso-Bmn7flMnlwtE",
+  "resumo": "Noite de psytrance no Liamba Reggae Bar com Psyalbin, Smiik Prog, Rádio Libertadora, Synesthezk e Bobe."
  },
  {
-  "id": "pagode-do-recomeco-30-anos-do-padang-Bmn7flMd8fjf",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "Pagode do Recomeço – 30 anos do Padang",
-  "local": "Parador",
+  "id": "o-ultimo-baile-com-s4tan-pre-halloween-16-out-sexta-feira-Bm",
+  "data": "2026-10-16",
+  "categoria": "Festa",
+  "nome": "O Último Baile com S4TAN – Pré-Halloween",
+  "local": "Clube Metrópole",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/pagode-do-recomeco-30-anos-do-padang-Bmn7flMd8fjf"
+  "horario": "22:00",
+  "preco": "A partir de R$ 13,99",
+  "link": "https://ihoje.com/events/o-ultimo-baile-com-s4tan-pre-halloween-16-out-sexta-feira-Bmn7flD02poL",
+  "resumo": "Festa pré-Halloween no Clube Metrópole. Aniversariantes de outubro entram grátis até 23h30."
  },
  {
-  "id": "fela-day-pe-15-edicao-Bmn7flHB1XaT",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "Fela Day PE – 15ª edição",
-  "local": "Brilho Cultural",
+  "id": "ca-s-sobremesa-pitty-Bmn7flMegmIm",
+  "data": "2026-10-16",
+  "categoria": "Festa",
+  "nome": "CAØS Sobremesa – Pitty",
+  "local": "IRAQ",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/fela-day-pe-15-edicao-Bmn7flHB1XaT"
+  "horario": "22:00",
+  "preco": "R$ 18 – R$ 28,13",
+  "link": "https://ihoje.com/events/ca-s-sobremesa-pitty-Bmn7flMegmIm",
+  "resumo": "Noite CAØS dedicada ao rock brasileiro, com especial Pitty (Admirável Chip Novo) e DJs Thomas Henry, Mare, Mariah e Brunow."
  },
  {
-  "id": "alex-cohen-interpreta-o-rei-92ZMKa5AOFi",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "Alex Cohen interpreta o Rei",
+  "id": "riomar-fernando-pedrosa",
+  "data": "2026-10-16",
+  "categoria": "Teatro",
+  "nome": "Fernando Pedrosa (stand-up)",
   "local": "Teatro RioMar",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/alex-cohen-interpreta-o-rei-92ZMKa5AOFi"
+  "horario": "22:00",
+  "preco": "A partir de R$ 50",
+  "link": "",
+  "resumo": "Show solo de stand-up que mistura observações do cotidiano com um humor leve.",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
  },
  {
-  "id": "rocktoberfest-anabela-squad-band-Bmn7flMjWTdg",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "RocktoberFest – Anabela & Squad Band",
-  "local": "Downtown Pub",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/rocktoberfest-anabela-squad-band-Bmn7flMjWTdg"
- },
- {
-  "id": "rock-resistencia-fest-1-ano-Bmn7flHFyIne",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "Rock Resistência Fest (1 ano)",
-  "local": "Darkside Studio",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/rock-resistencia-fest-1-ano-Bmn7flHFyIne"
- },
- {
-  "id": "gritano-halloween-ano-3-Bmn7flHGHnxQ",
-  "data": "2026-10-17",
+  "id": "bololo-v3-2026-Bmn7flMl5117",
+  "data": "2026-10-16",
   "categoria": "Festa",
-  "nome": "Gritano Halloween Ano 3",
-  "local": "Quintal do Sossego",
+  "nome": "Bololô v3.2026",
+  "local": "Cachaçaria Carvalheira",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/gritano-halloween-ano-3-Bmn7flHGHnxQ"
- },
- {
-  "id": "memorias-com-roginho-Bmn7flMl6Fji",
-  "data": "2026-10-17",
-  "categoria": "Show",
-  "nome": "Memórias com Roginho",
-  "local": "Lá na Ladeira Gastrobar",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/memorias-com-roginho-Bmn7flMl6Fji"
+  "horario": "23:00",
+  "preco": "A partir de R$ 286",
+  "link": "https://ihoje.com/events/bololo-v3-2026-Bmn7flMl5117",
+  "resumo": "Terceira Bololô do ano, um grande baile open bar na Cachaçaria Carvalheira com Syon Trio, Gordinho Bolado, Vilx e Mau Lopes. Para maiores de 18."
  },
  {
   "horario": "",
@@ -398,8 +441,9 @@
   "local": "Clube Vassourinhas",
   "cidade": "Olinda",
   "horario": "13:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/samba-do-bonfim-edicao-de-aniversario-Bmn7flMeiz2x"
+  "preco": "R$ 28,99",
+  "link": "https://ihoje.com/events/samba-do-bonfim-edicao-de-aniversario-Bmn7flMeiz2x",
+  "resumo": "Samba do Bonfim comemora 3 anos com sete horas de samba, axé e ancestralidade e convidados especiais. Aniversariantes de outubro não pagam."
  },
  {
   "id": "pagode-na-ladeira-vem-pro-agito-Bmn7flHB1G3D",
@@ -409,8 +453,9 @@
   "local": "Mansão da Matuta",
   "cidade": "Olinda",
   "horario": "14:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/pagode-na-ladeira-vem-pro-agito-Bmn7flHB1G3D"
+  "preco": "A partir de R$ 35",
+  "link": "https://ihoje.com/events/pagode-na-ladeira-vem-pro-agito-Bmn7flHB1G3D",
+  "resumo": "Tarde de pagode na Mansão da Matuta, em Olinda, com Insinuar, Simples Olhar e Boa Ousadia."
  },
  {
   "horario": "14:00",
@@ -423,7 +468,20 @@
   "local": "Praça de Boa Viagem",
   "cidade": "Recife",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira diária de artesanato e comidas típicas na praça em frente à praia."
+ },
+ {
+  "id": "pagode-do-recomeco-30-anos-do-padang-Bmn7flMd8fjf",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "Pagode do Recomeço – 30 anos do Padang",
+  "local": "Parador",
+  "cidade": "Recife",
+  "horario": "16:00",
+  "preco": "A partir de R$ 45",
+  "link": "https://ihoje.com/events/pagode-do-recomeco-30-anos-do-padang-Bmn7flMd8fjf",
+  "resumo": "Pagode em comemoração aos 30 anos da banda Padang, numa viagem nostálgica pela história do grupo."
  },
  {
   "id": "evt-14",
@@ -437,6 +495,78 @@
   "link": ""
  },
  {
+  "id": "memorias-com-roginho-Bmn7flMl6Fji",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "Memórias com Roginho",
+  "local": "Lá na Ladeira Gastrobar",
+  "cidade": "Recife",
+  "horario": "19:00",
+  "preco": "A partir de R$ 30",
+  "link": "https://ihoje.com/events/memorias-com-roginho-Bmn7flMl6Fji",
+  "resumo": "Memórias com Roginho no Lá na Ladeira Gastrobar."
+ },
+ {
+  "id": "rock-resistencia-fest-1-ano-Bmn7flHFyIne",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "Rock Resistência Fest (1 ano)",
+  "local": "Darkside Studio",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "A partir de R$ 13,99",
+  "link": "https://ihoje.com/events/rock-resistencia-fest-1-ano-Bmn7flHFyIne",
+  "resumo": "Rock Resistência comemora 1 ano com shows de HeadWick, Royal Vessel, Conspiração Reptiliana e RIQUE."
+ },
+ {
+  "id": "fela-day-pe-15-edicao-Bmn7flHB1XaT",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "Fela Day PE – 15ª edição",
+  "local": "Brilho Cultural",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 28,13 – R$ 67,50",
+  "link": "https://ihoje.com/events/fela-day-pe-15-edicao-Bmn7flHB1XaT",
+  "resumo": "15ª edição do Fela Day PE, noite de afrobeat em homenagem a Fela Kuti, com show da banda Abeokuta e DJs Makeda, Ari Falcão, Drão Sessions e Sasquatman."
+ },
+ {
+  "id": "alex-cohen-interpreta-o-rei-92ZMKa5AOFi",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "Alex Cohen interpreta o Rei",
+  "local": "Teatro RioMar",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 50",
+  "link": "https://ihoje.com/events/alex-cohen-interpreta-o-rei-92ZMKa5AOFi",
+  "resumo": "Espetáculo em que o cantor e multi-instrumentista Alex Cohen homenageia a obra de Roberto Carlos, com histórias e bastidores entre as músicas."
+ },
+ {
+  "id": "rocktoberfest-anabela-squad-band-Bmn7flMjWTdg",
+  "data": "2026-10-17",
+  "categoria": "Show",
+  "nome": "RocktoberFest – Anabela & Squad Band",
+  "local": "Downtown Pub",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 25",
+  "link": "https://ihoje.com/events/rocktoberfest-anabela-squad-band-Bmn7flMjWTdg",
+  "resumo": "Festa Rocktoberfest no Downtown Pub, clima de Oktoberfest com rock ao vivo de Anabela e Squad Band e DJ Sapo."
+ },
+ {
+  "id": "gritano-halloween-ano-3-Bmn7flHGHnxQ",
+  "data": "2026-10-17",
+  "categoria": "Festa",
+  "nome": "Gritano Halloween Ano 3",
+  "local": "Quintal do Sossego",
+  "cidade": "Recife",
+  "horario": "22:00",
+  "preco": "R$ 28,99",
+  "link": "https://ihoje.com/events/gritano-halloween-ano-3-Bmn7flHGHnxQ",
+  "resumo": "Festa de Halloween da Gritano ao som de pop, rock e indie. Vale ir fantasiado."
+ },
+ {
   "id": "rave-alien-galactica-sabado-17-out-Bmn7flHEr8W5",
   "data": "2026-10-17",
   "categoria": "Festa",
@@ -444,8 +574,9 @@
   "local": "Clube Metrópole",
   "cidade": "Recife",
   "horario": "22:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/rave-alien-galactica-sabado-17-out-Bmn7flHEr8W5"
+  "preco": "A partir de R$ 18,99",
+  "link": "https://ihoje.com/events/rave-alien-galactica-sabado-17-out-Bmn7flHEr8W5",
+  "resumo": "Rave temática alienígena no Clube Metrópole. Para maiores de 18."
  },
  {
   "id": "baba-de-bruxa-iv-Bmn7flCWDvhS",
@@ -455,8 +586,9 @@
   "local": "IRAQ",
   "cidade": "Recife",
   "horario": "22:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/baba-de-bruxa-iv-Bmn7flCWDvhS"
+  "preco": "R$ 0 – R$ 61,88",
+  "link": "https://ihoje.com/events/baba-de-bruxa-iv-Bmn7flCWDvhS",
+  "resumo": "Quarta edição da Baba de Bruxa no IRAQ."
  },
  {
   "id": "sanatorio-a-festa-Bmn7flCS6t6p",
@@ -466,8 +598,9 @@
   "local": "Praia Hause",
   "cidade": "Olinda",
   "horario": "22:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/sanatorio-a-festa-Bmn7flCS6t6p"
+  "preco": "R$ 99",
+  "link": "https://ihoje.com/events/sanatorio-a-festa-Bmn7flCS6t6p",
+  "resumo": "Festa de Halloween open bar na Praia Hause, com música e surpresas. Vale ir fantasiado."
  },
  {
   "id": "feirinha-recife-antigo-2026-10-18",
@@ -480,7 +613,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "samba-do-malandro-Bmn7flMiQ9bH",
@@ -490,8 +624,9 @@
   "local": "Clube Vassourinhas",
   "cidade": "Olinda",
   "horario": "13:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/samba-do-malandro-Bmn7flMiQ9bH"
+  "preco": "Grátis",
+  "link": "https://ihoje.com/events/samba-do-malandro-Bmn7flMiQ9bH",
+  "resumo": "Samba no Palco 360 do Clube Vassourinhas, em Olinda, com shows completos do Samba do Malandro e do Balanço Black."
  },
  {
   "horario": "14:00",
@@ -504,7 +639,8 @@
   "local": "Praça de Boa Viagem",
   "cidade": "Recife",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira diária de artesanato e comidas típicas na praça em frente à praia."
  },
  {
   "id": "chico-chico-na-cel-Bmn7flCXMaZl",
@@ -514,8 +650,37 @@
   "local": "Casa Estação da Luz",
   "cidade": "Olinda",
   "horario": "16:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/chico-chico-na-cel-Bmn7flCXMaZl"
+  "preco": "Esgotado",
+  "link": "https://ihoje.com/events/chico-chico-na-cel-Bmn7flCXMaZl",
+  "resumo": "Chico Chico apresenta o álbum Deixa Arder, entre rock, blues, folk e MPB, e releituras de músicas antigas. Show às 18h."
+ },
+ {
+  "id": "riomar-candlelight-queen",
+  "data": "2026-10-18",
+  "categoria": "Show",
+  "nome": "Candlelight: tributo ao Queen",
+  "local": "Teatro RioMar",
+  "cidade": "Recife",
+  "horario": "18:00",
+  "preco": "A partir de R$ 49",
+  "link": "",
+  "resumo": "Concerto instrumental à luz de velas com sucessos do Queen.",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
+ },
+ {
+  "id": "riomar-candlelight-ariana",
+  "data": "2026-10-18",
+  "categoria": "Show",
+  "nome": "Candlelight: tributo a Ariana Grande",
+  "local": "Teatro RioMar",
+  "cidade": "Recife",
+  "horario": "20:00",
+  "preco": "A partir de R$ 49",
+  "link": "",
+  "resumo": "Concerto instrumental à luz de velas com sucessos de Ariana Grande.",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
  },
  {
   "id": "estreia-cara-de-barro",
@@ -528,7 +693,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Primeiro filme de terror da DC Studios, dirigido por James Watkins.",
+  "data_fim": "2026-10-28"
  },
  {
   "id": "estreia-outro-lado-das-redes",
@@ -541,7 +708,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Filme escrito e dirigido por Aaron Sorkin (Sony).",
+  "data_fim": "2026-10-28"
  },
  {
   "id": "estreia-one-piece-ilha-espiral",
@@ -554,7 +723,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Segundo filme da franquia One Piece, com dublagem brasileira inédita.",
+  "data_fim": "2026-10-28"
  },
  {
   "id": "estreia-familia-de-sorte",
@@ -567,7 +738,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Comédia brasileira dirigida por Viviane Ferreira.",
+  "data_fim": "2026-10-28"
  },
  {
   "id": "estreia-caixa-do-demonio",
@@ -580,29 +753,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
- },
- {
-  "id": "turne-sabores-2026-nubia-92ZMKjm6oaq",
-  "data": "2026-10-23",
-  "categoria": "Show",
-  "nome": "Turnê Sabores – Nubia",
-  "local": "Brilho Cultural",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/turne-sabores-2026-nubia-92ZMKjm6oaq"
- },
- {
-  "id": "ca-s-britney-spears-Bmn7flMegmIn",
-  "data": "2026-10-23",
-  "categoria": "Festa",
-  "nome": "CAØS – Britney Spears",
-  "local": "IRAQ",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/ca-s-britney-spears-Bmn7flMegmIn"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Filme de terror com Carla Gugino.",
+  "data_fim": "2026-10-28"
  },
  {
   "id": "fricaute-Bmn7flMdariJ",
@@ -611,9 +764,22 @@
   "nome": "Fricaute",
   "local": "Darkside Studio",
   "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/fricaute-Bmn7flMdariJ"
+  "horario": "19:00",
+  "preco": "R$ 23,99",
+  "link": "https://ihoje.com/events/fricaute-Bmn7flMdariJ",
+  "resumo": "Festa com 4 bandas da cena independente do Recife (Fernando Remigio & Rebordosa, Zambrotta, Desconforme, Bruxos de Nadi) e DJ de rock de garagem."
+ },
+ {
+  "id": "turne-sabores-2026-nubia-92ZMKjm6oaq",
+  "data": "2026-10-23",
+  "categoria": "Show",
+  "nome": "Turnê Sabores – Nubia",
+  "local": "Brilho Cultural",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 0 – R$ 90",
+  "link": "https://ihoje.com/events/turne-sabores-2026-nubia-92ZMKjm6oaq",
+  "resumo": "Show de Nubia na turnê Sabores 2026."
  },
  {
   "id": "80-anos-de-belchior-com-a-banda-dos-coracoes-selvagens-Bmn7f",
@@ -623,8 +789,21 @@
   "local": "Av. Sigismundo Gonçalves, 414",
   "cidade": "Olinda",
   "horario": "21:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/80-anos-de-belchior-com-a-banda-dos-coracoes-selvagens-Bmn7flMfq8lt"
+  "preco": "R$ 33,99",
+  "link": "https://ihoje.com/events/80-anos-de-belchior-com-a-banda-dos-coracoes-selvagens-Bmn7flMfq8lt",
+  "resumo": "Noite Belchiana pelos 80 anos de Belchior, com show da Banda dos Corações Selvagens no Vestígios Bar, em Olinda."
+ },
+ {
+  "id": "ca-s-britney-spears-Bmn7flMegmIn",
+  "data": "2026-10-23",
+  "categoria": "Festa",
+  "nome": "CAØS – Britney Spears",
+  "local": "IRAQ",
+  "cidade": "Recife",
+  "horario": "22:00",
+  "preco": "R$ 18 – R$ 28,13",
+  "link": "https://ihoje.com/events/ca-s-britney-spears-Bmn7flMegmIn",
+  "resumo": "Festa CAØS com tema Britney Spears no IRAQ."
  },
  {
   "id": "halloween-da-pabllo-92ZMKa5AORF",
@@ -635,95 +814,8 @@
   "cidade": "Olinda",
   "horario": "23:00",
   "preco": "A partir de R$ 105",
-  "link": "https://ihoje.com/events/halloween-da-pabllo-92ZMKa5AORF"
- },
- {
-  "id": "sambinha-do-barcha-2-anos-Bmn7flHC9NZQ",
-  "data": "2026-10-24",
-  "categoria": "Show",
-  "nome": "Sambinha do Barcha – 2 anos",
-  "local": "Mirante do Paço",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/sambinha-do-barcha-2-anos-Bmn7flHC9NZQ"
- },
- {
-  "id": "halloween-tour-da-ggg-nordeste-92ZMKa4spWD",
-  "data": "2026-10-24",
-  "categoria": "Show",
-  "nome": "Halloween + tour da GGG Nordeste",
-  "local": "Darkside Studio",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/halloween-tour-da-ggg-nordeste-92ZMKa4spWD"
- },
- {
-  "id": "baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu",
-  "data": "2026-10-24",
-  "categoria": "Festa",
-  "nome": "Baile das Rainhas",
-  "local": "Clube Metrópole",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu"
- },
- {
-  "id": "noite-do-desande-Bmn7flHFya4O",
-  "data": "2026-10-24",
-  "categoria": "Festa",
-  "nome": "Noite do Desande",
-  "local": "IRAQ",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/noite-do-desande-Bmn7flHFya4O"
- },
- {
-  "id": "aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fun",
-  "data": "2026-10-24",
-  "categoria": "Show",
-  "nome": "Samba pra Cima – Jorge Aragão e Fundo de Quintal",
-  "local": "Empório Barrozo",
-  "cidade": "Recife",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fundo-de-quintal-Bmn7flCYTbNw"
- },
- {
-  "id": "samba-da-pitomba-canta-arlindo-cruz-24-de-outubro-Bmn7flHB1p",
-  "data": "2026-10-24",
-  "categoria": "Frevo e prévias",
-  "nome": "Samba da Pitomba canta Arlindo Cruz",
-  "local": "Pitombeira dos Quatro Cantos",
-  "cidade": "Olinda",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/samba-da-pitomba-canta-arlindo-cruz-24-de-outubro-Bmn7flHB1pd3"
- },
- {
-  "id": "belchior-80-tudo-outra-vez-com-marina-duarte-renato-bandeira",
-  "data": "2026-10-24",
-  "categoria": "Show",
-  "nome": "Belchior 80 – Marina Duarte e Renato Bandeira",
-  "local": "Alma Arte Café",
-  "cidade": "Olinda",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/belchior-80-tudo-outra-vez-com-marina-duarte-renato-bandeira-e-banda-Bmn7flMfpRD4"
- },
- {
-  "id": "irah-caldeira-no-reino-da-cantoria-Bmn7flHGHnOj",
-  "data": "2026-10-24",
-  "categoria": "Show",
-  "nome": "Irah Caldeira no Reino da Cantoria",
-  "local": "Teatro Fernando Santa Cruz",
-  "cidade": "Olinda",
-  "horario": "",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/irah-caldeira-no-reino-da-cantoria-Bmn7flHGHnOj"
+  "link": "https://ihoje.com/events/halloween-da-pabllo-92ZMKa5AORF",
+  "resumo": "Pabllo Vittar traz a turnê Halloween da Pabllo, festa de Dia das Bruxas que celebra seus 10 anos de carreira. Show às 23h."
  },
  {
   "id": "churrasquinho-menos-e-mais-recife-92ZMKa4s95S",
@@ -733,8 +825,105 @@
   "local": "Centro de Convenções",
   "cidade": "Olinda",
   "horario": "14:00",
+  "preco": "A partir de R$ 130",
+  "link": "https://ihoje.com/events/churrasquinho-menos-e-mais-recife-92ZMKa4s95S",
+  "resumo": "Grupo Menos é Mais faz 4h de pagode sem parar em palco 360º com participações surpresa. Setores VIP, Open Bar e Gazebo."
+ },
+ {
+  "id": "samba-da-pitomba-canta-arlindo-cruz-24-de-outubro-Bmn7flHB1p",
+  "data": "2026-10-24",
+  "categoria": "Frevo e prévias",
+  "nome": "Samba da Pitomba canta Arlindo Cruz",
+  "local": "Pitombeira dos Quatro Cantos",
+  "cidade": "Olinda",
+  "horario": "15:00",
+  "preco": "A partir de R$ 38,99",
+  "link": "https://ihoje.com/events/samba-da-pitomba-canta-arlindo-cruz-24-de-outubro-Bmn7flHB1pd3",
+  "resumo": "Samba de raiz, com muita interação entre músicos e público, cantando Arlindo Cruz na sede da Pitombeira dos Quatro Cantos, em Olinda."
+ },
+ {
+  "id": "aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fun",
+  "data": "2026-10-24",
+  "categoria": "Show",
+  "nome": "Samba pra Cima – Jorge Aragão e Fundo de Quintal",
+  "local": "Empório Barrozo",
+  "cidade": "Recife",
+  "horario": "16:00",
+  "preco": "A partir de R$ 50",
+  "link": "https://ihoje.com/events/aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fundo-de-quintal-Bmn7flCYTbNw",
+  "resumo": "Aniversário do Samba pra Cima, que canta Jorge Aragão e Fundo de Quintal numa tarde e noite para cantar junto."
+ },
+ {
+  "id": "belchior-80-tudo-outra-vez-com-marina-duarte-renato-bandeira",
+  "data": "2026-10-24",
+  "categoria": "Show",
+  "nome": "Belchior 80 – Marina Duarte e Renato Bandeira",
+  "local": "Alma Arte Café",
+  "cidade": "Olinda",
+  "horario": "16:00",
   "preco": "Ver link",
-  "link": "https://ihoje.com/events/churrasquinho-menos-e-mais-recife-92ZMKa4s95S"
+  "link": "https://ihoje.com/events/belchior-80-tudo-outra-vez-com-marina-duarte-renato-bandeira-e-banda-Bmn7flMfpRD4",
+  "resumo": "Show-tributo a Belchior com Marina Duarte, Renato Bandeira e banda e participações de Silvério Pessoa, Isabela Moraes e Tonfil. Show às 18h."
+ },
+ {
+  "id": "sambinha-do-barcha-2-anos-Bmn7flHC9NZQ",
+  "data": "2026-10-24",
+  "categoria": "Show",
+  "nome": "Sambinha do Barcha – 2 anos",
+  "local": "Mirante do Paço",
+  "cidade": "Recife",
+  "horario": "17:00",
+  "preco": "Ver link",
+  "link": "https://ihoje.com/events/sambinha-do-barcha-2-anos-Bmn7flHC9NZQ",
+  "resumo": "Sambinha do Barcha faz 2 anos com samba e pagode: Lipe Lucena, Felipe Farra, Vilx, De Cara com o Samba, Soundsbymaul e Mau Lopes."
+ },
+ {
+  "id": "irah-caldeira-no-reino-da-cantoria-Bmn7flHGHnOj",
+  "data": "2026-10-24",
+  "categoria": "Show",
+  "nome": "Irah Caldeira no Reino da Cantoria",
+  "local": "Teatro Fernando Santa Cruz",
+  "cidade": "Olinda",
+  "horario": "19:00",
+  "preco": "R$ 44",
+  "link": "https://ihoje.com/events/irah-caldeira-no-reino-da-cantoria-Bmn7flHGHnOj",
+  "resumo": "Irah Caldeira apresenta No Reino da Cantoria, show que celebra a cantoria e a música de raiz nordestina."
+ },
+ {
+  "id": "halloween-tour-da-ggg-nordeste-92ZMKa4spWD",
+  "data": "2026-10-24",
+  "categoria": "Show",
+  "nome": "Halloween + tour da GGG Nordeste",
+  "local": "Darkside Studio",
+  "cidade": "Recife",
+  "horario": "21:00",
+  "preco": "R$ 33,75 – R$ 56,25",
+  "link": "https://ihoje.com/events/halloween-tour-da-ggg-nordeste-92ZMKa4spWD",
+  "resumo": "Halloween da Hang The Dj! com show de Giovanna Moraes (GGG), com clássicos do rock e músicas do projeto Rumo a Tokyo. Vale ir fantasiado."
+ },
+ {
+  "id": "baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu",
+  "data": "2026-10-24",
+  "categoria": "Festa",
+  "nome": "Baile das Rainhas",
+  "local": "Clube Metrópole",
+  "cidade": "Recife",
+  "horario": "22:00",
+  "preco": "A partir de R$ 18,99",
+  "link": "https://ihoje.com/events/baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu",
+  "resumo": "Baile em homenagem ao Carnaval e às rainhas Anitta e Eloína dos Leopardos, no Clube Metrópole."
+ },
+ {
+  "id": "noite-do-desande-Bmn7flHFya4O",
+  "data": "2026-10-24",
+  "categoria": "Festa",
+  "nome": "Noite do Desande",
+  "local": "IRAQ",
+  "cidade": "Recife",
+  "horario": "22:00",
+  "preco": "R$ 0 – R$ 47,25",
+  "link": "https://ihoje.com/events/noite-do-desande-Bmn7flHFya4O",
+  "resumo": "Noite com três DJs do Baile 081 misturando brega funk, brasilidades, pop, melodic techno, funkhall e tribal numa mesma pista."
  },
  {
   "id": "do-outro-lado-92ZMKo2Mbg6",
@@ -744,8 +933,24 @@
   "local": "IRAQ",
   "cidade": "Recife",
   "horario": "22:00",
-  "preco": "Ver link",
-  "link": "https://ihoje.com/events/do-outro-lado-92ZMKo2Mbg6"
+  "preco": "R$ 18 – R$ 45",
+  "link": "https://ihoje.com/events/do-outro-lado-92ZMKo2Mbg6",
+  "resumo": "Festa-experiência com ambientes temáticos, intervenções, personagens e surpresas. Atrações reveladas aos poucos."
+ },
+ {
+  "id": "riomar-barbixas",
+  "data": "2026-10-24",
+  "categoria": "Teatro",
+  "nome": "Cia. Barbixas – Improvável",
+  "local": "Teatro RioMar",
+  "cidade": "Recife",
+  "horario": "24/10 18h30 e 21h; 25/10 17h30 e 21h",
+  "preco": "A partir de R$ 60",
+  "link": "",
+  "resumo": "Espetáculo de improviso em que as cenas nascem na hora a partir de sugestões da plateia.",
+  "data_fim": "2026-10-25",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
  },
  {
   "id": "feirinha-recife-antigo-2026-10-25",
@@ -758,7 +963,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "estreia-klara-e-o-sol",
@@ -771,7 +977,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Adaptação do romance de Kazuo Ishiguro, dirigida por Taika Waititi, com Jenna Ortega e Amy Adams.",
+  "data_fim": "2026-11-04"
  },
  {
   "id": "estreia-razao-e-sensibilidade",
@@ -784,7 +992,9 @@
   "preco": "Ver link",
   "link": "",
   "fonte": "Cenanauta",
-  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/"
+  "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
+  "resumo": "Nova adaptação do romance de Jane Austen.",
+  "data_fim": "2026-11-04"
  },
  {
   "id": "halloween-metropole-2026-day-i-sexta-feira-30-out-92ZMKeMgl2",
@@ -943,6 +1153,20 @@
   "link": "https://ihoje.com/events/o-baile-dos-novos-cafonas-Bmn7flMmdXiM"
  },
  {
+  "id": "riomar-murilo-couto",
+  "data": "2026-10-31",
+  "categoria": "Teatro",
+  "nome": "Murilo Couto (stand-up)",
+  "local": "Teatro RioMar",
+  "cidade": "Recife",
+  "horario": "18:30 e 21:00",
+  "preco": "A partir de R$ 40",
+  "link": "",
+  "resumo": "Stand-up sobre a nova experiência do humorista como homem casado.",
+  "fonte": "Blog dos Eventos",
+  "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
+ },
+ {
   "id": "previa-da-tcm-chapadinhos-na-praia-2027-Bmn7flMegDD7",
   "data": "2026-11-01",
   "categoria": "Frevo e prévias",
@@ -964,7 +1188,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "halloween-metropole-2026-day-iii-domingo-01-nov-92ZMKeMg43H",
@@ -1223,7 +1448,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "classicos-do-brasil-mundo-livre-s-a-spok-frevo-orquestra-lul",
@@ -1412,7 +1638,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "festival-recife-rock-nation-Bmn7flCVvVQx",
@@ -1502,7 +1729,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "lifes-apresenta-tangolo-mangos-quem-e-voce-alice-Bmn7flHDh5M",
@@ -1669,7 +1897,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "aniversario-do-clube-bela-vista-Bmn7flD03eGd",
@@ -1759,7 +1988,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "quinta-no-galo-quinteto-violado-e-convidados-Bmn7flMjWCz4",
@@ -1860,7 +2090,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "quinta-no-galo-maestro-spok-e-convidados-Bmn7flMjWCz3",
@@ -1895,7 +2126,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "2026-12-26-réveillon-carneiros-–-abertura-(até-2/1)",
@@ -1921,7 +2153,8 @@
   "preco": "Livre",
   "link": "",
   "fonte": "Melhores Destinos",
-  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html"
+  "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
+  "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
   "id": "2026-12-31-réveillon-carneiros-–-noite-da-virada",

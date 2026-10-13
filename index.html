@@ -203,7 +203,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
       <h2>Eventos de hoje</h2>
       <p class="ag-count" id="hoje-count"></p>
       <table id="tbl-hoje" data-source="hoje" data-row-key="id">
-        <thead><tr><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="preco">Preço</th><th data-field="descricao">Descrição</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <thead><tr><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -280,7 +280,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
       <h2 id="prox-title">Próximos 30 dias</h2>
       <p class="ag-count" id="prox-count"></p>
       <table id="tbl-prox" data-source="proximos" data-row-key="id">
-        <thead><tr><th data-field="data">Data</th><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="categoria">Tipo</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <thead><tr><th data-field="data">Data</th><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="categoria">Tipo</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -617,6 +617,10 @@ dash.calc('resumo', {
   const ehPago = (r) => (typeof r.gratis === 'boolean' ? !r.gratis : /R\$|ingress|passe|a partir/i.test(String(r.preco || '')));
   // Marcado Grátis mostra os grátis; Pagos, os pagos; preço desconhecido só aparece com os dois marcados
   const precoOk = (st, r) => (ehGratis(r) ? st.gratis : ehPago(r) ? st.pago : st.gratis && st.pago);
+  // Resumo de até 200 caracteres
+  const resumoTxt = (r) => { const t = String(r.resumo || r.descricao || '').trim(); return t.length > 200 ? t.slice(0, 199).trimEnd() + '…' : t; };
+  // Item com período (data até data_fim) vale para todos os dias do período
+  const fimDe = (r) => r.data_fim || r.data;
   const fonteCell = (tr, r) => { const f = fonteOf(r); cell(tr, f.nome, 'src mut', f.url); };
 
 
@@ -627,8 +631,13 @@ dash.calc('resumo', {
     if (d.status === 'error') { take.textContent = ''; clearSk('hoje'); failed(tb); return; }
     if (d.status !== 'ok') return;
     clearSk('hoje');
-    const rows = d.data;
-    const dia = rows.length ? rows[0].data : null;
+    const dia = d.data.length ? d.data[0].data : null;
+    // Hoje também mostra o que está em cartaz no período (exposições, filmes, feiras com data_fim)
+    const px = dash.data('proximos');
+    const ids = new Set(d.data.map((r) => r.id));
+    const extra = dia && px.status === 'ok' ? px.data.filter((r) => r.data_fim && r.data <= dia && r.data_fim >= dia && !ids.has(r.id))
+      .map((r) => Object.assign({}, r, { gratis: ehGratis(r), data: dia, horario: r.horario || 'Em cartaz' })) : [];
+    const rows = d.data.concat(extra);
     take.textContent = dia
       ? `${fmtDia(dia, { weekday: 'long', day: 'numeric', month: 'long' })}: ${rows.length} eventos no Recife e Região Metropolitana, ${rows.filter((r) => r.gratis === true).length} grátis.`
       : '';
@@ -639,17 +648,17 @@ dash.calc('resumo', {
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
       && precoOk(st, r)
-      && (!q || norm([r.nome, r.local, r.descricao, r.endereco].join(' ')).includes(q)))
+      && (!q || norm([r.nome, r.local, r.descricao, r.resumo, r.endereco].join(' ')).includes(q)))
       .sort((a, b) => String(a.horario).localeCompare(String(b.horario)));
     $('hoje-count').textContent = `${vis.length} de ${rows.length} eventos`;
     tb.replaceChildren(...vis.map((r) => {
       const tr = document.createElement('tr'); tr.dataset.key = r.id;
       cell(tr, r.horario, 'tn');
       cell(tr, r.nome, 'nm', r.link);
+      cell(tr, resumoTxt(r), 'mut');
       cell(tr, r.local);
       cell(tr, r.cidade, 'mut hide-sm');
-      cell(tr, r.preco, r.gratis ? 'free' : '');
-      cell(tr, r.descricao, 'mut');
+      cell(tr, r.preco, ehGratis(r) ? 'free' : '');
       fonteCell(tr, r);
       actionsCell(tr, itemFrom('hoje', r));
       return tr;
@@ -772,22 +781,23 @@ dash.calc('resumo', {
     chips($('prox-chips'), uniq(rows, 'categoria'), 'Todos', st);
     fillCidade($('prox-cidade'), rows, st.cidade);
     const q = norm(st.q);
-    const vis = rows.filter((r) => r.data >= ini && r.data <= fim
+    const vis = rows.filter((r) => r.data <= fim && fimDe(r) >= ini
       && (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
       && precoOk(st, r)
-      && (!q || norm([r.nome, r.local, r.cidade].join(' ')).includes(q)))
-      .sort((a, b) => (a.data + a.horario).localeCompare(b.data + b.horario));
+      && (!q || norm([r.nome, r.local, r.cidade, r.resumo].join(' ')).includes(q)))
+      .sort((a, b) => ((a.data < ini ? ini : a.data) + (a.data_fim ? '1' : '0') + a.horario).localeCompare((b.data < ini ? ini : b.data) + (b.data_fim ? '1' : '0') + b.horario));
     $('prox-count').textContent = `${vis.length} eventos`;
     const curto = (iso) => { const t = fmtDia(iso, { weekday: 'short', day: '2-digit', month: '2-digit' }); return t.charAt(0).toUpperCase() + t.slice(1); };
     box.replaceChildren(...vis.map((r) => {
       const tr = document.createElement('tr'); tr.dataset.key = r.id;
-      cell(tr, curto(r.data), 'tn nm-d'); cell(tr, r.horario, 'tn'); cell(tr, r.nome, 'nm', r.link); cell(tr, r.local);
-      cell(tr, r.cidade, 'mut'); cell(tr, r.categoria, 'mut hide-sm'); cell(tr, r.preco, 'tn'); fonteCell(tr, r);
+      const quando = r.data_fim && r.data_fim !== r.data ? (r.data < ini ? 'Até ' + fmtDia(r.data_fim, { day: '2-digit', month: '2-digit' }) : curto(r.data) + ' a ' + fmtDia(r.data_fim, { day: '2-digit', month: '2-digit' })) : curto(r.data);
+      cell(tr, quando, 'tn nm-d'); cell(tr, r.horario, 'tn'); cell(tr, r.nome, 'nm', r.link); cell(tr, resumoTxt(r), 'mut'); cell(tr, r.local);
+      cell(tr, r.cidade, 'mut'); cell(tr, r.categoria, 'mut hide-sm'); cell(tr, r.preco, ehGratis(r) ? 'tn free' : 'tn'); fonteCell(tr, r);
       actionsCell(tr, itemFrom('prox', r));
       return tr;
     }));
-    if (!vis.length) box.replaceChildren(emptyRow(9));
+    if (!vis.length) box.replaceChildren(emptyRow(10));
   }
 
   function drawMon() {
