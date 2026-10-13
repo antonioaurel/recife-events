@@ -86,8 +86,8 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 <style>
 #dash-root { --dash-gutter: clamp(12px, 3vw, 32px); }
 .ag { --ag-coral: #13294B; --ag-on: #FFFFFF; --ag-rosa: #E85D75; --ag-sol: #F2A900; --ag-mar: #0F8B8D; --ag-azul: #2D5BD3; --ag-tint: color-mix(in srgb, var(--ag-coral) 10%, transparent); }
-.ag { font-family: var(--font-anthropic-sans); max-width: 1180px; margin-inline: auto; }
-.ag[data-theme] { background: var(--color-bg); color: var(--color-fg); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.ag { font-family: var(--font-anthropic-sans); width: 100%; }
+.ag[data-theme] { background: var(--color-bg); color: var(--color-fg); }
 .ag[data-theme="claro"] { --color-bg: #FFF9F2; --color-fg: #1F1B16; --color-fg-muted: #6B6158; --color-panel: #FFFFFF; --color-border-line: #EADFD3; color-scheme: light; }
 .ag[data-theme="escuro"] { --ag-coral: #A9C8EE; --ag-on: #0E1A30; --color-bg: #15131A; --color-fg: #F4EFEA; --color-fg-muted: #A79F98; --color-panel: #201D27; --color-border-line: #34303D; color-scheme: dark; --ag-azul: #7D9BFF; --ag-mar: #3CC2C4; }
 .ag-top { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--cds-gap-sm); flex-wrap: wrap; }
@@ -161,8 +161,8 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-top">
       <div><h1>Eventos Recife</h1><a class="ag-me" href="https://antonioaurel.github.io/">antonioaurel.github.io</a></div>
       <div class="ag-theme" role="group" aria-label="Fundo da tela">
-        <button type="button" data-theme-set="auto" aria-pressed="true">Automático</button>
-        <button type="button" data-theme-set="claro" aria-pressed="false">☀︎ Claro</button>
+        <button type="button" data-theme-set="auto" aria-pressed="false">Automático</button>
+        <button type="button" data-theme-set="claro" aria-pressed="true">☀︎ Claro</button>
         <button type="button" data-theme-set="escuro" aria-pressed="false">☾ Escuro</button>
       </div>
     </div>
@@ -342,11 +342,19 @@ dash.calc('resumo', {
 
   // Theme: automático segue o tema do app; claro/escuro forçam o fundo da página
   const root = document.querySelector('.ag');
-  const setTheme = (t) => {
+  // Tema: claro por padrão; a escolha fica guardada neste navegador
+  const TEMA = 'eventos-recife-tema';
+  const setTheme = (t, salvar) => {
     if (t === 'auto') root.removeAttribute('data-theme'); else root.dataset.theme = t;
+    const html = document.documentElement;
+    if (t === 'claro') html.dataset.theme = 'light'; else if (t === 'escuro') html.dataset.theme = 'dark'; else html.removeAttribute('data-theme');
     document.querySelectorAll('[data-theme-set]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.themeSet === t)));
+    if (salvar) { try { localStorage.setItem(TEMA, t); } catch (e) { /* sem armazenamento */ } }
   };
-  document.querySelectorAll('[data-theme-set]').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.themeSet)));
+  let temaInicial = 'claro';
+  try { const v = localStorage.getItem(TEMA); if (v === 'auto' || v === 'claro' || v === 'escuro') temaInicial = v; } catch (e) { /* padrão claro */ }
+  setTheme(temaInicial);
+  document.querySelectorAll('[data-theme-set]').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.themeSet, true)));
 
   // Tabs and links
   const tabs = ['hoje', 'amanha', 'fds', 'proximos', 'p60', 'ano', 'fazer', 'comer', 'beber', 'salvos'];
