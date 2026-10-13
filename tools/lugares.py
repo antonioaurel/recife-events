@@ -8,6 +8,9 @@ Uso:
       Imprime (JSON) as linhas de hoje.json dos lugares abertos nessa data,
       com horário do dia e preço do dia (dias grátis). Lugares com
       situacao "fechado" e os "verificar" de confiança baixa ficam de fora.
+  python3 tools/lugares.py fechados AAAA-MM-DD
+      Imprime (JSON) as linhas de fechados.json: lugares que não abrem nessa
+      data (folga semanal) ou estão fechados (reforma etc.), com o motivo.
 """
 import datetime
 import json
@@ -90,6 +93,22 @@ def abertos(dados, data, pular=()):
     return linhas
 
 
+def fechados(dados, data):
+    """Lugares do cadastro fechados nessa data (folga semanal ou fechamento/reforma)."""
+    d = DIAS[datetime.date.fromisoformat(data).weekday()]
+    linhas = []
+    for p in dados['places']:
+        if p['situacao'] == 'fechado':
+            motivo = p['status'][0].upper() + p['status'][1:]
+        elif not (p['horarios'].get(d) or []):
+            abre = [x for x in DIAS if p['horarios'].get(x)]
+            motivo = f"Não abre {'aos' if d in ('sab', 'dom') else 'às'} {NOMES[d]}s" + (f"; abre {NOMES[abre[0]]} a {NOMES[abre[-1]]}" if abre else '')
+        else:
+            continue
+        linhas.append({'id': 'fechado-' + p['id'], 'nome': p['name'], 'motivo': motivo})
+    return linhas
+
+
 if __name__ == '__main__':
     dados = carregar()
     if len(sys.argv) >= 2 and sys.argv[1] == 'validar':
@@ -99,5 +118,8 @@ if __name__ == '__main__':
     if len(sys.argv) >= 3 and sys.argv[1] == 'abertos':
         pular = set(sys.argv[4].split(',')) if len(sys.argv) >= 5 and sys.argv[3] == '--pular' else set()
         print(json.dumps(abertos(dados, sys.argv[2], pular), ensure_ascii=False, indent=1))
+        sys.exit(0)
+    if len(sys.argv) >= 3 and sys.argv[1] == 'fechados':
+        print(json.dumps(fechados(dados, sys.argv[2]), ensure_ascii=False, indent=1))
         sys.exit(0)
     print(__doc__)
