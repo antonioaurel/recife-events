@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated_at": "2026-10-13",
-  "note": "Protótipo. Categoria 'museu'. Futuras categorias: igreja, espaco_eventos, show, exposicao. confidence: alta=fonte oficial 2025-26, media=secundária/recente, baixa=antiga/incerta.",
+  "note": "Cadastro de lugares do site Eventos Recife. Campos originais (hours, price, status) são o texto de referência; campos estruturados derivados: situacao (aberto|verificar|fechado), horarios (faixas por dia seg..dom, [] = fechado), gratis_dias, subcategory, verificado_em. Lugares com situacao 'fechado' ficam no cadastro mas não aparecem no site. confidence: alta=fonte oficial 2025-26, media=secundária/recente, baixa=antiga/incerta. Categorias: museu (agora); futuras: igreja, espaco_eventos, show, exposicao.",
   "places": [
     {
       "id": "paco-do-frevo",
@@ -15,9 +15,54 @@
       "phone": "(81) 3355-9500",
       "email": "comunicacao.recife@idg.org.br",
       "website": "https://www.pacodofrevo.org.br/",
-      "instagram": null,
+      "instagram": "https://www.instagram.com/pacodofrevo/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "qua": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "sab": [
+          [
+            "11:00",
+            "19:00"
+          ]
+        ],
+        "dom": [
+          [
+            "11:00",
+            "19:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "ter"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "cais-do-sertao",
@@ -26,14 +71,59 @@
       "city": "Recife",
       "neighborhood": "Bairro do Recife",
       "address": "Av. Alfredo Lisboa, s/n, Armazém 10",
-      "hours": "Ter–Sex 10h–16h; Sáb–Dom 11h–17h",
+      "hours": "Ter–Sex 10h–16h; Sáb–Dom 13h–18h",
       "price": "R$10 / R$5; terças grátis",
       "phone": "(81) 3182-8267",
       "email": "agendamento@caisdosertao.pe.gov.br",
       "website": "https://caisdosertao.pe.gov.br/",
       "instagram": "https://www.instagram.com/ocaisdosertao/",
       "status": "aberto",
-      "confidence": "media"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "qua": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "sab": [
+          [
+            "13:00",
+            "18:00"
+          ]
+        ],
+        "dom": [
+          [
+            "13:00",
+            "18:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "ter"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "sinagoga-kahal-zur-israel",
@@ -49,7 +139,45 @@
       "website": null,
       "instagram": "https://www.instagram.com/sinagogakahalzurisrael/",
       "status": "verificar (revitalização anunciada 2025)",
-      "confidence": "baixa"
+      "confidence": "baixa",
+      "situacao": "verificar",
+      "subcategory": "museu_religioso",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [],
+        "dom": [
+          [
+            "11:00",
+            "18:00"
+          ]
+        ]
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "caixa-cultural-recife",
@@ -65,7 +193,58 @@
       "website": "https://www.caixacultural.gov.br/Paginas/Recife.aspx",
       "instagram": "https://www.instagram.com/caixaculturalrecife",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "centro_cultural",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "qua": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "20:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "embaixada-bonecos-gigantes",
@@ -81,7 +260,55 @@
       "website": "https://www.bonecosgigantesdeolinda.com.br/embaixada-dos-bonecos",
       "instagram": "https://www.instagram.com/bonecosgigantesdeolinda/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "exposicao_permanente",
+      "horarios": {
+        "seg": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "ter": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "forte-do-brum",
@@ -97,7 +324,53 @@
       "website": "https://7rm.eb.mil.br/index.php/forte-do-brum",
       "instagram": "https://www.instagram.com/fortedobrum/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "forte",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "sab": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "ter"
+      ],
+      "verificado_em": "2026-10-13",
+      "gratis_obs": "também no último domingo do mês"
     },
     {
       "id": "museu-cidade-recife",
@@ -113,7 +386,53 @@
       "website": "https://museudacidadedorecife.org/",
       "instagram": "https://www.instagram.com/museudacidadedorecife/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "forte",
+      "horarios": {
+        "seg": [],
+        "ter": [],
+        "qua": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "map-recife",
@@ -129,7 +448,53 @@
       "website": null,
       "instagram": "https://www.instagram.com/map.recife/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [],
+        "qua": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "museu-do-trem",
@@ -143,9 +508,60 @@
       "phone": "(81) 3184-3197",
       "email": "educativomt@gmail.com",
       "website": "http://www.cultura.pe.gov.br/museudotrem",
-      "instagram": null,
+      "instagram": "https://www.instagram.com/museudotremrec/",
       "status": "reaberto jul/2026",
-      "confidence": "media"
+      "confidence": "media",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "capela-dourada",
@@ -161,7 +577,65 @@
       "website": "http://www.capeladourada.com.br/",
       "instagram": null,
       "status": "verificar",
-      "confidence": "baixa"
+      "confidence": "baixa",
+      "situacao": "verificar",
+      "subcategory": "igreja_museu",
+      "horarios": {
+        "seg": [
+          [
+            "08:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "16:00"
+          ]
+        ],
+        "ter": [
+          [
+            "08:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "16:00"
+          ]
+        ],
+        "qua": [
+          [
+            "08:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "16:00"
+          ]
+        ],
+        "qui": [
+          [
+            "08:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "16:00"
+          ]
+        ],
+        "sex": [
+          [
+            "08:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "16:00"
+          ]
+        ],
+        "sab": [],
+        "dom": []
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "mamam",
@@ -177,7 +651,53 @@
       "website": null,
       "instagram": "https://www.instagram.com/mamamrecife",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [],
+        "qua": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "16:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "mepe",
@@ -193,7 +713,58 @@
       "website": "http://www.museudoestadope.com.br",
       "instagram": "https://www.instagram.com/museudoestadope/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "museu-da-abolicao",
@@ -209,7 +780,58 @@
       "website": "http://www.museudaabolicao.museus.gov.br",
       "instagram": "https://www.instagram.com/museuabolicao/",
       "status": "reaberto jun/2026",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ],
+        "dom": []
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "museu-murillo-la-greca",
@@ -223,9 +845,62 @@
       "phone": "(81) 3355-3126",
       "email": "murillolagreca@gmail.com",
       "website": null,
-      "instagram": null,
+      "instagram": "https://www.instagram.com/murillolagreca/",
       "status": "aberto",
-      "confidence": "media"
+      "confidence": "media",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [],
+        "qua": [
+          [
+            "09:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "12:00"
+          ],
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "dom": []
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "museu-homem-nordeste",
@@ -241,7 +916,52 @@
       "website": "https://www.gov.br/fundaj/pt-br/composicao/dimeca/museu-do-homem-do-nordeste-1",
       "instagram": "https://www.instagram.com/museudohomemdonordeste/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "08:30",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "08:30",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "08:30",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "08:30",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "casa-museu-gilberto-freyre",
@@ -257,7 +977,45 @@
       "website": "https://fgf.org.br/CASA-MUSEU/",
       "instagram": "https://www.instagram.com/fundacao.gilbertofreyre/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "ter": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "16:30"
+          ]
+        ],
+        "sab": [],
+        "dom": []
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "instituto-ricardo-brennand",
@@ -267,13 +1025,56 @@
       "neighborhood": "Várzea",
       "address": "Alameda Antônio Brennand, s/n",
       "hours": "Ter–Qua 13h–17h; Qui–Dom 10h–17h (temporada DEGAS|BORGES)",
-      "price": "R$50 / R$25; 'Sexta Gratuita' ocasional",
+      "price": "A partir de R$30 (temporada DEGAS|BORGES); 'Sexta Gratuita' ocasional",
       "phone": "(81) 2121-0365",
       "email": "irb@institutoricardobrennand.org.br",
       "website": "https://www.institutoricardobrennand.org.br",
-      "instagram": null,
+      "instagram": "https://www.instagram.com/institutorb/",
       "status": "aberto",
-      "confidence": "media"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "oficina-brennand",
@@ -283,13 +1084,58 @@
       "neighborhood": "Várzea",
       "address": "Rua Diogo de Vasconcelos, s/n",
       "hours": "Ter–Dom 9h–17h",
-      "price": "R$50 / R$25; residentes PE R$40",
+      "price": "R$50 / R$25; residentes PE R$40; terças grátis",
       "phone": "(81) 2011-5466",
       "email": "contato@oficinafranciscobrennand.org.br",
       "website": "https://oficinafranciscobrennand.org.br/",
       "instagram": "https://www.instagram.com/oficinafranciscobrennand/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "ter"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "mac-pe",
@@ -305,7 +1151,58 @@
       "website": "https://www.cultura.pe.gov.br/pagina/espacosculturais/museu-de-arte-contemporanea-mac/",
       "instagram": "https://www.instagram.com/mac.pe.oficial/",
       "status": "reaberto jun/2026",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "10:00",
+            "13:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "mureo",
@@ -321,7 +1218,58 @@
       "website": null,
       "instagram": "https://www.instagram.com/museuregionaldeolinda/",
       "status": "aberto",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "aberto",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "maspe",
@@ -337,7 +1285,50 @@
       "website": null,
       "instagram": null,
       "status": "aberto",
-      "confidence": "media"
+      "confidence": "media",
+      "situacao": "aberto",
+      "subcategory": "museu_religioso",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "14:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "museu-mamulengo",
@@ -351,9 +1342,55 @@
       "phone": "(81) 99246-1876",
       "email": "museu.mamulengo@hotmail.com",
       "website": null,
-      "instagram": null,
+      "instagram": "https://www.instagram.com/museu.mamulengo/",
       "status": "verificar horário",
-      "confidence": "media"
+      "confidence": "media",
+      "situacao": "verificar",
+      "subcategory": "museu",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "qua": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "qui": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "sex": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "sab": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "dom": []
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     },
     {
       "id": "espaco-ciencia",
@@ -369,7 +1406,83 @@
       "website": "https://www.espacociencia.pe.gov.br/",
       "instagram": "https://www.instagram.com/espacocienciape",
       "status": "FECHADO p/ reforma (reabertura prevista out/2026)",
-      "confidence": "alta"
+      "confidence": "alta",
+      "situacao": "fechado",
+      "subcategory": "museu_ciencia",
+      "horarios": {
+        "seg": [],
+        "ter": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "qua": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "qui": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "sex": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "sab": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ],
+        "dom": [
+          [
+            "13:00",
+            "17:00"
+          ]
+        ]
+      },
+      "gratis_dias": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex",
+        "sab",
+        "dom"
+      ],
+      "verificado_em": "2026-10-13"
     }
-  ]
+  ],
+  "fields": {
+    "id": "slug único",
+    "category": "museu|igreja|espaco_eventos|show|exposicao",
+    "subcategory": "tipo específico",
+    "name": "",
+    "city": "",
+    "neighborhood": "",
+    "address": "",
+    "hours": "texto",
+    "horarios": {
+      "seg..dom": "[[HH:MM,HH:MM],...]"
+    },
+    "price": "texto",
+    "gratis_dias": [
+      "seg..dom"
+    ],
+    "phone": "",
+    "email": "",
+    "website": "url",
+    "instagram": "url",
+    "status": "texto livre",
+    "situacao": "aberto|verificar|fechado",
+    "confidence": "alta|media|baixa",
+    "verificado_em": "AAAA-MM-DD"
+  }
 }
