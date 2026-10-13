@@ -44,6 +44,21 @@
   "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
  },
  {
+  "id": "cais-mediacao-mundo-do-sertao",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Mediação \"O Mundo do Sertão\"",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "14h (dias 14 e 21/10)",
+  "preco": "Ver link",
+  "link": "",
+  "resumo": "Mediação no acervo do museu com saída da Vitrine Joias da Coroa, dentro do Mês do Nordestino.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
+  "data_fim": "2026-10-21"
+ },
+ {
   "id": "expo-rua",
   "data": "2026-10-14",
   "categoria": "Exposição",
@@ -57,6 +72,51 @@
   "data_fim": "2026-11-10",
   "fonte": "Portal de Prefeitura",
   "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+ },
+ {
+  "id": "mamam-mostra-spa-videoarte-2026",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Mostra SPA de Videoarte (SPA das Artes 2026)",
+  "local": "MAMAM – Museu de Arte Moderna Aloísio Magalhães",
+  "cidade": "Recife",
+  "horario": "Qua–Sex 10h–17h; Sáb–Dom 10h–16h",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "11 trabalhos de videoarte (2 a 19 min) da 11ª SPA das Artes do Recife.",
+  "fonte": "Portal de Prefeitura",
+  "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/recife-recebe-museus-exposicoes-e-artes-nas-ruas-a-partir-deste/632464/",
+  "data_fim": "2026-10-25"
+ },
+ {
+  "id": "abolicao-que-heranca-voce-vai-poder",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Que herança você vai poder?",
+  "local": "Museu da Abolição",
+  "cidade": "Recife",
+  "horario": "Seg–Sex 9h–17h; Sáb 13h–17h · longa duração",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Exposição da reabertura total do museu (jun/2026), com foco no protagonismo negro.",
+  "fonte": "Diario de Pernambuco",
+  "fonte_link": "https://www.diariodepernambuco.com.br/viver/2026/06/11716470-apos-reformas-museu-da-abolicao-reabre-totalmente-com-exposicoes-que-reforcam-o-protagonismo-negro.html",
+  "data_fim": "2026-12-31"
+ },
+ {
+  "id": "abolicao-restituir-o-possivel",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Restituir o Possível",
+  "local": "Museu da Abolição",
+  "cidade": "Recife",
+  "horario": "Seg–Sex 9h–17h; Sáb 13h–17h · longa duração",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Exposição da reabertura total do museu (jun/2026), com foco no protagonismo negro.",
+  "fonte": "Diario de Pernambuco",
+  "fonte_link": "https://www.diariodepernambuco.com.br/viver/2026/06/11716470-apos-reformas-museu-da-abolicao-reabre-totalmente-com-exposicoes-que-reforcam-o-protagonismo-negro.html",
+  "data_fim": "2026-12-31"
  },
  {
   "id": "cartaz-moviemax",
@@ -89,6 +149,36 @@
   "fonte_link": "https://www.adorocinema.com/programacao/cinema-G0GV7/"
  },
  {
+  "id": "cais-marcas-do-ferro-recife",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "As marcas do ferro na Cidade do Recife",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "Ter–Sex 10h–16h; Sáb–Dom 13h–18h",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Mostra do Coletivo Porãozinho dos Ventos no Espaço Todo Gonzaga, parte do Mês do Nordestino no Cais do Sertão.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
+  "data_fim": "2026-11-08"
+ },
+ {
+  "id": "museu-do-trem-entre-trilhos-e-memorias",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Entre Trilhos e Memórias: os destinos do patrimônio ferroviário de Pernambuco",
+  "local": "Museu do Trem (Estação Central Capiba)",
+  "cidade": "Recife",
+  "horario": "Ter–Sex 9h–17h; Sáb–Dom 10h–14h · longa duração",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Exposição inaugurada na reabertura do Museu do Trem (02/07/2026), após quatro anos fechado.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/noticias/estacao-central-capiba-museu-do-trem-reabrem/498083/",
+  "data_fim": "2026-12-31"
+ },
+ {
   "id": "expo-degas-borges",
   "data": "2026-10-14",
   "categoria": "Exposição",
@@ -117,6 +207,21 @@
   "data_fim": "2026-10-18",
   "fonte": "Cinema da Fundação",
   "fonte_link": "https://cinemadafundacao.com.br/filmes-2/"
+ },
+ {
+  "id": "mac-pe-exposicao-60-anos",
+  "data": "2026-10-14",
+  "categoria": "Exposição",
+  "nome": "Exposição de longa duração – 60 anos do MAC-PE",
+  "local": "MAC-PE – Museu de Arte Contemporânea",
+  "cidade": "Olinda",
+  "horario": "longa duração",
+  "preco": "Ver link",
+  "link": "",
+  "resumo": "Mostra de longa duração da reabertura (30/06/2026) com obras de Burle Marx, Portinari, Di Cavalcanti, Tarsila do Amaral, João Câmara e outros.",
+  "fonte": "Diario de Pernambuco",
+  "fonte_link": "https://www.diariodepernambuco.com.br/amp/viver/2026/06/11717776-governo-de-pe-reabre-mac-igreja-de-sao-pedro-e-mosteiro-de-sao-bento-apos-reformas-veja-imagens.html",
+  "data_fim": "2026-12-31"
  },
  {
   "id": "estreia-street-fighter",
@@ -683,6 +788,35 @@
   "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
  },
  {
+  "id": "cais-musica-no-cais-o-curioh",
+  "data": "2026-10-20",
+  "categoria": "Show",
+  "nome": "Música no Cais com O Curioh",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "15h",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Apresentação musical do grupo O Curioh, do Conservatório Pernambucano de Música, no espaço Sertãomundo.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/"
+ },
+ {
+  "id": "cais-visita-guiada-marcas-do-ferro",
+  "data": "2026-10-20",
+  "categoria": "Exposição",
+  "nome": "Visita guiada: As marcas do ferro na Cidade do Recife",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "15h (terças 20 e 27/10)",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Visitas guiadas à exposição do Coletivo Porãozinho dos Ventos, no Espaço Todo Gonzaga.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
+  "data_fim": "2026-10-27"
+ },
+ {
   "id": "estreia-cara-de-barro",
   "data": "2026-10-22",
   "categoria": "Cinema",
@@ -967,6 +1101,20 @@
   "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
  },
  {
+  "id": "cais-roda-conversa-ferros-do-recife",
+  "data": "2026-10-28",
+  "categoria": "Exposição",
+  "nome": "Roda de conversa \"Os ferros do Recife que contam histórias\"",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "15h",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Roda de conversa no Espaço Todo Gonzaga ligada à exposição sobre o ferro na paisagem do Recife.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/"
+ },
+ {
   "id": "estreia-klara-e-o-sol",
   "data": "2026-10-29",
   "categoria": "Cinema",
@@ -995,6 +1143,21 @@
   "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
   "resumo": "Nova adaptação do romance de Jane Austen.",
   "data_fim": "2026-11-04"
+ },
+ {
+  "id": "cais-ensaio-aberto-grupo-bote",
+  "data": "2026-10-29",
+  "categoria": "Teatro",
+  "nome": "Ensaio aberto do Grupo Bote de Teatro",
+  "local": "Museu Cais do Sertão",
+  "cidade": "Recife",
+  "horario": "",
+  "preco": "Grátis",
+  "link": "",
+  "resumo": "Ensaio aberto ao público do Grupo Bote de Teatro na Sala Pajeú do Cais do Sertão.",
+  "fonte": "Folha de Pernambuco",
+  "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
+  "data_fim": "2026-10-30"
  },
  {
   "id": "halloween-metropole-2026-day-i-sexta-feira-30-out-92ZMKeMgl2",
