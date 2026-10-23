@@ -197,13 +197,14 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="hoje-q" placeholder="Buscar evento, local…" aria-label="Buscar">
       <select id="hoje-cidade" aria-label="Cidade"></select>
+      <select id="hoje-periodo" aria-label="Período"><option value="">Qualquer horário</option><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select>
       <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="hoje-gratis" checked> Grátis</label><label><input type="checkbox" id="hoje-pago" checked> Pagos</label></span>
     </div>
     <div class="ag-card" id="card-hoje">
       <h2>Eventos de hoje</h2>
       <p class="ag-count" id="hoje-count"></p>
       <table id="tbl-hoje" data-source="hoje" data-row-key="id">
-        <thead><tr><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <thead><tr><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="bairro">Bairro</th><th data-field="cidade">Cidade</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -274,13 +275,14 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="prox-q" placeholder="Buscar artista, festa, local…" aria-label="Buscar">
       <select id="prox-cidade" aria-label="Cidade"></select>
+      <select id="prox-periodo" aria-label="Período"><option value="">Qualquer horário</option><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select>
       <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="prox-gratis" checked> Grátis</label><label><input type="checkbox" id="prox-pago" checked> Pagos</label></span>
     </div>
     <div class="ag-card" id="card-proximos" style="--card: var(--ag-azul)">
       <h2 id="prox-title">Próximos 30 dias</h2>
       <p class="ag-count" id="prox-count"></p>
       <table id="tbl-prox" data-source="proximos" data-row-key="id">
-        <thead><tr><th data-field="data">Data</th><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="cidade">Cidade</th><th data-field="categoria">Tipo</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
+        <thead><tr><th data-field="data">Data</th><th data-field="horario">Horário</th><th data-field="nome">Evento</th><th data-field="resumo">Resumo</th><th data-field="local">Local</th><th data-field="bairro">Bairro</th><th data-field="cidade">Cidade</th><th data-field="categoria">Tipo</th><th data-field="preco">Preço</th><th data-field="fonte">Fonte</th><th class="acts" aria-label="Ações"></th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -374,11 +376,11 @@ dash.calc('resumo', {
   const safeHref = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : '');
 
   const state = {
-    hoje: { cat: 'Todos', q: '', cidade: '', gratis: true, pago: true },
+    hoje: { cat: 'Todos', q: '', cidade: '', periodo: '', gratis: true, pago: true },
     fazer: { cat: 'Todos', q: '', regiao: '', gratis: true, pago: true },
     comer: { cat: 'Todas', q: '', tipo: '', open: true, categoria: '' },
     beber: { cat: 'Todas', q: '', tipo: '', open: false },
-    prox: { cat: 'Todos', q: '', cidade: '', gratis: true, pago: true },
+    prox: { cat: 'Todos', q: '', cidade: '', periodo: '', gratis: true, pago: true },
     mon: { cat: 'Todos' },
   };
   let tab = 'hoje';
@@ -537,6 +539,7 @@ dash.calc('resumo', {
   const bindSearch = (id, st) => $(id).addEventListener('input', (e) => { st.q = e.target.value; draw(); });
   bindSearch('hoje-q', state.hoje); bindSearch('fazer-q', state.fazer); bindSearch('comer-q', state.comer); bindSearch('beber-q', state.beber); bindSearch('prox-q', state.prox);
   $('hoje-cidade').addEventListener('change', (e) => { state.hoje.cidade = e.target.value; draw(); });
+  $('hoje-periodo').addEventListener('change', (e) => { state.hoje.periodo = e.target.value; draw(); });
   [['hoje', state.hoje], ['fazer', state.fazer], ['prox', state.prox]].forEach(([k, st]) => {
     $(k + '-gratis').addEventListener('change', (e) => { st.gratis = e.target.checked; draw(); });
     $(k + '-pago').addEventListener('change', (e) => { st.pago = e.target.checked; draw(); });
@@ -548,6 +551,7 @@ dash.calc('resumo', {
   $('beber-tipo').addEventListener('change', (e) => { state.beber.tipo = e.target.value; draw(); });
   $('beber-open').addEventListener('change', (e) => { state.beber.open = e.target.checked; draw(); });
   $('prox-cidade').addEventListener('change', (e) => { state.prox.cidade = e.target.value; draw(); });
+  $('prox-periodo').addEventListener('change', (e) => { state.prox.periodo = e.target.value; draw(); });
 
   // Cidades agrupadas: Recife, Litoral Norte e Litoral Sul (praias), mais outras que aparecerem nos dados
   const LIT_NORTE = ['Olinda', 'Paulista', 'Igarassu', 'Itamaracá', 'Itapissuma', 'Goiana'];
@@ -617,6 +621,15 @@ dash.calc('resumo', {
   // Pago: campo gratis=false ou preço com valor/ingresso; "Ver link"/"Consultar" não entram em nenhum dos dois
   const ehPago = (r) => (typeof r.gratis === 'boolean' ? !r.gratis : /R\$|ingress|passe|a partir/i.test(String(r.preco || '')));
   // Marcado Grátis mostra os grátis; Pagos, os pagos; preço desconhecido só aparece com os dois marcados
+  // Período pelo horário: manhã 5h–12h, tarde 12h–18h, noite 18h–5h. Vale se o horário (ou faixa) toca o período.
+  const PERIODOS = { manha: [5, 12], tarde: [12, 18], noite: [18, 29] };
+  const horasDe = (txt) => [...String(txt || '').matchAll(/(\d{1,2})\s*(?:h|:\d{2})/gi)].map((m) => Number(m[1])).filter((h) => h <= 24).map((h) => (h < 5 ? h + 24 : h));
+  const periodoOk = (sel, r) => {
+    if (!sel) return true;
+    const hs = horasDe(r.horario); if (!hs.length) return false;
+    const [a, b] = PERIODOS[sel]; const ini = Math.min(...hs); const fim = Math.max(...hs);
+    return hs.length === 1 ? ini >= a && ini < b : ini < b && fim > a;
+  };
   const precoOk = (st, r) => (ehGratis(r) ? st.gratis : ehPago(r) ? st.pago : st.gratis && st.pago);
   // Resumo de até 200 caracteres
   const resumoTxt = (r) => { const t = String(r.resumo || r.descricao || '').trim(); return t.length > 200 ? t.slice(0, 199).trimEnd() + '…' : t; };
@@ -648,8 +661,9 @@ dash.calc('resumo', {
     const q = norm(st.q);
     const vis = rows.filter((r) => (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
+      && periodoOk(st.periodo, r)
       && precoOk(st, r)
-      && (!q || norm([r.nome, r.local, r.descricao, r.resumo, r.endereco].join(' ')).includes(q)))
+      && (!q || norm([r.nome, r.local, r.bairro, r.descricao, r.resumo, r.endereco].join(' ')).includes(q)))
       .sort((a, b) => String(a.horario).localeCompare(String(b.horario)));
     $('hoje-count').textContent = `${vis.length} de ${rows.length} eventos`;
     tb.replaceChildren(...vis.map((r) => {
@@ -658,13 +672,14 @@ dash.calc('resumo', {
       cell(tr, r.nome, 'nm', r.link);
       cell(tr, resumoTxt(r), 'mut');
       cell(tr, r.local);
+      cell(tr, r.bairro || '', 'mut');
       cell(tr, r.cidade, 'mut hide-sm');
       cell(tr, r.preco, ehGratis(r) ? 'free' : '');
       fonteCell(tr, r);
       actionsCell(tr, itemFrom('hoje', r));
       return tr;
     }));
-    if (!vis.length) tb.replaceChildren(emptyRow(8));
+    if (!vis.length) tb.replaceChildren(emptyRow(9));
   }
   function emptyRow(n) {
     const tr = document.createElement('tr'); const td = document.createElement('td');
@@ -785,20 +800,21 @@ dash.calc('resumo', {
     const vis = rows.filter((r) => r.data <= fim && fimDe(r) >= ini
       && (st.cat === 'Todos' || r.categoria === st.cat)
       && cidadeOk(st.cidade, r.cidade)
+      && periodoOk(st.periodo, r)
       && precoOk(st, r)
-      && (!q || norm([r.nome, r.local, r.cidade, r.resumo].join(' ')).includes(q)))
+      && (!q || norm([r.nome, r.local, r.bairro, r.cidade, r.resumo].join(' ')).includes(q)))
       .sort((a, b) => ((a.data < ini ? ini : a.data) + (a.data_fim ? '1' : '0') + a.horario).localeCompare((b.data < ini ? ini : b.data) + (b.data_fim ? '1' : '0') + b.horario));
     $('prox-count').textContent = `${vis.length} eventos`;
     const curto = (iso) => { const t = fmtDia(iso, { weekday: 'short', day: '2-digit', month: '2-digit' }); return t.charAt(0).toUpperCase() + t.slice(1); };
     box.replaceChildren(...vis.map((r) => {
       const tr = document.createElement('tr'); tr.dataset.key = r.id;
       const quando = r.data_fim && r.data_fim !== r.data ? (r.data < ini ? 'Até ' + fmtDia(r.data_fim, { day: '2-digit', month: '2-digit' }) : curto(r.data) + ' a ' + fmtDia(r.data_fim, { day: '2-digit', month: '2-digit' })) : curto(r.data);
-      cell(tr, quando, 'tn nm-d'); cell(tr, r.horario, 'tn'); cell(tr, r.nome, 'nm', r.link); cell(tr, resumoTxt(r), 'mut'); cell(tr, r.local);
+      cell(tr, quando, 'tn nm-d'); cell(tr, r.horario, 'tn'); cell(tr, r.nome, 'nm', r.link); cell(tr, resumoTxt(r), 'mut'); cell(tr, r.local); cell(tr, r.bairro || '', 'mut');
       cell(tr, r.cidade, 'mut'); cell(tr, r.categoria, 'mut hide-sm'); cell(tr, r.preco, ehGratis(r) ? 'tn free' : 'tn'); fonteCell(tr, r);
       actionsCell(tr, itemFrom('prox', r));
       return tr;
     }));
-    if (!vis.length) box.replaceChildren(emptyRow(10));
+    if (!vis.length) box.replaceChildren(emptyRow(11));
   }
 
   function drawMon() {
