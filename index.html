@@ -109,6 +109,9 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
 .ag-filters input[type=search] { flex: 1 1 12rem; }
 .ag-filters input[type=checkbox] { accent-color: var(--ag-coral); }
 .ag-preco { display: inline-flex; gap: var(--cds-gap-sm); }
+.ag-datas { display: inline-flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ag-filters input[type=date] { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-height: 2.25rem; }
+.ag-datas .ag-act { margin: 0; }
 .ag-filters label { font-size: var(--cds-font-size-caption); display: inline-flex; gap: var(--cds-gap-xs); align-items: center; color: var(--color-fg-muted); }
 .ag-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-sm); }
 .ag-chips button { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
@@ -275,6 +278,7 @@ window.d3 = { format: () => (x) => Number(x).toLocaleString('pt-BR') };
     <div class="ag-filters">
       <input type="search" id="prox-q" placeholder="Buscar artista, festa, local…" aria-label="Buscar">
       <select id="prox-cidade" aria-label="Cidade"></select>
+      <span class="ag-datas" role="group" aria-label="Datas"><label>De <input type="date" id="prox-de"></label><label>Até <input type="date" id="prox-ate"></label><button type="button" id="prox-limpar" class="ag-act">Limpar datas</button></span>
       <select id="prox-periodo" aria-label="Período"><option value="">Qualquer horário</option><option value="manha">Manhã</option><option value="tarde">Tarde</option><option value="noite">Noite</option></select>
       <span class="ag-preco" role="group" aria-label="Preço"><label><input type="checkbox" id="prox-gratis" checked> Grátis</label><label><input type="checkbox" id="prox-pago" checked> Pagos</label></span>
     </div>
@@ -380,7 +384,7 @@ dash.calc('resumo', {
     fazer: { cat: 'Todos', q: '', regiao: '', gratis: true, pago: true },
     comer: { cat: 'Todas', q: '', tipo: '', open: true, categoria: '' },
     beber: { cat: 'Todas', q: '', tipo: '', open: false },
-    prox: { cat: 'Todos', q: '', cidade: '', periodo: '', gratis: true, pago: true },
+    prox: { cat: 'Todos', q: '', cidade: '', periodo: '', de: '', ate: '', gratis: true, pago: true },
     mon: { cat: 'Todos' },
   };
   let tab = 'hoje';
@@ -552,6 +556,9 @@ dash.calc('resumo', {
   $('beber-open').addEventListener('change', (e) => { state.beber.open = e.target.checked; draw(); });
   $('prox-cidade').addEventListener('change', (e) => { state.prox.cidade = e.target.value; draw(); });
   $('prox-periodo').addEventListener('change', (e) => { state.prox.periodo = e.target.value; draw(); });
+  $('prox-de').addEventListener('change', (e) => { state.prox.de = e.target.value; if (state.prox.ate && state.prox.ate < state.prox.de) { state.prox.ate = ''; $('prox-ate').value = ''; } draw(); });
+  $('prox-ate').addEventListener('change', (e) => { state.prox.ate = e.target.value; draw(); });
+  $('prox-limpar').addEventListener('click', () => { state.prox.de = ''; state.prox.ate = ''; $('prox-de').value = ''; $('prox-ate').value = ''; draw(); });
 
   // Cidades agrupadas: Recife, Litoral Norte e Litoral Sul (praias), mais outras que aparecerem nos dados
   const LIT_NORTE = ['Olinda', 'Paulista', 'Igarassu', 'Itamaracá', 'Itapissuma', 'Goiana'];
@@ -772,7 +779,7 @@ dash.calc('resumo', {
     const d = dash.data('proximos'); const h = dash.data('hoje'); const box = $('tbl-prox').tBodies[0];
     if (d.status === 'error') { failed(box); return; }
     if (d.status !== 'ok' || h.status !== 'ok') return;
-    const rows = d.data; const st = state.prox;
+    let rows = d.data; const st = state.prox;
     const dia = h.data.length ? h.data[0].data : new Date().toISOString().slice(0, 10);
     const addD = (iso, n) => new Date(Date.parse(iso + 'T12:00:00Z') + n * 864e5).toISOString().slice(0, 10);
     const wd = (iso) => new Date(iso + 'T12:00:00Z').getUTCDay();
@@ -792,6 +799,15 @@ dash.calc('resumo', {
       fim = dia.slice(0, 4) + '-12-31'; titulo = 'Até o fim do ano';
     } else {
       fim = addD(dia, 30); titulo = 'Próximos 30 dias';
+    }
+    // Datas específicas (De / Até) substituem o período da aba
+    $('prox-de').min = dia; $('prox-ate').min = st.de || dia;
+    if (st.de || st.ate) {
+      ini = st.de || dia; fim = st.ate || ini;
+      const dm = { day: '2-digit', month: '2-digit' };
+      titulo = ini === fim ? fmtDia(ini, { weekday: 'long', day: 'numeric', month: 'long' }) : `De ${fmtDia(ini, dm)} a ${fmtDia(fim, dm)}`;
+      titulo = titulo.charAt(0).toUpperCase() + titulo.slice(1);
+      if (ini <= dia) { const ids = new Set(rows.map((r) => r.id)); rows = rows.concat(h.data.filter((r) => !ids.has(r.id))); }
     }
     $('prox-title').textContent = titulo;
     chips($('prox-chips'), uniq(rows, 'categoria'), 'Todos', st);
