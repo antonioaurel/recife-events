@@ -1,5 +1,5 @@
 {
-  "lido_em": "2026-10-23T10:47:23-03:00",
+  "lido_em": "2026-10-23T18:15:50-03:00",
   "falhas": [
     "agendaculturaldorecife: página indisponível (\"Sorry, this page isn't available\")",
     "museuabolicao: página indisponível (\"Sorry, this page isn't available\")"
@@ -312,6 +312,23 @@
       "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
     },
     {
+      "id": "emporiobarrozo-2026-10-23-o-forro-de-lala-lancamento-do-baile-de-lais-senna",
+      "eixo": "Shows e festas",
+      "perfil": "emporiobarrozo",
+      "lugar_id": "",
+      "data": "2026-10-23",
+      "data_fim": "",
+      "horario": "Casa abre 19h; DJ Babilônia 20h30; show 21h45",
+      "nome": "O Forró de Lalá – lançamento do baile de Laís Senna",
+      "local": "Empório Barrozo, Rua da Aurora, 1225",
+      "cidade": "Recife",
+      "preco": "R$ 30 (individual) / R$ 50 (casadinha, para 2)",
+      "gratis": false,
+      "resumo": "Baile de forró de Laís Senna com banda completa, DJ Babilônia e participação de Irah Caldeira e As Januárias.",
+      "fonte": "Instagram @emporiobarrozo",
+      "fonte_link": "https://www.instagram.com/p/Dexva-xCBN1/"
+    },
+    {
       "id": "feiradolindu-2026-10-23-sextou-no-lindu",
       "eixo": "Feiras",
       "perfil": "feiradolindu",
@@ -410,23 +427,6 @@
       "preco": "Ingressos via Sympla",
       "gratis": false,
       "resumo": "Festa com Conjunto Maravilha cantando Chico Buarque, Kid Camaleão e DJ 440.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-baracho-na-pitombeira",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "19h",
-      "nome": "Baracho na Pitombeira",
-      "local": "Pitombeira",
-      "cidade": "Olinda",
-      "preco": "Couvert R$ 10",
-      "gratis": false,
-      "resumo": "Show de voz e violão de Baracho.",
       "fonte": "Instagram @recifequecabenobolso",
       "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
     },
@@ -533,6 +533,40 @@
       "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
     },
     {
+      "id": "roda_deforro-2026-10-23-joao-neto-convida-maciel-melo-e-nadia-maia",
+      "eixo": "Shows e festas",
+      "perfil": "roda_deforro",
+      "lugar_id": "",
+      "data": "2026-10-23",
+      "data_fim": "",
+      "horario": "A partir das 19h (primeira banda às 20h)",
+      "nome": "João Neto convida Maciel Melo e Nádia Maia",
+      "local": "Vila Recife, Rua Bernardo Guimarães, 440",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": false,
+      "resumo": "Encontro de três nomes do forró no Vila Recife, na sexta da Roda de Forró.",
+      "fonte": "Instagram @roda_deforro",
+      "fonte_link": "https://www.instagram.com/p/De2YVMLBZln/"
+    },
+    {
+      "id": "turmadapitombeira-2026-10-23-baracho-na-pitombeira",
+      "eixo": "Shows e festas",
+      "perfil": "turmadapitombeira",
+      "lugar_id": "",
+      "data": "2026-10-23",
+      "data_fim": "",
+      "horario": "A partir das 19h",
+      "nome": "Baracho na Pitombeira",
+      "local": "Pitombeira dos Quatro Cantos",
+      "cidade": "Olinda",
+      "preco": "Couvert R$ 10",
+      "gratis": false,
+      "resumo": "Show de voz e violão de Baracho.",
+      "fonte": "Instagram @turmadapitombeira",
+      "fonte_link": "https://www.instagram.com/p/De119SbxR6_/"
+    },
+    {
       "id": "visitrecife-2026-10-23-pracinha-cultural-de-boa-viagem",
       "eixo": "Shows e festas",
       "perfil": "visitrecife",
@@ -582,6 +616,23 @@
       "resumo": "Animação Papaya (Priscilla Kellen), Overman e Virtuosas.",
       "fonte": "Instagram @cinemasaoluizpe",
       "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
+    },
+    {
+      "id": "emporiobarrozo-2026-10-24-samba-pra-cima-tributo-a-jorge-aragao-e-fundo-de-quintal",
+      "eixo": "Shows e festas",
+      "perfil": "emporiobarrozo",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Samba Pra Cima – tributo a Jorge Aragão e Fundo de Quintal",
+      "local": "Empório Barrozo, Rua da Aurora, 1225",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Roda do Samba Pra Cima em homenagem a Jorge Aragão e ao Fundo de Quintal.",
+      "fonte": "Instagram @emporiobarrozo",
+      "fonte_link": "https://www.instagram.com/p/DesPDscODWd/"
     },
     {
       "id": "feiradaaurora-2026-10-24-feira-da-aurora-sabado",
@@ -735,6 +786,23 @@
       "resumo": "Raíssa Leal (voz) com Miguel Guerra (baixo) e Guilherme Calado (piano). Reservas por WhatsApp.",
       "fonte": "Instagram @pocodasartess",
       "fonte_link": "https://www.instagram.com/p/DesLzivpPFc/"
+    },
+    {
+      "id": "roda_deforro-2026-10-24-forro-do-vila-recife-sabado",
+      "eixo": "Shows e festas",
+      "perfil": "roda_deforro",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Forró do Vila Recife (sábado)",
+      "local": "Vila Recife, Rua Bernardo Guimarães, 440",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Noite de forró no Vila Recife, que tem programação sexta e sábado.",
+      "fonte": "Instagram @roda_deforro",
+      "fonte_link": "https://www.instagram.com/p/Dez_ZpyAfGF/"
     },
     {
       "id": "teatroriomarrecife-2026-10-24-improvavel-cia-barbixas",
@@ -1128,6 +1196,23 @@
       "fonte_link": "https://www.instagram.com/p/DexbpV-j6cU/"
     },
     {
+      "id": "bar.do.ro-2026-10-31-previa-oficial-do-bloco-da-sopa",
+      "eixo": "Shows e festas",
+      "perfil": "bar.do.ro",
+      "lugar_id": "",
+      "data": "2026-10-31",
+      "data_fim": "",
+      "horario": "15h Trio do Samba; 18h Paulinho Lins; 20h A Furiosa (Maestro Oséas); 21h cortejo",
+      "nome": "Prévia oficial do Bloco da Sopa",
+      "local": "Olinda (post anterior indica Clube Vassourinhas); cortejo até os Quatro Cantos",
+      "cidade": "Olinda",
+      "preco": "Camisa R$ 60 (dá entrada gratuita)",
+      "gratis": false,
+      "resumo": "Prévia de carnaval com samba, frevo e cortejo do Bloco da Sopa, que em 2027 homenageia o Maestro Oséas Leão.",
+      "fonte": "Instagram @bar.do.ro",
+      "fonte_link": "https://www.instagram.com/p/DevYoQ3DZCP/"
+    },
+    {
       "id": "mac.pe.oficial-2026-10-31-urban-sketchers-recife-encontro-61-no-mac-pe",
       "eixo": "Museus e exposições",
       "perfil": "mac.pe.oficial",
@@ -1194,6 +1279,40 @@
       "resumo": "Edição de domingo da Feira da Aurora volta em 01/11 (não haverá no domingo 25/10).",
       "fonte": "Instagram @feiradaaurora",
       "fonte_link": "https://www.instagram.com/p/DexeIe4lLiZ/"
+    },
+    {
+      "id": "forrobodorecife-2026-11-01-forrobodo-no-cais-1-ano",
+      "eixo": "Shows e festas",
+      "perfil": "forrobodorecife",
+      "lugar_id": "",
+      "data": "2026-11-01",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Forrobodó no Cais – 1 ano",
+      "local": "Cais do Sertão",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Encontro de forró pé de serra do Forrobodó Recife, em edição de 1 ano no Cais do Sertão.",
+      "fonte": "Instagram @forrobodorecife",
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+    },
+    {
+      "id": "orquestradebolso-2026-11-01-chapadinhos-na-praia-odb-banda-desaperreio-e-dj-mau-lopes",
+      "eixo": "Shows e festas",
+      "perfil": "orquestradebolso",
+      "lugar_id": "",
+      "data": "2026-11-01",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Chapadinhos na Praia – ODB, Banda Desaperreio e DJ Mau Lopes",
+      "local": "Clube Vassourinhas",
+      "cidade": "Olinda",
+      "preco": "Ingressos pelo link do post",
+      "gratis": false,
+      "resumo": "Festa com Orquestra de Bolso, Banda Desaperreio e DJ Mau Lopes.",
+      "fonte": "Instagram @orquestradebolso",
+      "fonte_link": "https://www.instagram.com/p/DecJWQaNMzK/"
     },
     {
       "id": "pacodofrevo-2026-11-01-arrastao-do-frevo-dia-do-frevo-de-bloco",
@@ -1332,6 +1451,23 @@
       "fonte_link": "https://www.instagram.com/p/DezMYeFFPjr/"
     },
     {
+      "id": "forrobodorecife-2026-11-27-36o-baile-do-forrobodo-7-anos-do-forrobodorecife",
+      "eixo": "Shows e festas",
+      "perfil": "forrobodorecife",
+      "lugar_id": "",
+      "data": "2026-11-27",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "36º Baile do Forrobodó – 7 anos do ForrobodóRecife",
+      "local": "Círculo Militar do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Baile de aniversário de 7 anos do Forrobodó Recife.",
+      "fonte": "Instagram @forrobodorecife",
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+    },
+    {
       "id": "espacocienciape-2026-12-01-32a-ciencia-jovem-feira-de-ciencias-da-educacao-basica",
       "eixo": "Parques",
       "perfil": "espacocienciape",
@@ -1347,6 +1483,40 @@
       "resumo": "Uma das maiores feiras de ciências da educação básica do país, pela primeira vez no interior. Inscrições para o corpo de votantes até 25/10.",
       "fonte": "Instagram @espacocienciape",
       "fonte_link": "https://www.instagram.com/p/Deb8F0FJaOy/"
+    },
+    {
+      "id": "forrobodorecife-2026-12-08-forrobodo-no-cais-dezembro",
+      "eixo": "Shows e festas",
+      "perfil": "forrobodorecife",
+      "lugar_id": "",
+      "data": "2026-12-08",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Forrobodó no Cais (dezembro)",
+      "local": "Cais do Sertão",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Encontro de forró do Forrobodó Recife no Cais do Sertão.",
+      "fonte": "Instagram @forrobodorecife",
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+    },
+    {
+      "id": "forrobodorecife-2026-12-12-forrobodo-na-aurora",
+      "eixo": "Shows e festas",
+      "perfil": "forrobodorecife",
+      "lugar_id": "",
+      "data": "2026-12-12",
+      "data_fim": "",
+      "horario": "Ver post",
+      "nome": "Forrobodó na Aurora",
+      "local": "Rua da Aurora",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Encontro de forró do Forrobodó Recife na Rua da Aurora.",
+      "fonte": "Instagram @forrobodorecife",
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
     },
     {
       "id": "casaestacaodaluz-2027-01-10-ensaios-de-carnaval-com-spok-convidados",
