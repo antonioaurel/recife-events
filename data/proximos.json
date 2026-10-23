@@ -7,6 +7,7 @@
     "nome": "Exposição “Imersão e Origem — 20 anos ATO I” – Gabriel Wickbold",
     "local": "Museu do Estado de Pernambuco (MEPE)",
     "endereco": "",
+    "bairro": "Graças",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -26,6 +27,7 @@
     "nome": "Exposição “Degas/Borges”",
     "local": "Pinacoteca do Instituto Ricardo Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -50,7 +52,8 @@
     "resumo": "Museu do frevo no Bairro do Recife, com exposições, estandartes e a história do ritmo.",
     "data_fim": "2026-10-31",
     "fonte": "Sympla",
-    "fonte_link": "https://www.sympla.com.br/eventos/recife-pe"
+    "fonte_link": "https://www.sympla.com.br/eventos/recife-pe",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "expo-rua",
@@ -65,7 +68,8 @@
     "resumo": "Fotos de artistas, performances e cenas urbanas expostas ao ar livre na Rua da Imperatriz.",
     "data_fim": "2026-11-10",
     "fonte": "Portal de Prefeitura",
-    "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+    "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/",
+    "bairro": "Boa Vista"
   },
   {
     "id": "mamam-mostra-spa-videoarte-2026",
@@ -80,7 +84,8 @@
     "resumo": "11 trabalhos de videoarte (2 a 19 min) da 11ª SPA das Artes do Recife.",
     "fonte": "Portal de Prefeitura",
     "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/recife-recebe-museus-exposicoes-e-artes-nas-ruas-a-partir-deste/632464/",
-    "data_fim": "2026-10-25"
+    "data_fim": "2026-10-25",
+    "bairro": "Boa Vista"
   },
   {
     "id": "abolicao-que-heranca-voce-vai-poder",
@@ -95,7 +100,8 @@
     "resumo": "Exposição da reabertura total do museu (jun/2026), com foco no protagonismo negro.",
     "fonte": "Diario de Pernambuco",
     "fonte_link": "https://www.diariodepernambuco.com.br/viver/2026/06/11716470-apos-reformas-museu-da-abolicao-reabre-totalmente-com-exposicoes-que-reforcam-o-protagonismo-negro.html",
-    "data_fim": "2026-12-31"
+    "data_fim": "2026-12-31",
+    "bairro": "Madalena"
   },
   {
     "id": "abolicao-restituir-o-possivel",
@@ -110,7 +116,8 @@
     "resumo": "Exposição da reabertura total do museu (jun/2026), com foco no protagonismo negro.",
     "fonte": "Diario de Pernambuco",
     "fonte_link": "https://www.diariodepernambuco.com.br/viver/2026/06/11716470-apos-reformas-museu-da-abolicao-reabre-totalmente-com-exposicoes-que-reforcam-o-protagonismo-negro.html",
-    "data_fim": "2026-12-31"
+    "data_fim": "2026-12-31",
+    "bairro": "Madalena"
   },
   {
     "id": "cais-marcas-do-ferro-recife",
@@ -125,7 +132,8 @@
     "resumo": "Mostra do Coletivo Porãozinho dos Ventos no Espaço Todo Gonzaga, parte do Mês do Nordestino no Cais do Sertão.",
     "fonte": "Folha de Pernambuco",
     "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
-    "data_fim": "2026-11-08"
+    "data_fim": "2026-11-08",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "museu-do-trem-entre-trilhos-e-memorias",
@@ -140,7 +148,8 @@
     "resumo": "Exposição inaugurada na reabertura do Museu do Trem (02/07/2026), após quatro anos fechado.",
     "fonte": "Folha de Pernambuco",
     "fonte_link": "https://www.folhape.com.br/noticias/estacao-central-capiba-museu-do-trem-reabrem/498083/",
-    "data_fim": "2026-12-31"
+    "data_fim": "2026-12-31",
+    "bairro": "São José"
   },
   {
     "id": "expo-degas-borges",
@@ -155,7 +164,8 @@
     "resumo": "40 esculturas em bronze de Degas, em parceria com o Masp, em diálogo com fotografias de Sofia Borges.",
     "data_fim": "2027-01-10",
     "fonte": "Portal de Prefeitura",
-    "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/"
+    "fonte_link": "https://portaldeprefeitura.com.br/entretenimento/agenda-cultural-recife-claudia-raia-tiago-abravanel-paralamas-outubro/633310/",
+    "bairro": "Várzea"
   },
   {
     "id": "mac-pe-exposicao-60-anos",
@@ -170,7 +180,8 @@
     "resumo": "Mostra de longa duração da reabertura (30/06/2026) com obras de Burle Marx, Portinari, Di Cavalcanti, Tarsila do Amaral, João Câmara e outros.",
     "fonte": "Diario de Pernambuco",
     "fonte_link": "https://www.diariodepernambuco.com.br/amp/viver/2026/06/11717776-governo-de-pe-reabre-mac-igreja-de-sao-pedro-e-mosteiro-de-sao-bento-apos-reformas-veja-imagens.html",
-    "data_fim": "2026-12-31"
+    "data_fim": "2026-12-31",
+    "bairro": "Carmo"
   },
   {
     "id": "ig-museuregionaldeolinda-2026-10-16-exposicao-muito-latina-pra-ser-minimalista-lidiane-mendes",
@@ -180,6 +191,7 @@
     "nome": "Exposição “Muito Latina pra ser Minimalista” – Lidiane Mendes",
     "local": "Museu Regional de Olinda (MUREO)",
     "endereco": "",
+    "bairro": "Amparo",
     "cidade": "Olinda",
     "preco": "Ver post",
     "gratis": null,
@@ -199,6 +211,7 @@
     "nome": "Exposição “Chico da Silva – Inventário de um Imaginário”",
     "local": "Museu da Cidade do Recife – Forte das Cinco Pontas",
     "endereco": "",
+    "bairro": "São José",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -223,7 +236,8 @@
     "resumo": "Visitas guiadas à exposição do Coletivo Porãozinho dos Ventos, no Espaço Todo Gonzaga.",
     "fonte": "Folha de Pernambuco",
     "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
-    "data_fim": "2026-10-27"
+    "data_fim": "2026-10-27",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "estreia-caixa-do-demonio",
@@ -238,7 +252,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Filme de terror com Carla Gugino.",
-    "data_fim": "2026-10-28"
+    "data_fim": "2026-10-28",
+    "bairro": ""
   },
   {
     "id": "estreia-cara-de-barro",
@@ -253,7 +268,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Primeiro filme de terror da DC Studios, dirigido por James Watkins.",
-    "data_fim": "2026-10-28"
+    "data_fim": "2026-10-28",
+    "bairro": ""
   },
   {
     "id": "estreia-familia-de-sorte",
@@ -268,7 +284,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Comédia brasileira dirigida por Viviane Ferreira.",
-    "data_fim": "2026-10-28"
+    "data_fim": "2026-10-28",
+    "bairro": ""
   },
   {
     "id": "estreia-outro-lado-das-redes",
@@ -283,7 +300,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Filme escrito e dirigido por Aaron Sorkin (Sony).",
-    "data_fim": "2026-10-28"
+    "data_fim": "2026-10-28",
+    "bairro": ""
   },
   {
     "id": "estreia-one-piece-ilha-espiral",
@@ -298,7 +316,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Segundo filme da franquia One Piece, com dublagem brasileira inédita.",
-    "data_fim": "2026-10-28"
+    "data_fim": "2026-10-28",
+    "bairro": ""
   },
   {
     "id": "ig-museudoestadope-2026-10-22-exposicao-acervo-revisitado-abstracionismo-lirico",
@@ -308,6 +327,7 @@
     "nome": "Exposição “Acervo Revisitado | Abstracionismo Lírico”",
     "local": "Museu do Estado de Pernambuco (MEPE) – Espaço Cícero Dias",
     "endereco": "",
+    "bairro": "Graças",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -327,6 +347,7 @@
     "nome": "Exposição “As Marcas do Ferro na Cidade do Recife”",
     "local": "Museu Cais do Sertão – Espaço Todo Gonzaga",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Entrada gratuita para visitantes",
     "gratis": true,
@@ -346,6 +367,7 @@
     "nome": "Instalação “A casa de todos”",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -365,6 +387,7 @@
     "nome": "Exposição “José Patrício: A Dança Matemática das Cores”",
     "local": "Galeria Amparo 60, Rua Prof. Eduardo Wanderley Filho, 187, 3º andar",
     "endereco": "",
+    "bairro": "Boa Viagem",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -384,6 +407,7 @@
     "nome": "Exposição “Existências” – Mergulha e Voa",
     "local": "Centro Cultural Mercado Eufrásio Barbosa – Galeria 01, Varadouro",
     "endereco": "",
+    "bairro": "Varadouro",
     "cidade": "Olinda",
     "preco": "Gratuito",
     "gratis": true,
@@ -403,6 +427,7 @@
     "nome": "Exposição “Vereda Interior” – Gustavo Pimentel",
     "local": "Centro Cultural Mercado Eufrásio Barbosa – Galeria 02, Varadouro",
     "endereco": "",
+    "bairro": "Varadouro",
     "cidade": "Olinda",
     "preco": "Gratuito",
     "gratis": true,
@@ -422,6 +447,7 @@
     "nome": "Exposição “Nem todo viandante anda estradas” – itinerância da 36ª Bienal de São Paulo",
     "local": "Oficina Francisco Brennand – espaço Estádio",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "R$ 20 (meia) / R$ 40 (inteira) para moradores de PE; grátis em 27/10",
     "gratis": null,
@@ -441,6 +467,7 @@
     "nome": "Exposição “esse é Sérvulo Esmeraldo” (prorrogada)",
     "local": "CAIXA Cultural Recife – Galeria 1",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Gratuito",
     "gratis": true,
@@ -460,6 +487,7 @@
     "nome": "Programação Moviemax Rosa e Silva – estreias da semana",
     "local": "Moviemax Rosa e Silva",
     "endereco": "",
+    "bairro": "Aflitos",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": false,
@@ -479,6 +507,7 @@
     "nome": "Oficina “Bordar mapas para contar sonhos” – Cadu Cinelli (inscrições encerradas)",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Inscrições encerradas",
     "gratis": null,
@@ -500,7 +529,8 @@
     "horario": "19:00",
     "preco": "R$ 23,99",
     "link": "https://ihoje.com/events/fricaute-Bmn7flMdariJ",
-    "resumo": "Festa com 4 bandas da cena independente do Recife (Fernando Remigio & Rebordosa, Zambrotta, Desconforme, Bruxos de Nadi) e DJ de rock de garagem."
+    "resumo": "Festa com 4 bandas da cena independente do Recife (Fernando Remigio & Rebordosa, Zambrotta, Desconforme, Bruxos de Nadi) e DJ de rock de garagem.",
+    "bairro": ""
   },
   {
     "id": "80-anos-de-belchior-com-a-banda-dos-coracoes-selvagens-Bmn7f",
@@ -512,7 +542,8 @@
     "horario": "21:00",
     "preco": "R$ 33,99",
     "link": "https://ihoje.com/events/80-anos-de-belchior-com-a-banda-dos-coracoes-selvagens-Bmn7flMfq8lt",
-    "resumo": "Noite Belchiana pelos 80 anos de Belchior, com show da Banda dos Corações Selvagens no Vestígios Bar, em Olinda."
+    "resumo": "Noite Belchiana pelos 80 anos de Belchior, com show da Banda dos Corações Selvagens no Vestígios Bar, em Olinda.",
+    "bairro": ""
   },
   {
     "id": "turne-sabores-2026-nubia-92ZMKjm6oaq",
@@ -524,7 +555,8 @@
     "horario": "21:00",
     "preco": "R$ 0 – R$ 90",
     "link": "https://ihoje.com/events/turne-sabores-2026-nubia-92ZMKjm6oaq",
-    "resumo": "Show de Nubia na turnê Sabores 2026."
+    "resumo": "Show de Nubia na turnê Sabores 2026.",
+    "bairro": ""
   },
   {
     "id": "ca-s-britney-spears-Bmn7flMegmIn",
@@ -536,7 +568,8 @@
     "horario": "22:00",
     "preco": "R$ 18 – R$ 28,13",
     "link": "https://ihoje.com/events/ca-s-britney-spears-Bmn7flMegmIn",
-    "resumo": "Festa CAØS com tema Britney Spears no IRAQ."
+    "resumo": "Festa CAØS com tema Britney Spears no IRAQ.",
+    "bairro": ""
   },
   {
     "id": "halloween-da-pabllo-92ZMKa5AORF",
@@ -548,7 +581,8 @@
     "horario": "23:00",
     "preco": "A partir de R$ 105",
     "link": "https://ihoje.com/events/halloween-da-pabllo-92ZMKa5AORF",
-    "resumo": "Pabllo Vittar traz a turnê Halloween da Pabllo, festa de Dia das Bruxas que celebra seus 10 anos de carreira. Show às 23h."
+    "resumo": "Pabllo Vittar traz a turnê Halloween da Pabllo, festa de Dia das Bruxas que celebra seus 10 anos de carreira. Show às 23h.",
+    "bairro": "Salgadinho"
   },
   {
     "id": "ig-fundajoficial-2026-10-23-mostra-60-anos-de-homens-e-caranguejos-josue-de-castro-o-rec",
@@ -558,6 +592,7 @@
     "nome": "Mostra “60 anos de Homens e Caranguejos: Josué de Castro, o Recife e a Fome”",
     "local": "Fundaj – Sala de Leitura Nilo Pereira, Derby",
     "endereco": "",
+    "bairro": "Derby",
     "cidade": "Recife",
     "preco": "Gratuito",
     "gratis": true,
@@ -577,6 +612,7 @@
     "nome": "Aviso: Olha! Recife sem passeios regulares em 24 e 25/10",
     "local": "",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -596,6 +632,7 @@
     "nome": "Lançamento do livro “Projeto Tea Tea” (Editora Ediluz)",
     "local": "Livraria do Jardim, Av. Manoel Borba, 292, Boa Vista",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -614,6 +651,7 @@
     "nome": "Orgulho Nerd – Edição de Halloween",
     "local": "Livraria do Jardim, Av. Manoel Borba, 292, Boa Vista",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -632,6 +670,7 @@
     "nome": "Encontros dos clubes de leitura UniVersos (13h) e da Aurora (15h)",
     "local": "Livraria do Jardim, Av. Manoel Borba, 292, Boa Vista",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -650,6 +689,7 @@
     "nome": "Oficina de Retrato a Carvão com Carlo Blind",
     "local": "Museu Murillo La Greca",
     "endereco": "",
+    "bairro": "Parnamirim",
     "cidade": "Recife",
     "preco": "R$ 100 (material incluso; 50% das vagas com bolsa integral)",
     "gratis": false,
@@ -670,7 +710,8 @@
     "horario": "14:00",
     "preco": "A partir de R$ 130",
     "link": "https://ihoje.com/events/churrasquinho-menos-e-mais-recife-92ZMKa4s95S",
-    "resumo": "Grupo Menos é Mais faz 4h de pagode sem parar em palco 360º com participações surpresa. Setores VIP, Open Bar e Gazebo."
+    "resumo": "Grupo Menos é Mais faz 4h de pagode sem parar em palco 360º com participações surpresa. Setores VIP, Open Bar e Gazebo.",
+    "bairro": "Salgadinho"
   },
   {
     "id": "ig-cinemasaoluizpe-2026-10-24-cinema-sao-luiz-sessoes-de-sabado",
@@ -680,6 +721,7 @@
     "nome": "Cinema São Luiz – sessões de sábado",
     "local": "Cinema São Luiz, Rua da Aurora",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "R$ 10 (inteira) / R$ 5 (meia)",
     "gratis": false,
@@ -698,6 +740,7 @@
     "nome": "Oficina de Desenho de Observação com George Barbosa",
     "local": "Instituto Ricardo Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "R$ 100 (inclui ingresso, visita mediada e materiais)",
     "gratis": false,
@@ -718,7 +761,8 @@
     "horario": "15:00",
     "preco": "A partir de R$ 38,99",
     "link": "https://ihoje.com/events/samba-da-pitomba-canta-arlindo-cruz-24-de-outubro-Bmn7flHB1pd3",
-    "resumo": "Samba de raiz, com muita interação entre músicos e público, cantando Arlindo Cruz na sede da Pitombeira dos Quatro Cantos, em Olinda."
+    "resumo": "Samba de raiz, com muita interação entre músicos e público, cantando Arlindo Cruz na sede da Pitombeira dos Quatro Cantos, em Olinda.",
+    "bairro": ""
   },
   {
     "id": "ig-feiradaaurora-2026-10-24-feira-da-aurora-sabado",
@@ -728,6 +772,7 @@
     "nome": "Feira da Aurora (sábado)",
     "local": "Rua da Aurora, em frente à SEPLAG, 1377",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -748,7 +793,8 @@
     "horario": "16:00",
     "preco": "Ver link",
     "link": "https://ihoje.com/events/belchior-80-tudo-outra-vez-com-marina-duarte-renato-bandeira-e-banda-Bmn7flMfpRD4",
-    "resumo": "Show-tributo a Belchior com Marina Duarte, Renato Bandeira e banda e participações de Silvério Pessoa, Isabela Moraes e Tonfil. Show às 18h."
+    "resumo": "Show-tributo a Belchior com Marina Duarte, Renato Bandeira e banda e participações de Silvério Pessoa, Isabela Moraes e Tonfil. Show às 18h.",
+    "bairro": ""
   },
   {
     "id": "aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fun",
@@ -760,7 +806,8 @@
     "horario": "16:00",
     "preco": "A partir de R$ 50",
     "link": "https://ihoje.com/events/aniversario-do-samba-pra-cima-homenagem-a-jorge-aragao-e-fundo-de-quintal-Bmn7flCYTbNw",
-    "resumo": "Aniversário do Samba pra Cima, que canta Jorge Aragão e Fundo de Quintal numa tarde e noite para cantar junto."
+    "resumo": "Aniversário do Samba pra Cima, que canta Jorge Aragão e Fundo de Quintal numa tarde e noite para cantar junto.",
+    "bairro": ""
   },
   {
     "id": "ig-pacodofrevo-2026-10-24-orquestra-experimental-de-frevo-da-ufpe-15-anos",
@@ -770,6 +817,7 @@
     "nome": "Orquestra Experimental de Frevo da UFPE – 15 anos",
     "local": "Paço do Frevo",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Ingresso do museu: R$ 10 (inteira) / R$ 5 (meia)",
     "gratis": false,
@@ -790,7 +838,8 @@
     "horario": "17:00",
     "preco": "Ver link",
     "link": "https://ihoje.com/events/sambinha-do-barcha-2-anos-Bmn7flHC9NZQ",
-    "resumo": "Sambinha do Barcha faz 2 anos com samba e pagode: Lipe Lucena, Felipe Farra, Vilx, De Cara com o Samba, Soundsbymaul e Mau Lopes."
+    "resumo": "Sambinha do Barcha faz 2 anos com samba e pagode: Lipe Lucena, Felipe Farra, Vilx, De Cara com o Samba, Soundsbymaul e Mau Lopes.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-caixaculturalrecife-2026-10-24-contacao-de-historias-historias-do-meu-povo-com-roma-julia",
@@ -800,6 +849,7 @@
     "nome": "Contação de histórias “Histórias do meu povo”, com Roma Julia",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Inscrição pelo site",
     "gratis": null,
@@ -820,7 +870,8 @@
     "horario": "19:00",
     "preco": "R$ 44",
     "link": "https://ihoje.com/events/irah-caldeira-no-reino-da-cantoria-Bmn7flHGHnOj",
-    "resumo": "Irah Caldeira apresenta No Reino da Cantoria, show que celebra a cantoria e a música de raiz nordestina."
+    "resumo": "Irah Caldeira apresenta No Reino da Cantoria, show que celebra a cantoria e a música de raiz nordestina.",
+    "bairro": "Varadouro"
   },
   {
     "id": "ig-visitrecife-2026-10-24-pracinha-cultural-de-boa-viagem",
@@ -830,6 +881,7 @@
     "nome": "Pracinha Cultural de Boa Viagem",
     "local": "Pracinha de Boa Viagem",
     "endereco": "",
+    "bairro": "Boa Viagem",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -848,6 +900,7 @@
     "nome": "Raíssa Leal Trio – jazz nacional e internacional",
     "local": "Espaço Cultural Poço das Artes, Rua Álvaro Macedo, 54, Poço da Panela",
     "endereco": "",
+    "bairro": "Poço da Panela",
     "cidade": "Recife",
     "preco": "R$ 30 (sala) / R$ 25 (jardim)",
     "gratis": false,
@@ -868,7 +921,8 @@
     "horario": "21:00",
     "preco": "R$ 33,75 – R$ 56,25",
     "link": "https://ihoje.com/events/halloween-tour-da-ggg-nordeste-92ZMKa4spWD",
-    "resumo": "Halloween da Hang The Dj! com show de Giovanna Moraes (GGG), com clássicos do rock e músicas do projeto Rumo a Tokyo. Vale ir fantasiado."
+    "resumo": "Halloween da Hang The Dj! com show de Giovanna Moraes (GGG), com clássicos do rock e músicas do projeto Rumo a Tokyo. Vale ir fantasiado.",
+    "bairro": ""
   },
   {
     "id": "baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu",
@@ -880,7 +934,8 @@
     "horario": "22:00",
     "preco": "A partir de R$ 18,99",
     "link": "https://ihoje.com/events/baile-das-rainhas-sabado-24-out-Bmn7flHDiKhu",
-    "resumo": "Baile em homenagem ao Carnaval e às rainhas Anitta e Eloína dos Leopardos, no Clube Metrópole."
+    "resumo": "Baile em homenagem ao Carnaval e às rainhas Anitta e Eloína dos Leopardos, no Clube Metrópole.",
+    "bairro": ""
   },
   {
     "id": "do-outro-lado-92ZMKo2Mbg6",
@@ -892,7 +947,8 @@
     "horario": "22:00",
     "preco": "R$ 18 – R$ 45",
     "link": "https://ihoje.com/events/do-outro-lado-92ZMKo2Mbg6",
-    "resumo": "Festa-experiência com ambientes temáticos, intervenções, personagens e surpresas. Atrações reveladas aos poucos."
+    "resumo": "Festa-experiência com ambientes temáticos, intervenções, personagens e surpresas. Atrações reveladas aos poucos.",
+    "bairro": ""
   },
   {
     "id": "noite-do-desande-Bmn7flHFya4O",
@@ -904,7 +960,8 @@
     "horario": "22:00",
     "preco": "R$ 0 – R$ 47,25",
     "link": "https://ihoje.com/events/noite-do-desande-Bmn7flHFya4O",
-    "resumo": "Noite com três DJs do Baile 081 misturando brega funk, brasilidades, pop, melodic techno, funkhall e tribal numa mesma pista."
+    "resumo": "Noite com três DJs do Baile 081 misturando brega funk, brasilidades, pop, melodic techno, funkhall e tribal numa mesma pista.",
+    "bairro": ""
   },
   {
     "id": "riomar-barbixas",
@@ -919,7 +976,8 @@
     "resumo": "Espetáculo de improviso em que as cenas nascem na hora a partir de sugestões da plateia.",
     "data_fim": "2026-10-25",
     "fonte": "Blog dos Eventos",
-    "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
+    "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/",
+    "bairro": "Pina"
   },
   {
     "id": "ig-feiradaaurora-2026-10-24-movimento-jaqueira",
@@ -929,6 +987,7 @@
     "nome": "Movimento Jaqueira",
     "local": "Parque da Jaqueira",
     "endereco": "",
+    "bairro": "Jaqueira",
     "cidade": "Recife",
     "preco": "Entrada gratuita",
     "gratis": true,
@@ -947,6 +1006,7 @@
     "nome": "Improvável – Cia Barbixas",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -966,6 +1026,7 @@
     "nome": "Forró do Vila Recife (sábado)",
     "local": "Vila Recife, Rua Bernardo Guimarães, 440",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -984,6 +1045,7 @@
     "nome": "Samba Pra Cima – tributo a Jorge Aragão e Fundo de Quintal",
     "local": "Empório Barrozo, Rua da Aurora, 1225",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1002,6 +1064,7 @@
     "nome": "Aviso: Cinema São Luiz sem sessões no domingo 25/10 (eleições)",
     "local": "Cinema São Luiz, Rua da Aurora",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -1020,6 +1083,7 @@
     "nome": "Aviso: MAC-PE fechado no domingo 25/10 (eleições)",
     "local": "MAC-PE – Rua Treze de Maio, 149, Carmo",
     "endereco": "",
+    "bairro": "Carmo",
     "cidade": "Olinda",
     "preco": "",
     "gratis": null,
@@ -1038,6 +1102,7 @@
     "nome": "Aviso: Museu do Trem fechado no domingo 25/10 (eleições)",
     "local": "Museu do Trem – Estação Central do Recife",
     "endereco": "",
+    "bairro": "São José",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -1056,6 +1121,7 @@
     "nome": "Aviso: Oficina Francisco Brennand fechada no domingo 25/10 (eleições)",
     "local": "Oficina Cerâmica Francisco Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -1078,7 +1144,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-caixaculturalrecife-2026-10-25-aviso-caixa-cultural-recife-em-horario-especial-no-domingo-2",
@@ -1088,6 +1155,7 @@
     "nome": "Aviso: CAIXA Cultural Recife em horário especial no domingo 25/10 (eleições)",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Gratuito",
     "gratis": true,
@@ -1106,6 +1174,7 @@
     "nome": "Feira do Lindu (domingo)",
     "local": "Parque Dona Lindu, Boa Viagem",
     "endereco": "",
+    "bairro": "Boa Viagem",
     "cidade": "Recife",
     "preco": "Apresentações gratuitas; demais serviços pagos",
     "gratis": null,
@@ -1124,6 +1193,7 @@
     "nome": "Aviso: Paço do Frevo fechado no domingo 25/10 (eleições)",
     "local": "Paço do Frevo",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -1143,6 +1213,7 @@
     "nome": "Aviso: Instituto Ricardo Brennand fechado em 25, 26, 28 e 29/10 e 02/11",
     "local": "Instituto Ricardo Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "",
     "gratis": null,
@@ -1162,6 +1233,7 @@
     "nome": "Seminário “PeNSE: Os Desafios da Saúde Escolar”",
     "local": "Fundaj – Sala Calouste Gulbenkian, Campus Gilberto Freyre, Casa Forte",
     "endereco": "",
+    "bairro": "Casa Forte",
     "cidade": "Recife",
     "preco": "Gratuito (inscrição pelo link na bio)",
     "gratis": true,
@@ -1180,6 +1252,7 @@
     "nome": "Oficina “Forma e Luz: abstracionismo com cianotipia”",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Gratuito (inscrição pelo site)",
     "gratis": true,
@@ -1199,6 +1272,7 @@
     "nome": "Última terça do mês com entrada gratuita no Instituto Ricardo Brennand",
     "local": "Instituto Ricardo Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "Grátis",
     "gratis": true,
@@ -1217,6 +1291,7 @@
     "nome": "Pré-estreia: A Terra do Meu Pai",
     "local": "Moviemax Rosa e Silva",
     "endereco": "",
+    "bairro": "Aflitos",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": false,
@@ -1235,6 +1310,7 @@
     "nome": "Entrada gratuita na Oficina Francisco Brennand – encerramento da itinerância da Bienal",
     "local": "Oficina Francisco Brennand",
     "endereco": "",
+    "bairro": "Várzea",
     "cidade": "Recife",
     "preco": "Grátis",
     "gratis": true,
@@ -1253,6 +1329,7 @@
     "nome": "Abertura do XVII Janela Internacional de Cinema do Recife",
     "local": "Cinema São Luiz, Rua da Aurora",
     "endereco": "",
+    "bairro": "Boa Vista",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1275,7 +1352,8 @@
     "link": "",
     "resumo": "Roda de conversa no Espaço Todo Gonzaga ligada à exposição sobre o ferro na paisagem do Recife.",
     "fonte": "Folha de Pernambuco",
-    "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/"
+    "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-ocaisdosertao-2026-10-28-roda-de-conversa-os-ferros-do-recife-que-contam-historias",
@@ -1285,6 +1363,7 @@
     "nome": "Roda de conversa “Os ferros do Recife que contam histórias...”",
     "local": "Museu Cais do Sertão – Espaço Todo Gonzaga",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Entrada gratuita",
     "gratis": true,
@@ -1303,6 +1382,7 @@
     "nome": "Pré-estreia: A Ilustre Desconhecida",
     "local": "Moviemax Rosa e Silva",
     "endereco": "",
+    "bairro": "Aflitos",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": false,
@@ -1321,6 +1401,7 @@
     "nome": "Festival de Cinema Francês do Brasil 2026",
     "local": "Moviemax Rosa e Silva",
     "endereco": "",
+    "bairro": "Aflitos",
     "cidade": "Recife",
     "preco": "Ver post (ingressos já à venda)",
     "gratis": false,
@@ -1345,7 +1426,8 @@
     "resumo": "Ensaio aberto ao público do Grupo Bote de Teatro na Sala Pajeú do Cais do Sertão.",
     "fonte": "Folha de Pernambuco",
     "fonte_link": "https://www.folhape.com.br/cultura/ca-nordestino-programacao/517310/",
-    "data_fim": "2026-10-30"
+    "data_fim": "2026-10-30",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-ocaisdosertao-2026-10-29-ensaio-aberto-grupo-bote-de-teatro",
@@ -1355,6 +1437,7 @@
     "nome": "Ensaio aberto – Grupo Bote de Teatro",
     "local": "Museu Cais do Sertão – Sala Pejeú",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Entrada gratuita",
     "gratis": true,
@@ -1379,7 +1462,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Adaptação do romance de Kazuo Ishiguro, dirigida por Taika Waititi, com Jenna Ortega e Amy Adams.",
-    "data_fim": "2026-11-04"
+    "data_fim": "2026-11-04",
+    "bairro": ""
   },
   {
     "id": "estreia-razao-e-sensibilidade",
@@ -1394,7 +1478,8 @@
     "fonte": "Cenanauta",
     "fonte_link": "https://cenanauta.com.br/filmes/estreias-de-outubro-2026/",
     "resumo": "Nova adaptação do romance de Jane Austen.",
-    "data_fim": "2026-11-04"
+    "data_fim": "2026-11-04",
+    "bairro": ""
   },
   {
     "id": "adoro-djs-vol-2-Bmn7flHxB7IB",
@@ -1405,7 +1490,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/adoro-djs-vol-2-Bmn7flHxB7IB"
+    "link": "https://ihoje.com/events/adoro-djs-vol-2-Bmn7flHxB7IB",
+    "bairro": ""
   },
   {
     "id": "casa-da-madame-sata-Bmn7flMl50OI",
@@ -1416,7 +1502,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/casa-da-madame-sata-Bmn7flMl50OI"
+    "link": "https://ihoje.com/events/casa-da-madame-sata-Bmn7flMl50OI",
+    "bairro": ""
   },
   {
     "id": "halloween-metropole-2026-day-i-sexta-feira-30-out-92ZMKeMgl2",
@@ -1427,7 +1514,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/halloween-metropole-2026-day-i-sexta-feira-30-out-92ZMKeMgl2z"
+    "link": "https://ihoje.com/events/halloween-metropole-2026-day-i-sexta-feira-30-out-92ZMKeMgl2z",
+    "bairro": ""
   },
   {
     "id": "manguetown-halloween-edicao-especial-Bmn7flHzTyMR",
@@ -1438,7 +1526,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/manguetown-halloween-edicao-especial-Bmn7flHzTyMR"
+    "link": "https://ihoje.com/events/manguetown-halloween-edicao-especial-Bmn7flHzTyMR",
+    "bairro": "Cidade Universitária"
   },
   {
     "id": "ig-caixaculturalrecife-2026-10-30-barbatuques-25-anos",
@@ -1448,6 +1537,7 @@
     "nome": "Barbatuques – 25 anos",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "R$ 30 (inteira) / R$ 15 (meia)",
     "gratis": false,
@@ -1467,6 +1557,7 @@
     "nome": "Barbatuques – Tum Pá (infantil)",
     "local": "CAIXA Cultural Recife",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "R$ 30 (inteira) / R$ 15 (meia)",
     "gratis": false,
@@ -1486,6 +1577,7 @@
     "nome": "Arrastão da Longevidade – Mês da Pessoa Idosa",
     "local": "Museu Cais do Sertão",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1505,7 +1597,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/bacurau-assombrado-Bmn7flMl50Gv"
+    "link": "https://ihoje.com/events/bacurau-assombrado-Bmn7flMl50Gv",
+    "bairro": ""
   },
   {
     "id": "bau-da-tay-nb-society-Bmn7flHGILjW",
@@ -1516,7 +1609,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/bau-da-tay-nb-society-Bmn7flHGILjW"
+    "link": "https://ihoje.com/events/bau-da-tay-nb-society-Bmn7flHGILjW",
+    "bairro": ""
   },
   {
     "horario": "",
@@ -1529,7 +1623,8 @@
     "local": "Classic Hall (antigo Chevrolet Hall)",
     "cidade": "Olinda",
     "fonte": "Folha PE",
-    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266"
+    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266",
+    "bairro": "Salgadinho"
   },
   {
     "id": "halloween-metropole-2026-day-ii-sabado-31-out-92ZMKeMg47P",
@@ -1540,7 +1635,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/halloween-metropole-2026-day-ii-sabado-31-out-92ZMKeMg47P"
+    "link": "https://ihoje.com/events/halloween-metropole-2026-day-ii-sabado-31-out-92ZMKeMg47P",
+    "bairro": ""
   },
   {
     "id": "lollipoprock-party-de-halloween-2026-quando-as-luzes-se-apag",
@@ -1551,7 +1647,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/lollipoprock-party-de-halloween-2026-quando-as-luzes-se-apagam-festa-de-halloween-em-recife-92ZMKo1E3wl"
+    "link": "https://ihoje.com/events/lollipoprock-party-de-halloween-2026-quando-as-luzes-se-apagam-festa-de-halloween-em-recife-92ZMKo1E3wl",
+    "bairro": ""
   },
   {
     "id": "samba-de-jorge-Bmn7flHGIu4C",
@@ -1562,7 +1659,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/samba-de-jorge-Bmn7flHGIu4C"
+    "link": "https://ihoje.com/events/samba-de-jorge-Bmn7flHGIu4C",
+    "bairro": "Amparo"
   },
   {
     "id": "aniversario-do-samba-pra-cima-homenagem-a-zeca-pagodinho-e-b",
@@ -1573,7 +1671,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/aniversario-do-samba-pra-cima-homenagem-a-zeca-pagodinho-e-beth-carvalho-Bmn7flCYTc00"
+    "link": "https://ihoje.com/events/aniversario-do-samba-pra-cima-homenagem-a-zeca-pagodinho-e-beth-carvalho-Bmn7flCYTc00",
+    "bairro": ""
   },
   {
     "id": "setealem-Bmn7flMmdG3o",
@@ -1584,7 +1683,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/setealem-Bmn7flMmdG3o"
+    "link": "https://ihoje.com/events/setealem-Bmn7flMmdG3o",
+    "bairro": ""
   },
   {
     "id": "temporal-30-anos-art-popular-Bmn7flMmf3za",
@@ -1595,7 +1695,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/temporal-30-anos-art-popular-Bmn7flMmf3za"
+    "link": "https://ihoje.com/events/temporal-30-anos-art-popular-Bmn7flMmf3za",
+    "bairro": ""
   },
   {
     "id": "ig-mac.pe.oficial-2026-10-31-urban-sketchers-recife-encontro-61-no-mac-pe",
@@ -1605,6 +1706,7 @@
     "nome": "Urban Sketchers Recife – Encontro 61 no MAC-PE",
     "local": "MAC-PE – Rua Treze de Maio, 149, Carmo",
     "endereco": "",
+    "bairro": "Carmo",
     "cidade": "Olinda",
     "preco": "Gratuito",
     "gratis": true,
@@ -1624,7 +1726,8 @@
     "cidade": "Olinda",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/o-baile-dos-novos-cafonas-Bmn7flMmdXiM"
+    "link": "https://ihoje.com/events/o-baile-dos-novos-cafonas-Bmn7flMmdXiM",
+    "bairro": ""
   },
   {
     "id": "ig-bar.do.ro-2026-10-31-previa-oficial-do-bloco-da-sopa",
@@ -1634,6 +1737,7 @@
     "nome": "Prévia oficial do Bloco da Sopa",
     "local": "Olinda (post anterior indica Clube Vassourinhas); cortejo até os Quatro Cantos",
     "endereco": "",
+    "bairro": "",
     "cidade": "Olinda",
     "preco": "Camisa R$ 60 (dá entrada gratuita)",
     "gratis": false,
@@ -1656,7 +1760,8 @@
     "link": "",
     "resumo": "Stand-up sobre a nova experiência do humorista como homem casado.",
     "fonte": "Blog dos Eventos",
-    "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/"
+    "fonte_link": "https://blogdoseventos.com.br/2026/10/01/teatro-riomar-recife-transforma-outubro-em-maratona-de-humor-musica-e-diversao/",
+    "bairro": "Pina"
   },
   {
     "id": "ig-teatroriomarrecife-2026-10-31-murilo-couto-show-sobre-casamento-sessao-extra",
@@ -1666,6 +1771,7 @@
     "nome": "Murilo Couto – show sobre casamento (sessão extra)",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -1684,6 +1790,7 @@
     "nome": "Arrastão do Frevo – Dia do Frevo de Bloco",
     "local": "Concentração no Marco Zero, cortejo até o Paço do Frevo",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Gratuito",
     "gratis": true,
@@ -1703,7 +1810,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/previa-da-tcm-chapadinhos-na-praia-2027-Bmn7flMegDD7"
+    "link": "https://ihoje.com/events/previa-da-tcm-chapadinhos-na-praia-2027-Bmn7flMegDD7",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-11-01",
@@ -1717,7 +1825,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-feiradaaurora-2026-11-01-feira-da-aurora-domingo",
@@ -1727,6 +1836,7 @@
     "nome": "Feira da Aurora (domingo)",
     "local": "Rua da Aurora, em frente à SEPLAG, 1377",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1746,7 +1856,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/halloween-metropole-2026-day-iii-domingo-01-nov-92ZMKeMg43H"
+    "link": "https://ihoje.com/events/halloween-metropole-2026-day-iii-domingo-01-nov-92ZMKeMg43H",
+    "bairro": ""
   },
   {
     "id": "ig-orquestradebolso-2026-11-01-chapadinhos-na-praia-odb-banda-desaperreio-e-dj-mau-lopes",
@@ -1756,6 +1867,7 @@
     "nome": "Chapadinhos na Praia – ODB, Banda Desaperreio e DJ Mau Lopes",
     "local": "Clube Vassourinhas",
     "endereco": "",
+    "bairro": "",
     "cidade": "Olinda",
     "preco": "Ingressos pelo link do post",
     "gratis": false,
@@ -1774,6 +1886,7 @@
     "nome": "Forrobodó no Cais – 1 ano",
     "local": "Cais do Sertão",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1793,7 +1906,8 @@
     "cidade": "Recife",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/halloween-metropole-2026-day-iv-segunda-feira-02-nov-92ZMKeMg47S"
+    "link": "https://ihoje.com/events/halloween-metropole-2026-day-iv-segunda-feira-02-nov-92ZMKeMg47S",
+    "bairro": ""
   },
   {
     "id": "ig-fundajoficial-2026-11-03-palestra-abandono-na-educacao-superior-quando-a-evasao-e-um",
@@ -1803,6 +1917,7 @@
     "nome": "Palestra “Abandono na educação superior: quando a evasão é um problema”",
     "local": "Fundaj – Sala Calouste Gulbenkian, Campus Gilberto Freyre, Casa Forte",
     "endereco": "",
+    "bairro": "Casa Forte",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -1821,6 +1936,7 @@
     "nome": "Seminário de lançamento do “Atlas das Praias Atingidas pelo Derramamento de Petróleo”",
     "local": "Fundaj – Sala Calouste Gulbenkian, Campus Gilberto Freyre, Casa Forte",
     "endereco": "",
+    "bairro": "Casa Forte",
     "cidade": "Recife",
     "preco": "Inscrição pelo link na bio",
     "gratis": null,
@@ -1839,6 +1955,7 @@
     "nome": "Minicurso “Acesso ao Banco de Dados IBGE Sidra”",
     "local": "Fundaj – Campus Ulysses Pernambucano, Derby (Sala Sebastião Vila Nova)",
     "endereco": "",
+    "bairro": "Derby",
     "cidade": "Recife",
     "preco": "Gratuito (inscrições até 27/10)",
     "gratis": true,
@@ -1858,7 +1975,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/hexa-mata-halloween-Bmn7flHzTyAo"
+    "link": "https://ihoje.com/events/hexa-mata-halloween-Bmn7flHzTyAo",
+    "bairro": ""
   },
   {
     "id": "mestre-ambrosio-no-alma-olinda-pe-dia-06-11-sexta-92ZMKsKyZy",
@@ -1869,7 +1987,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "A partir de R$ 75",
-    "link": "https://ihoje.com/events/mestre-ambrosio-no-alma-olinda-pe-dia-06-11-sexta-92ZMKsKyZyU"
+    "link": "https://ihoje.com/events/mestre-ambrosio-no-alma-olinda-pe-dia-06-11-sexta-92ZMKsKyZyU",
+    "bairro": ""
   },
   {
     "id": "classicos-do-brasil-seu-jorge-alcione-marcelo-d2-92ZMKa6HQl3",
@@ -1880,7 +1999,8 @@
     "cidade": "Recife",
     "horario": "18:30",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/classicos-do-brasil-seu-jorge-alcione-marcelo-d2-92ZMKa6HQl3"
+    "link": "https://ihoje.com/events/classicos-do-brasil-seu-jorge-alcione-marcelo-d2-92ZMKa6HQl3",
+    "bairro": "Boa Viagem"
   },
   {
     "id": "non-serviam-fest-edicao-pernambuco-Bmn7flCUmrgp",
@@ -1891,7 +2011,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/non-serviam-fest-edicao-pernambuco-Bmn7flCUmrgp"
+    "link": "https://ihoje.com/events/non-serviam-fest-edicao-pernambuco-Bmn7flCUmrgp",
+    "bairro": ""
   },
   {
     "id": "vintage-culture-recife-Bmn7flCQY4Af",
@@ -1902,7 +2023,8 @@
     "cidade": "Olinda",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/vintage-culture-recife-Bmn7flCQY4Af"
+    "link": "https://ihoje.com/events/vintage-culture-recife-Bmn7flCQY4Af",
+    "bairro": "Salgadinho"
   },
   {
     "id": "sexta-06-11-o-baile-dos-maduros-esta-chegando-em-recife-92ZM",
@@ -1913,7 +2035,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/sexta-06-11-o-baile-dos-maduros-esta-chegando-em-recife-92ZMKsMRr5U"
+    "link": "https://ihoje.com/events/sexta-06-11-o-baile-dos-maduros-esta-chegando-em-recife-92ZMKsMRr5U",
+    "bairro": ""
   },
   {
     "id": "40-anos-pendurando-esta-contnha-Bmn7flHzUo05",
@@ -1924,7 +2047,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/40-anos-pendurando-esta-contnha-Bmn7flHzUo05"
+    "link": "https://ihoje.com/events/40-anos-pendurando-esta-contnha-Bmn7flHzUo05",
+    "bairro": ""
   },
   {
     "horario": "",
@@ -1937,7 +2061,8 @@
     "local": "Parque Dona Lindu",
     "cidade": "Recife",
     "fonte": "Folha PE",
-    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266"
+    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266",
+    "bairro": "Boa Viagem"
   },
   {
     "horario": "",
@@ -1950,7 +2075,8 @@
     "local": "Parque Dona Lindu",
     "cidade": "Recife",
     "fonte": "Folha PE",
-    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266"
+    "fonte_link": "https://folhape.com.br/cultura/agenda-de-shows-em-pe-2026-diogo-nogueira-simone-lenine-mumuzinho/499266",
+    "bairro": "Boa Viagem"
   },
   {
     "id": "mestre-ambrosio-no-alma-olinda-pe-dia-07-11-sabado-92ZMKsKyZ",
@@ -1961,7 +2087,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "A partir de R$ 75",
-    "link": "https://ihoje.com/events/mestre-ambrosio-no-alma-olinda-pe-dia-07-11-sabado-92ZMKsKyZyN"
+    "link": "https://ihoje.com/events/mestre-ambrosio-no-alma-olinda-pe-dia-07-11-sabado-92ZMKsKyZyN",
+    "bairro": ""
   },
   {
     "id": "aniversario-de-cara-com-o-samba-8-anos-Bmn7flMfqGnp",
@@ -1972,7 +2099,8 @@
     "cidade": "Recife",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/aniversario-de-cara-com-o-samba-8-anos-Bmn7flMfqGnp"
+    "link": "https://ihoje.com/events/aniversario-de-cara-com-o-samba-8-anos-Bmn7flMfqGnp",
+    "bairro": ""
   },
   {
     "id": "maluco-beleza-a-festa-Bmn7flCXLCTn",
@@ -1983,7 +2111,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/maluco-beleza-a-festa-Bmn7flCXLCTn"
+    "link": "https://ihoje.com/events/maluco-beleza-a-festa-Bmn7flCXLCTn",
+    "bairro": ""
   },
   {
     "id": "pagodea-a-saideira-2026-Bmn7flMl66Gi",
@@ -1994,7 +2123,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/pagodea-a-saideira-2026-Bmn7flMl66Gi"
+    "link": "https://ihoje.com/events/pagodea-a-saideira-2026-Bmn7flMl66Gi",
+    "bairro": ""
   },
   {
     "id": "samba-de-luxo-19-anos-Bmn7flHFAmt4",
@@ -2005,7 +2135,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/samba-de-luxo-19-anos-Bmn7flHFAmt4"
+    "link": "https://ihoje.com/events/samba-de-luxo-19-anos-Bmn7flHFAmt4",
+    "bairro": ""
   },
   {
     "id": "soparia-oficina-rock-cafe-Bmn7flMiPjHW",
@@ -2016,7 +2147,8 @@
     "cidade": "Recife",
     "horario": "17:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/soparia-oficina-rock-cafe-Bmn7flMiPjHW"
+    "link": "https://ihoje.com/events/soparia-oficina-rock-cafe-Bmn7flMiPjHW",
+    "bairro": ""
   },
   {
     "id": "forro-da-paz-2026-ano-9-92ZMKsMPeDx",
@@ -2027,7 +2159,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/forro-da-paz-2026-ano-9-92ZMKsMPeDx"
+    "link": "https://ihoje.com/events/forro-da-paz-2026-ano-9-92ZMKsMPeDx",
+    "bairro": ""
   },
   {
     "id": "box-14-historia-de-vida-20-anos-show-unico-92ZMKeGAUxq",
@@ -2038,7 +2171,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/box-14-historia-de-vida-20-anos-show-unico-92ZMKeGAUxq"
+    "link": "https://ihoje.com/events/box-14-historia-de-vida-20-anos-show-unico-92ZMKeGAUxq",
+    "bairro": ""
   },
   {
     "id": "don-l-no-baile-do-andrew-Bmn7flHyLqZ3",
@@ -2049,7 +2183,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "A partir de R$ 60",
-    "link": "https://ihoje.com/events/don-l-no-baile-do-andrew-Bmn7flHyLqZ3"
+    "link": "https://ihoje.com/events/don-l-no-baile-do-andrew-Bmn7flHyLqZ3",
+    "bairro": "Cidade Universitária"
   },
   {
     "id": "iraq-beach-club-16-Bmn7flMgxYzm",
@@ -2060,7 +2195,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/iraq-beach-club-16-Bmn7flMgxYzm"
+    "link": "https://ihoje.com/events/iraq-beach-club-16-Bmn7flMgxYzm",
+    "bairro": ""
   },
   {
     "id": "mc-morena-na-metropole-sabado-07-nov-Bmn7flHDhUW4",
@@ -2071,7 +2207,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/mc-morena-na-metropole-sabado-07-nov-Bmn7flHDhUW4"
+    "link": "https://ihoje.com/events/mc-morena-na-metropole-sabado-07-nov-Bmn7flHDhUW4",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-11-08",
@@ -2085,7 +2222,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "classicos-do-brasil-mundo-livre-s-a-spok-frevo-orquestra-lul",
@@ -2096,7 +2234,8 @@
     "cidade": "Recife",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/classicos-do-brasil-mundo-livre-s-a-spok-frevo-orquestra-lula-queiroga-92ZMKa6I6R8"
+    "link": "https://ihoje.com/events/classicos-do-brasil-mundo-livre-s-a-spok-frevo-orquestra-lula-queiroga-92ZMKa6I6R8",
+    "bairro": "Boa Viagem"
   },
   {
     "id": "paggodin-leo-santana-e-convidados-Bmn7flMhHcax",
@@ -2107,7 +2246,8 @@
     "cidade": "Olinda",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/paggodin-leo-santana-e-convidados-Bmn7flMhHcax"
+    "link": "https://ihoje.com/events/paggodin-leo-santana-e-convidados-Bmn7flMhHcax",
+    "bairro": "Salgadinho"
   },
   {
     "id": "evt-75",
@@ -2118,7 +2258,8 @@
     "cidade": "Recife",
     "horario": "18:30",
     "preco": "Consultar",
-    "link": ""
+    "link": "",
+    "bairro": "Santo Antônio"
   },
   {
     "id": "daparte-no-recife-estelita-Bmn7flCTcFiD",
@@ -2129,7 +2270,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/daparte-no-recife-estelita-Bmn7flCTcFiD"
+    "link": "https://ihoje.com/events/daparte-no-recife-estelita-Bmn7flCTcFiD",
+    "bairro": ""
   },
   {
     "id": "espetaculo-piazzolla-Bmn7flMmeMjJ",
@@ -2140,7 +2282,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/espetaculo-piazzolla-Bmn7flMmeMjJ"
+    "link": "https://ihoje.com/events/espetaculo-piazzolla-Bmn7flMmeMjJ",
+    "bairro": "Santo Antônio"
   },
   {
     "horario": "20:00",
@@ -2151,7 +2294,8 @@
     "categoria": "Show",
     "nome": "Virgínia Rodrigues em Concerto",
     "local": "Teatro do Parque",
-    "cidade": "Recife"
+    "cidade": "Recife",
+    "bairro": "Boa Vista"
   },
   {
     "id": "ig-teatroriomarrecife-2026-11-12-bruna-louise-stand-up",
@@ -2161,6 +2305,7 @@
     "nome": "Bruna Louise – stand-up",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -2181,7 +2326,8 @@
     "cidade": "Recife",
     "horario": "18:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/thonygama-minino-johnny-Bmn7flMhGEBr"
+    "link": "https://ihoje.com/events/thonygama-minino-johnny-Bmn7flMhGEBr",
+    "bairro": "Ipsep"
   },
   {
     "id": "projeto-seis-e-meia-recife-almerio-e-renato-braz-Bmn7flMiPk2",
@@ -2192,7 +2338,8 @@
     "cidade": "Recife",
     "horario": "18:30",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/projeto-seis-e-meia-recife-almerio-e-renato-braz-Bmn7flMiPk2w"
+    "link": "https://ihoje.com/events/projeto-seis-e-meia-recife-almerio-e-renato-braz-Bmn7flMiPk2w",
+    "bairro": "Boa Vista"
   },
   {
     "id": "seu-pereira-e-coletivo-401-em-olinda-pe-Bmn7flCYV70u",
@@ -2203,7 +2350,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/seu-pereira-e-coletivo-401-em-olinda-pe-Bmn7flCYV70u"
+    "link": "https://ihoje.com/events/seu-pereira-e-coletivo-401-em-olinda-pe-Bmn7flCYV70u",
+    "bairro": ""
   },
   {
     "id": "samba-pra-cima-Bmn7flCYTbJn",
@@ -2214,7 +2362,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/samba-pra-cima-Bmn7flCYTbJn"
+    "link": "https://ihoje.com/events/samba-pra-cima-Bmn7flCYTbJn",
+    "bairro": ""
   },
   {
     "id": "sessions-apresenta-ceu-20-anos-ao-vivo-em-recife-Bmn7flMdaaA",
@@ -2225,7 +2374,8 @@
     "cidade": "Recife",
     "horario": "18:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/sessions-apresenta-ceu-20-anos-ao-vivo-em-recife-Bmn7flMdaaAo"
+    "link": "https://ihoje.com/events/sessions-apresenta-ceu-20-anos-ao-vivo-em-recife-Bmn7flMdaaAo",
+    "bairro": ""
   },
   {
     "id": "gerlane-lops-ge-canta-arlindo-Bmn7flMgyxck",
@@ -2236,7 +2386,8 @@
     "cidade": "Recife",
     "horario": "18:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/gerlane-lops-ge-canta-arlindo-Bmn7flMgyxck"
+    "link": "https://ihoje.com/events/gerlane-lops-ge-canta-arlindo-Bmn7flMgyxck",
+    "bairro": "São José"
   },
   {
     "id": "pagode-nostalgia-92ZMKsNZyqU",
@@ -2247,7 +2398,8 @@
     "cidade": "Recife",
     "horario": "18:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/pagode-nostalgia-92ZMKsNZyqU"
+    "link": "https://ihoje.com/events/pagode-nostalgia-92ZMKsNZyqU",
+    "bairro": ""
   },
   {
     "id": "filipe-ret-92ZMKoaJdSN",
@@ -2258,7 +2410,8 @@
     "cidade": "Olinda",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/filipe-ret-92ZMKoaJdSN"
+    "link": "https://ihoje.com/events/filipe-ret-92ZMKoaJdSN",
+    "bairro": "Salgadinho"
   },
   {
     "id": "we-ve-global-live-tour-nchive-in-brazil-Bmn7flHxDB5T",
@@ -2269,7 +2422,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/we-ve-global-live-tour-nchive-in-brazil-Bmn7flHxDB5T"
+    "link": "https://ihoje.com/events/we-ve-global-live-tour-nchive-in-brazil-Bmn7flHxDB5T",
+    "bairro": "Pina"
   },
   {
     "id": "ig-teatroriomarrecife-2026-11-14-nchive-show-de-k-pop",
@@ -2279,6 +2433,7 @@
     "nome": "NCHIVE – show de K-pop",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -2298,7 +2453,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/secret-club-sabado-14-nov-Bmn7flHEr8VZ"
+    "link": "https://ihoje.com/events/secret-club-sabado-14-nov-Bmn7flHEr8VZ",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-11-15",
@@ -2312,7 +2468,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-teatroriomarrecife-2026-11-15-botando-pilha-marvio-lucio-carioca",
@@ -2322,6 +2479,7 @@
     "nome": "Botando Pilha – Márvio Lúcio (Carioca)",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -2341,7 +2499,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/festival-recife-rock-nation-Bmn7flCVvVQx"
+    "link": "https://ihoje.com/events/festival-recife-rock-nation-Bmn7flCVvVQx",
+    "bairro": "Boa Vista"
   },
   {
     "id": "batista-lima-acustico-92ZMKsNYJuc",
@@ -2352,7 +2511,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/batista-lima-acustico-92ZMKsNYJuc"
+    "link": "https://ihoje.com/events/batista-lima-acustico-92ZMKsNYJuc",
+    "bairro": "Pina"
   },
   {
     "id": "ig-teatroriomarrecife-2026-11-20-batista-lima-projeto-acustico",
@@ -2362,6 +2522,7 @@
     "nome": "Batista Lima – projeto acústico",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
@@ -2381,7 +2542,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/noturna-com-vita-sexta-feira-20-nov-Bmn7flHFyqRk"
+    "link": "https://ihoje.com/events/noturna-com-vita-sexta-feira-20-nov-Bmn7flHFyqRk",
+    "bairro": ""
   },
   {
     "id": "samba-de-terreiro-Bmn7flHErq7f",
@@ -2392,7 +2554,8 @@
     "cidade": "Recife",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/samba-de-terreiro-Bmn7flHErq7f"
+    "link": "https://ihoje.com/events/samba-de-terreiro-Bmn7flHErq7f",
+    "bairro": ""
   },
   {
     "id": "iron-maiden-tribute-killersors-Bmn7flD03eWA",
@@ -2403,7 +2566,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/iron-maiden-tribute-killersors-Bmn7flD03eWA"
+    "link": "https://ihoje.com/events/iron-maiden-tribute-killersors-Bmn7flD03eWA",
+    "bairro": ""
   },
   {
     "id": "hell-fire-fest-recife-pe-Bmn7flHzThxn",
@@ -2414,7 +2578,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/hell-fire-fest-recife-pe-Bmn7flHzThxn"
+    "link": "https://ihoje.com/events/hell-fire-fest-recife-pe-Bmn7flHzThxn",
+    "bairro": ""
   },
   {
     "id": "metropole-experience-com-kaya-conky-sabado-21-nov-Bmn7flHFzO",
@@ -2425,7 +2590,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/metropole-experience-com-kaya-conky-sabado-21-nov-Bmn7flHFzOeQ"
+    "link": "https://ihoje.com/events/metropole-experience-com-kaya-conky-sabado-21-nov-Bmn7flHFzOeQ",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-11-22",
@@ -2439,7 +2605,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "sambinha-do-boyzinho-Bmn7flMjYxnc",
@@ -2450,7 +2617,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/sambinha-do-boyzinho-Bmn7flMjYxnc"
+    "link": "https://ihoje.com/events/sambinha-do-boyzinho-Bmn7flMjYxnc",
+    "bairro": "Boa Vista"
   },
   {
     "id": "lifes-apresenta-tangolo-mangos-quem-e-voce-alice-Bmn7flHDh5M",
@@ -2461,7 +2629,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/lifes-apresenta-tangolo-mangos-quem-e-voce-alice-Bmn7flHDh5MZ"
+    "link": "https://ihoje.com/events/lifes-apresenta-tangolo-mangos-quem-e-voce-alice-Bmn7flHDh5MZ",
+    "bairro": ""
   },
   {
     "id": "quinta-no-galo-banda-som-da-terra-e-convidados-Bmn7flMjWT0Y",
@@ -2472,7 +2641,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/quinta-no-galo-banda-som-da-terra-e-convidados-Bmn7flMjWT0Y"
+    "link": "https://ihoje.com/events/quinta-no-galo-banda-som-da-terra-e-convidados-Bmn7flMjWT0Y",
+    "bairro": "São José"
   },
   {
     "id": "bullet-bane-no-recife-estelita-Bmn7flHDhVcA",
@@ -2483,7 +2653,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/bullet-bane-no-recife-estelita-Bmn7flHDhVcA"
+    "link": "https://ihoje.com/events/bullet-bane-no-recife-estelita-Bmn7flHDhVcA",
+    "bairro": ""
   },
   {
     "id": "deepartment-Bmn7flMl7dh9",
@@ -2494,7 +2665,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/deepartment-Bmn7flMl7dh9"
+    "link": "https://ihoje.com/events/deepartment-Bmn7flMl7dh9",
+    "bairro": ""
   },
   {
     "id": "o-louco-apaixonado-Bmn7flMd8fry",
@@ -2505,7 +2677,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/o-louco-apaixonado-Bmn7flMd8fry"
+    "link": "https://ihoje.com/events/o-louco-apaixonado-Bmn7flMd8fry",
+    "bairro": ""
   },
   {
     "id": "ig-forrobodorecife-2026-11-27-36o-baile-do-forrobodo-7-anos-do-forrobodorecife",
@@ -2515,6 +2688,7 @@
     "nome": "36º Baile do Forrobodó – 7 anos do ForrobodóRecife",
     "local": "Círculo Militar do Recife",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -2534,7 +2708,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/del-rey-na-cel-bailinho-de-fim-de-ano-Bmn7flCQW9vs"
+    "link": "https://ihoje.com/events/del-rey-na-cel-bailinho-de-fim-de-ano-Bmn7flCQW9vs",
+    "bairro": "Carmo"
   },
   {
     "id": "roda-de-samba-de-macumba-Bmn7flHB0jdg",
@@ -2545,7 +2720,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/roda-de-samba-de-macumba-Bmn7flHB0jdg"
+    "link": "https://ihoje.com/events/roda-de-samba-de-macumba-Bmn7flHB0jdg",
+    "bairro": ""
   },
   {
     "id": "festival-no-ar-coquetel-molotov-2026-92ZMKa4s9mx",
@@ -2556,7 +2732,8 @@
     "cidade": "Recife",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/festival-no-ar-coquetel-molotov-2026-92ZMKa4s9mx"
+    "link": "https://ihoje.com/events/festival-no-ar-coquetel-molotov-2026-92ZMKa4s9mx",
+    "bairro": "Cidade Universitária"
   },
   {
     "id": "sorriso-eu-gosto-no-pagode-recife-Bmn7flMl66WO",
@@ -2567,7 +2744,8 @@
     "cidade": "Olinda",
     "horario": "15:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/sorriso-eu-gosto-no-pagode-recife-Bmn7flMl66WO"
+    "link": "https://ihoje.com/events/sorriso-eu-gosto-no-pagode-recife-Bmn7flMl66WO",
+    "bairro": "Salgadinho"
   },
   {
     "id": "feijoda-do-rosa-2026-Bmn7flMl6o3Y",
@@ -2578,7 +2756,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/feijoda-do-rosa-2026-Bmn7flMl6o3Y"
+    "link": "https://ihoje.com/events/feijoda-do-rosa-2026-Bmn7flMl6o3Y",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "damassaclan-15-anos-Bmn7flMd8f6N",
@@ -2589,7 +2768,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/damassaclan-15-anos-Bmn7flMd8f6N"
+    "link": "https://ihoje.com/events/damassaclan-15-anos-Bmn7flMd8f6N",
+    "bairro": ""
   },
   {
     "id": "jao-turne-memorias-postumas-rec-Bmn7flMegmnD",
@@ -2600,7 +2780,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/jao-turne-memorias-postumas-rec-Bmn7flMegmnD"
+    "link": "https://ihoje.com/events/jao-turne-memorias-postumas-rec-Bmn7flMegmnD",
+    "bairro": "Imbiribeira"
   },
   {
     "id": "bifrost-open-air-Bmn7flHFA5KN",
@@ -2611,7 +2792,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/bifrost-open-air-Bmn7flHFA5KN"
+    "link": "https://ihoje.com/events/bifrost-open-air-Bmn7flHFA5KN",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-11-29",
@@ -2625,7 +2807,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "aniversario-do-clube-bela-vista-Bmn7flD03eGd",
@@ -2636,7 +2819,8 @@
     "cidade": "Recife",
     "horario": "12:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/aniversario-do-clube-bela-vista-Bmn7flD03eGd"
+    "link": "https://ihoje.com/events/aniversario-do-clube-bela-vista-Bmn7flD03eGd",
+    "bairro": ""
   },
   {
     "id": "vitor-kley-sozinho-e-bem-acompanhado-voz-violao-e-voces-92ZM",
@@ -2647,7 +2831,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/vitor-kley-sozinho-e-bem-acompanhado-voz-violao-e-voces-92ZMKeL8uGx"
+    "link": "https://ihoje.com/events/vitor-kley-sozinho-e-bem-acompanhado-voz-violao-e-voces-92ZMKeL8uGx",
+    "bairro": "Pina"
   },
   {
     "id": "ig-espacocienciape-2026-12-01-32a-ciencia-jovem-feira-de-ciencias-da-educacao-basica",
@@ -2657,6 +2842,7 @@
     "nome": "32ª Ciência Jovem – feira de ciências da educação básica",
     "local": "Armazém da Criatividade",
     "endereco": "",
+    "bairro": "",
     "cidade": "Caruaru",
     "preco": "Ver post",
     "gratis": null,
@@ -2677,7 +2863,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/bride-em-recife-92ZMKeIQkgE"
+    "link": "https://ihoje.com/events/bride-em-recife-92ZMKeIQkgE",
+    "bairro": ""
   },
   {
     "id": "ex-alunos-fdr-ou-30-anos-de-formatura-uma-festa-balzaquiana-",
@@ -2688,7 +2875,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/ex-alunos-fdr-ou-30-anos-de-formatura-uma-festa-balzaquiana-Bmn7flD01AAn"
+    "link": "https://ihoje.com/events/ex-alunos-fdr-ou-30-anos-de-formatura-uma-festa-balzaquiana-Bmn7flD01AAn",
+    "bairro": "Carmo"
   },
   {
     "id": "orquestra-vinagrete-no-alma-a-confra-das-confras-Bmn7flCS6cb",
@@ -2699,7 +2887,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/orquestra-vinagrete-no-alma-a-confra-das-confras-Bmn7flCS6cbL"
+    "link": "https://ihoje.com/events/orquestra-vinagrete-no-alma-a-confra-das-confras-Bmn7flCS6cbL",
+    "bairro": ""
   },
   {
     "id": "tony-nogueira-tributo-a-emilio-santiago-Bmn7flMjXr6Z",
@@ -2710,7 +2899,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/tony-nogueira-tributo-a-emilio-santiago-Bmn7flMjXr6Z"
+    "link": "https://ihoje.com/events/tony-nogueira-tributo-a-emilio-santiago-Bmn7flMjXr6Z",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "turne-dominguinho-recife-92ZMKa4rSju",
@@ -2721,7 +2911,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/turne-dominguinho-recife-92ZMKa4rSju"
+    "link": "https://ihoje.com/events/turne-dominguinho-recife-92ZMKa4rSju",
+    "bairro": "Salgadinho"
   },
   {
     "id": "feirinha-recife-antigo-2026-12-06",
@@ -2735,7 +2926,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "ig-forrobodorecife-2026-12-08-forrobodo-no-cais-dezembro",
@@ -2745,6 +2937,7 @@
     "nome": "Forrobodó no Cais (dezembro)",
     "local": "Cais do Sertão",
     "endereco": "",
+    "bairro": "Bairro do Recife",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -2764,7 +2957,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/quinta-no-galo-quinteto-violado-e-convidados-Bmn7flMjWCz4"
+    "link": "https://ihoje.com/events/quinta-no-galo-quinteto-violado-e-convidados-Bmn7flMjWCz4",
+    "bairro": "São José"
   },
   {
     "id": "os-centenarios-14-anos-Bmn7flMhGni1",
@@ -2775,7 +2969,8 @@
     "cidade": "Recife",
     "horario": "14:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/os-centenarios-14-anos-Bmn7flMhGni1"
+    "link": "https://ihoje.com/events/os-centenarios-14-anos-Bmn7flMhGni1",
+    "bairro": "Aflitos"
   },
   {
     "id": "grupo-terra-34-anos-Bmn7flHCa4E0",
@@ -2786,7 +2981,8 @@
     "cidade": "Recife",
     "horario": "17:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/grupo-terra-34-anos-Bmn7flHCa4E0"
+    "link": "https://ihoje.com/events/grupo-terra-34-anos-Bmn7flHCa4E0",
+    "bairro": ""
   },
   {
     "id": "mare-Bmn7flMdarmN",
@@ -2797,7 +2993,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/mare-Bmn7flMdarmN"
+    "link": "https://ihoje.com/events/mare-Bmn7flMdarmN",
+    "bairro": ""
   },
   {
     "id": "chamado-das-hordas-ix-sinfonia-bestial-Bmn7flMmevcz",
@@ -2808,7 +3005,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/chamado-das-hordas-ix-sinfonia-bestial-Bmn7flMmevcz"
+    "link": "https://ihoje.com/events/chamado-das-hordas-ix-sinfonia-bestial-Bmn7flMmevcz",
+    "bairro": ""
   },
   {
     "id": "paranoia-8-anos-92ZMKju4NPX",
@@ -2819,7 +3017,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/paranoia-8-anos-92ZMKju4NPX"
+    "link": "https://ihoje.com/events/paranoia-8-anos-92ZMKju4NPX",
+    "bairro": ""
   },
   {
     "id": "trimanos-brasil-em-originarios-Bmn7flHCaTIY",
@@ -2830,7 +3029,8 @@
     "cidade": "Recife",
     "horario": "20:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/trimanos-brasil-em-originarios-Bmn7flHCaTIY"
+    "link": "https://ihoje.com/events/trimanos-brasil-em-originarios-Bmn7flHCaTIY",
+    "bairro": "Boa Vista"
   },
   {
     "id": "ig-forrobodorecife-2026-12-12-forrobodo-na-aurora",
@@ -2840,6 +3040,7 @@
     "nome": "Forrobodó na Aurora",
     "local": "Rua da Aurora",
     "endereco": "",
+    "bairro": "",
     "cidade": "Recife",
     "preco": "Ver post",
     "gratis": null,
@@ -2859,7 +3060,8 @@
     "cidade": "Olinda",
     "horario": "",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/revelacao-xande-de-pilares-recife-22-08-2026-Bmn7flHDital"
+    "link": "https://ihoje.com/events/revelacao-xande-de-pilares-recife-22-08-2026-Bmn7flHDital",
+    "bairro": "Salgadinho"
   },
   {
     "id": "feirinha-recife-antigo-2026-12-13",
@@ -2873,7 +3075,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "quinta-no-galo-maestro-spok-e-convidados-Bmn7flMjWCz3",
@@ -2884,7 +3087,8 @@
     "cidade": "Recife",
     "horario": "19:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/quinta-no-galo-maestro-spok-e-convidados-Bmn7flMjWCz3"
+    "link": "https://ihoje.com/events/quinta-no-galo-maestro-spok-e-convidados-Bmn7flMjWCz3",
+    "bairro": "São José"
   },
   {
     "id": "festa-ex-alunos-2001-fecharam-a-abertura-mas-a-festa-continu",
@@ -2895,7 +3099,8 @@
     "cidade": "Recife",
     "horario": "16:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/festa-ex-alunos-2001-fecharam-a-abertura-mas-a-festa-continua-92ZMKeIR9di"
+    "link": "https://ihoje.com/events/festa-ex-alunos-2001-fecharam-a-abertura-mas-a-festa-continua-92ZMKeIR9di",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-12-20",
@@ -2909,7 +3114,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "2026-12-26-réveillon-carneiros-–-abertura-(até-2/1)",
@@ -2922,7 +3128,8 @@
     "preco": "Passes na Ingresse",
     "link": "",
     "fonte": "Réveillon Carneiros",
-    "fonte_link": "https://www.technoairlines.com/festival/reveillon-carneiros-2026-27-tamandare-brazil-2026"
+    "fonte_link": "https://www.technoairlines.com/festival/reveillon-carneiros-2026-27-tamandare-brazil-2026",
+    "bairro": ""
   },
   {
     "id": "feirinha-recife-antigo-2026-12-27",
@@ -2936,7 +3143,8 @@
     "link": "",
     "fonte": "Melhores Destinos",
     "fonte_link": "https://guia.melhoresdestinos.com.br/compras-recife.html",
-    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h."
+    "resumo": "Feira de artesanato, moda autoral e comidas na Rua do Bom Jesus, aos domingos das 10h às 19h.",
+    "bairro": "Bairro do Recife"
   },
   {
     "id": "2026-12-31-réveillon-carneiros-–-noite-da-virada",
@@ -2949,7 +3157,8 @@
     "preco": "Passes na Ingresse",
     "link": "",
     "fonte": "Réveillon Carneiros",
-    "fonte_link": "https://www.technoairlines.com/festival/reveillon-carneiros-2026-27-tamandare-brazil-2026"
+    "fonte_link": "https://www.technoairlines.com/festival/reveillon-carneiros-2026-27-tamandare-brazil-2026",
+    "bairro": ""
   },
   {
     "id": "reveillon-do-tatu-2027-tatu-bola-bar-recife-Bmn7flMiP33y",
@@ -2960,7 +3169,8 @@
     "cidade": "Recife",
     "horario": "21:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/reveillon-do-tatu-2027-tatu-bola-bar-recife-Bmn7flMiP33y"
+    "link": "https://ihoje.com/events/reveillon-do-tatu-2027-tatu-bola-bar-recife-Bmn7flMiP33y",
+    "bairro": ""
   },
   {
     "id": "reveillon-metropole-2026-quinta-feira-31-dez-Bmn7flCVvEx3",
@@ -2971,7 +3181,8 @@
     "cidade": "Recife",
     "horario": "22:00",
     "preco": "Ver link",
-    "link": "https://ihoje.com/events/reveillon-metropole-2026-quinta-feira-31-dez-Bmn7flCVvEx3"
+    "link": "https://ihoje.com/events/reveillon-metropole-2026-quinta-feira-31-dez-Bmn7flCVvEx3",
+    "bairro": ""
   },
   {
     "id": "ig-casaestacaodaluz-2027-01-10-ensaios-de-carnaval-com-spok-convidados",
@@ -2981,6 +3192,7 @@
     "nome": "Ensaios de Carnaval com Spok & convidados",
     "local": "Casa Estação da Luz, Rua Porto Seguro, 313, Carmo",
     "endereco": "",
+    "bairro": "Carmo",
     "cidade": "Olinda",
     "preco": "Ingressos na Sympla",
     "gratis": false,
@@ -2999,6 +3211,7 @@
     "nome": "Carnaval Estação da Luz 2027",
     "local": "Casa Estação da Luz, Rua Porto Seguro, 313, Carmo",
     "endereco": "",
+    "bairro": "Carmo",
     "cidade": "Olinda",
     "preco": "Ingressos na Sympla",
     "gratis": false,
@@ -3018,6 +3231,7 @@
     "nome": "Iron Maiden Symphonic – The Beast Experience",
     "local": "Teatro RioMar Recife",
     "endereco": "",
+    "bairro": "Pina",
     "cidade": "Recife",
     "preco": "Ver post (Uhuu/bilheteria)",
     "gratis": false,
