@@ -1,5 +1,5 @@
 {
-  "lido_em": "2026-10-23T18:15:50-03:00",
+  "lido_em": "2026-10-24T10:39:25-03:00",
   "falhas": [
     "agendaculturaldorecife: página indisponível (\"Sorry, this page isn't available\")",
     "museuabolicao: página indisponível (\"Sorry, this page isn't available\")"
@@ -20,7 +20,8 @@
       "gratis": null,
       "resumo": "Duas décadas da obra de Gabriel Wickbold em imagens e instalações em tecido, incluindo o inédito Maze ID, sobre identidade e inteligência artificial.",
       "fonte": "Instagram @museudoestadope",
-      "fonte_link": "https://www.instagram.com/p/DexBVnzkR7H/"
+      "fonte_link": "https://www.instagram.com/p/DexBVnzkR7H/",
+      "bairro": ""
     },
     {
       "id": "institutorb-2026-09-25-exposicao-degas-borges",
@@ -37,7 +38,8 @@
       "gratis": null,
       "resumo": "A Bailarina de Catorze Anos, de Edgar Degas, em diálogo com o olhar contemporâneo da artista Sofia Borges.",
       "fonte": "Instagram @institutorb",
-      "fonte_link": "https://www.instagram.com/p/Deh-CSsFs_A/"
+      "fonte_link": "https://www.instagram.com/p/Deh-CSsFs_A/",
+      "bairro": ""
     },
     {
       "id": "museuregionaldeolinda-2026-10-16-exposicao-muito-latina-pra-ser-minimalista-lidiane-mendes",
@@ -54,7 +56,8 @@
       "gratis": null,
       "resumo": "Exposição da artista e designer Lidiane Mendes no Museu Regional de Olinda.",
       "fonte": "Instagram @museuregionaldeolinda",
-      "fonte_link": "https://www.instagram.com/p/Dewb-QoICCx/"
+      "fonte_link": "https://www.instagram.com/p/Dewb-QoICCx/",
+      "bairro": ""
     },
     {
       "id": "museudacidadedorecife-2026-10-17-exposicao-chico-da-silva-inventario-de-um-imaginario",
@@ -71,24 +74,8 @@
       "gratis": null,
       "resumo": "Exposição de pinturas do artista Chico da Silva, com seres fantásticos, animais e cores do imaginário popular nordestino. Curadoria de Gerciane Oliveira e Kadma Marques.",
       "fonte": "Instagram @museudacidadedorecife",
-      "fonte_link": "https://www.instagram.com/p/DecKd4VuBq6/"
-    },
-    {
-      "id": "cinema.ufpe-2026-10-19-mostra-horrorpedia-3-1a-semana",
-      "eixo": "Cinema",
-      "perfil": "cinema.ufpe",
-      "lugar_id": "",
-      "data": "2026-10-19",
-      "data_fim": "2026-10-23",
-      "horario": "Ver post",
-      "nome": "Mostra Horrorpedia 3 – 1ª semana",
-      "local": "Cinema da UFPE, Av. dos Reitores, Cidade Universitária",
-      "cidade": "Recife",
-      "preco": "Gratuito (ingresso no Sympla 1h antes)",
-      "gratis": true,
-      "resumo": "Mostra de terror com filmes que vão do estranho ao aterrorizante; ingressos gratuitos retirados pelo Sympla uma hora antes de cada sessão.",
-      "fonte": "Instagram @cinema.ufpe",
-      "fonte_link": "https://www.instagram.com/p/DekV8DPkdGG/"
+      "fonte_link": "https://www.instagram.com/p/DecKd4VuBq6/",
+      "bairro": ""
     },
     {
       "id": "amparosessenta-2026-10-22-exposicao-jose-patricio-a-danca-matematica-das-cores",
@@ -105,7 +92,8 @@
       "gratis": null,
       "resumo": "Em cartaz: individual de José Patrício com curadoria de Diego Matos; cor, geometria e movimento em composições entre rigor matemático e gesto poético.",
       "fonte": "Instagram @amparosessenta",
-      "fonte_link": "https://www.instagram.com/p/DexUreKH-h5/"
+      "fonte_link": "https://www.instagram.com/p/DexUreKH-h5/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-22-exposicao-esse-e-servulo-esmeraldo-prorrogada",
@@ -122,7 +110,8 @@
       "gratis": true,
       "resumo": "Cerca de 50 esculturas, gravuras e pinturas do mestre cearense, com curadoria de Dodora Guimarães. Prorrogada até 1º/11.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DeuvDpgvS14/"
+      "fonte_link": "https://www.instagram.com/p/DeuvDpgvS14/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-22-instalacao-a-casa-de-todos",
@@ -139,7 +128,8 @@
       "gratis": null,
       "resumo": "Em cartaz até 25/10: instalação com casa bordada e programação de oficinas e contações.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DewrRKLIfMC/"
+      "fonte_link": "https://www.instagram.com/p/DewrRKLIfMC/",
+      "bairro": ""
     },
     {
       "id": "mercadoeufrasiobarbosa-2026-10-22-exposicao-existencias-mergulha-e-voa",
@@ -156,7 +146,8 @@
       "gratis": true,
       "resumo": "Em cartaz: leituras fotográficas ligadas à ancestralidade da artista, a partir de pesquisa com o próprio corpo. Curadoria de Mateus Sá. Livre.",
       "fonte": "Instagram @mercadoeufrasiobarbosa",
-      "fonte_link": "https://www.instagram.com/p/DeuI-VlEa2a/"
+      "fonte_link": "https://www.instagram.com/p/DeuI-VlEa2a/",
+      "bairro": ""
     },
     {
       "id": "mercadoeufrasiobarbosa-2026-10-22-exposicao-vereda-interior-gustavo-pimentel",
@@ -173,7 +164,8 @@
       "gratis": true,
       "resumo": "Em cartaz: o Sertão pernambucano retratado pelas vivências e memórias do fotógrafo Gustavo Pimentel. Curadoria de Mateus Sá. Livre.",
       "fonte": "Instagram @mercadoeufrasiobarbosa",
-      "fonte_link": "https://www.instagram.com/p/DeuI-VlEa2a/"
+      "fonte_link": "https://www.instagram.com/p/DeuI-VlEa2a/",
+      "bairro": ""
     },
     {
       "id": "moviemaxrosaesilva-2026-10-22-programacao-moviemax-rosa-e-silva-estreias-da-semana",
@@ -190,7 +182,8 @@
       "gratis": false,
       "resumo": "Estreias de O Outro Lado das Redes, I Want Your Sex e Meu Verão na Sicília; também Querendo ou Não, Sacrifício, Dentro da Baleia, Verity e As Aventuras de Tadeo.",
       "fonte": "Instagram @moviemaxrosaesilva",
-      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/"
+      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/",
+      "bairro": ""
     },
     {
       "id": "museudoestadope-2026-10-22-exposicao-acervo-revisitado-abstracionismo-lirico",
@@ -207,7 +200,8 @@
       "gratis": null,
       "resumo": "Em cartaz: obras abstratas do acervo do MEPE, de artistas como Burle Marx, Aloisio Magalhães, Gil Vicente e Carlos Pragana.",
       "fonte": "Instagram @museudoestadope",
-      "fonte_link": "https://www.instagram.com/p/Der_t-8j1GT/"
+      "fonte_link": "https://www.instagram.com/p/Der_t-8j1GT/",
+      "bairro": ""
     },
     {
       "id": "ocaisdosertao-2026-10-22-exposicao-as-marcas-do-ferro-na-cidade-do-recife",
@@ -224,7 +218,8 @@
       "gratis": true,
       "resumo": "Em cartaz: marcas, texturas e relevos de estruturas de ferro do Recife transformados em arte pelo coletivo Porãozinho dos Ventos, de jovens e adultos neurodivergentes.",
       "fonte": "Instagram @ocaisdosertao",
-      "fonte_link": "https://www.instagram.com/p/DesFC2vo5ua/"
+      "fonte_link": "https://www.instagram.com/p/DesFC2vo5ua/",
+      "bairro": ""
     },
     {
       "id": "oficinafranciscobrennand-2026-10-22-exposicao-nem-todo-viandante-anda-estradas-itinerancia-da-36",
@@ -241,24 +236,8 @@
       "gratis": null,
       "resumo": "Últimas semanas do recorte da 36ª Bienal; no encerramento (terça 27/10) a entrada é gratuita. Transfer grátis saindo às 11h30 da Av. Caxangá.",
       "fonte": "Instagram @oficinafranciscobrennand",
-      "fonte_link": "https://www.instagram.com/p/DekFQocMPZk/"
-    },
-    {
-      "id": "teatrodesantaisabel-2026-10-22-aviso-orquestra-sinfonica-do-recife-cancela-concertos-de-22",
-      "eixo": "Teatro",
-      "perfil": "teatrodesantaisabel",
-      "lugar_id": "",
-      "data": "2026-10-22",
-      "data_fim": "2026-10-23",
-      "horario": "",
-      "nome": "Aviso: Orquestra Sinfônica do Recife cancela concertos de 22 e 23/10",
-      "local": "Teatro de Santa Isabel",
-      "cidade": "Recife",
-      "preco": "",
-      "gratis": null,
-      "resumo": "Por motivo de força maior, a OSR cancelou os concertos de 22 e 23/10 no Teatro de Santa Isabel; novas apresentações em novembro, com datas a divulgar.",
-      "fonte": "Instagram @teatrodesantaisabel",
-      "fonte_link": "https://www.instagram.com/p/DeuLtfbxMeH/"
+      "fonte_link": "https://www.instagram.com/p/DekFQocMPZk/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-23-oficina-bordar-mapas-para-contar-sonhos-cadu-cinelli-inscric",
@@ -275,92 +254,8 @@
       "gratis": null,
       "resumo": "Oficina de narrativas e bordado coletivo a partir de sonhos dos participantes. 16 anos. Vagas esgotadas.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DeriF_bo3q4/"
-    },
-    {
-      "id": "cinema.ufpe-2026-10-23-mostra-horrorpedia-3-sessoes-de-sexta",
-      "eixo": "Cinema",
-      "perfil": "cinema.ufpe",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "14h A Estranha Hospedaria dos Prazeres; 16h Trabalhar Cansa; 18h e demais sessões: ver post",
-      "nome": "Mostra Horrorpedia 3 – sessões de sexta",
-      "local": "Cinema da UFPE, Av. dos Reitores, Cidade Universitária",
-      "cidade": "Recife",
-      "preco": "Gratuito (ingresso no Sympla 1h antes)",
-      "gratis": true,
-      "resumo": "Último dia da 1ª semana da mostra de terror, com A Estranha Hospedaria dos Prazeres (Mojica Marins) e Trabalhar Cansa (Rojas e Dutra).",
-      "fonte": "Instagram @cinema.ufpe",
-      "fonte_link": "https://www.instagram.com/p/De1geqsEQrG/"
-    },
-    {
-      "id": "cinemasaoluizpe-2026-10-23-cinema-sao-luiz-sessoes-de-sexta",
-      "eixo": "Cinema",
-      "perfil": "cinemasaoluizpe",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "14h30 Overman; 16h30 Virtuosas; 18h30 Naza",
-      "nome": "Cinema São Luiz – sessões de sexta",
-      "local": "Cinema São Luiz, Rua da Aurora",
-      "cidade": "Recife",
-      "preco": "R$ 10 (inteira) / R$ 5 (meia)",
-      "gratis": false,
-      "resumo": "Overman, Virtuosas e Naza, documentário de Yuval Abraham e Rachel Szor sobre as operações militares de Israel em Gaza.",
-      "fonte": "Instagram @cinemasaoluizpe",
-      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
-    },
-    {
-      "id": "emporiobarrozo-2026-10-23-o-forro-de-lala-lancamento-do-baile-de-lais-senna",
-      "eixo": "Shows e festas",
-      "perfil": "emporiobarrozo",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "Casa abre 19h; DJ Babilônia 20h30; show 21h45",
-      "nome": "O Forró de Lalá – lançamento do baile de Laís Senna",
-      "local": "Empório Barrozo, Rua da Aurora, 1225",
-      "cidade": "Recife",
-      "preco": "R$ 30 (individual) / R$ 50 (casadinha, para 2)",
-      "gratis": false,
-      "resumo": "Baile de forró de Laís Senna com banda completa, DJ Babilônia e participação de Irah Caldeira e As Januárias.",
-      "fonte": "Instagram @emporiobarrozo",
-      "fonte_link": "https://www.instagram.com/p/Dexva-xCBN1/"
-    },
-    {
-      "id": "feiradolindu-2026-10-23-sextou-no-lindu",
-      "eixo": "Feiras",
-      "perfil": "feiradolindu",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "18h às 22h",
-      "nome": "Sextou no Lindu",
-      "local": "Parque Dona Lindu, Boa Viagem",
-      "cidade": "Recife",
-      "preco": "Gratuito",
-      "gratis": true,
-      "resumo": "Happy hour com shows de Fabian James (18h) e Vitraiz (20h) e o chef Gustavo Paixão com baião de frutos do mar.",
-      "fonte": "Instagram @feiradolindu",
-      "fonte_link": "https://www.instagram.com/p/DewesPsEbaz/"
-    },
-    {
-      "id": "fundajoficial-2026-10-23-entrelacadas-circuito-de-performances",
-      "eixo": "Museus e exposições",
-      "perfil": "fundajoficial",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "15h30",
-      "nome": "Entrelaçadas – circuito de performances",
-      "local": "Fundaj – Campus Ulysses Pernambucano, Rua Henrique Dias, 609, Derby",
-      "cidade": "Recife",
-      "preco": "Gratuito",
-      "gratis": true,
-      "resumo": "Encerramento do circuito de performances sobre corpo, memória e ancestralidade, ocupando hall, galeria, escada, sala de videoarte e jardim da Fundaj.",
-      "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/DezA8j0oQYo/"
+      "fonte_link": "https://www.instagram.com/p/DeriF_bo3q4/",
+      "bairro": ""
     },
     {
       "id": "fundajoficial-2026-10-23-mostra-60-anos-de-homens-e-caranguejos-josue-de-castro-o-rec",
@@ -377,211 +272,8 @@
       "gratis": true,
       "resumo": "Últimos dias da mostra documental com itens do acervo de Josué de Castro, celebrando seu único romance e sua influência no Manguebeat.",
       "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/De1dGiJljrr/"
-    },
-    {
-      "id": "pocodasartess-2026-10-23-os-caras-do-blues",
-      "eixo": "Shows e festas",
-      "perfil": "pocodasartess",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "20h (abre às 19h)",
-      "nome": "Os Caras do Blues",
-      "local": "Espaço Cultural Poço das Artes, Rua Álvaro Macedo, 54, Poço da Panela",
-      "cidade": "Recife",
-      "preco": "R$ 30 (sala) / R$ 25 (jardim)",
-      "gratis": false,
-      "resumo": "Noite de blues com Guilherme Gesteira Costa, Carlos Vilanova, Flavão Pontes, Waltinho e Joca Costa. Reservas por WhatsApp.",
-      "fonte": "Instagram @pocodasartess",
-      "fonte_link": "https://www.instagram.com/p/DesLb_xpb0w/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-80-anos-de-belchior-a-banda-dos-coracoes-selvagens",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "21h",
-      "nome": "80 anos de Belchior – A Banda dos Corações Selvagens",
-      "local": "Vestígio Bar",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Show em homenagem aos 80 anos de Belchior.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-amantes-de-chico-conjunto-maravilha-canta-chico-buarque",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "",
-      "nome": "Amantes de Chico – Conjunto Maravilha canta Chico Buarque",
-      "local": "Espaço Almirante",
-      "cidade": "Recife",
-      "preco": "Ingressos via Sympla",
-      "gratis": false,
-      "resumo": "Festa com Conjunto Maravilha cantando Chico Buarque, Kid Camaleão e DJ 440.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-batalha-da-escadaria-edicao-conhecimento-pela-democracia",
-      "eixo": "Eventos gerais",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "19h40",
-      "nome": "Batalha da Escadaria – edição conhecimento pela democracia",
-      "local": "Rua do Hospício, esquina com a Conde da Boa Vista",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Edição especial da batalha de rima, patrimônio cultural imaterial do Recife.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-cine-apipucos-corra",
-      "eixo": "Cinema",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "19h30",
-      "nome": "Cine Apipucos: Corra!",
-      "local": "Parque Apipucos",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Exibição legendada de “Corra!” (Jordan Peele, 2017). Classificação 14 anos.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-cultura-com-lula-ato-pela-democracia-na-varzea-com-maciel-sa",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "20h",
-      "nome": "Cultura com Lula! – Ato pela democracia na Várzea, com Maciel Salu e Anderson Miguel",
-      "local": "Pátio da Várzea, Rua Francisco Lacerda",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Ato político-cultural com os mestres Maciel Salu e Anderson Miguel, os Poetas da Mata Norte e DJ Azougue.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-forro-vermelho-regente-joaquim-convida",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "21h",
-      "nome": "Forró Vermelho – Regente Joaquim convida",
-      "local": "Terra Polo Cultural, Rua Bispo Cardoso Ayres, 467, Boa Vista",
-      "cidade": "Recife",
-      "preco": "Ingressos via Sympla",
-      "gratis": false,
-      "resumo": "Forró com Poli, Anchieta Dali, Hélder Vasconcelos, Vanessa Oliveira, Publius e Gustavo (rabecado) e Marília Parente.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-forro-da-virada-forro-do-nogal-e-as-benditas-frutas",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "20h",
-      "nome": "Forró da Virada – Forró do Nogal e As Benditas Frutas",
-      "local": "Fazendinha",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Noite de forró com Forró do Nogal, As Benditas Frutas e convidados.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "recifequecabenobolso-2026-10-23-juntos-com-lula-afoxes-no-marco-zero",
-      "eixo": "Shows e festas",
-      "perfil": "recifequecabenobolso",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "19h",
-      "nome": "Juntos com Lula – afoxés no Marco Zero",
-      "local": "Marco Zero, Recife Antigo",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Encontro de afoxés (Oxum Pandá, Ogum Toberinã, Omô Nilê Ogunjá, Tambores de Ògún, entre outros) em ato político-cultural.",
-      "fonte": "Instagram @recifequecabenobolso",
-      "fonte_link": "https://www.instagram.com/p/De0VDFmjjfM/"
-    },
-    {
-      "id": "roda_deforro-2026-10-23-joao-neto-convida-maciel-melo-e-nadia-maia",
-      "eixo": "Shows e festas",
-      "perfil": "roda_deforro",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "A partir das 19h (primeira banda às 20h)",
-      "nome": "João Neto convida Maciel Melo e Nádia Maia",
-      "local": "Vila Recife, Rua Bernardo Guimarães, 440",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": false,
-      "resumo": "Encontro de três nomes do forró no Vila Recife, na sexta da Roda de Forró.",
-      "fonte": "Instagram @roda_deforro",
-      "fonte_link": "https://www.instagram.com/p/De2YVMLBZln/"
-    },
-    {
-      "id": "turmadapitombeira-2026-10-23-baracho-na-pitombeira",
-      "eixo": "Shows e festas",
-      "perfil": "turmadapitombeira",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "A partir das 19h",
-      "nome": "Baracho na Pitombeira",
-      "local": "Pitombeira dos Quatro Cantos",
-      "cidade": "Olinda",
-      "preco": "Couvert R$ 10",
-      "gratis": false,
-      "resumo": "Show de voz e violão de Baracho.",
-      "fonte": "Instagram @turmadapitombeira",
-      "fonte_link": "https://www.instagram.com/p/De119SbxR6_/"
-    },
-    {
-      "id": "visitrecife-2026-10-23-pracinha-cultural-de-boa-viagem",
-      "eixo": "Shows e festas",
-      "perfil": "visitrecife",
-      "lugar_id": "",
-      "data": "2026-10-23",
-      "data_fim": "",
-      "horario": "19h às 21h",
-      "nome": "Pracinha Cultural de Boa Viagem",
-      "local": "Pracinha de Boa Viagem",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Noites de frevo, samba e música ao vivo na Pracinha de Boa Viagem (quartas, sextas e sábados).",
-      "fonte": "Instagram @visitrecife",
-      "fonte_link": "https://www.instagram.com/p/DeuZAlCie-4/"
+      "fonte_link": "https://www.instagram.com/p/De1dGiJljrr/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-24-contacao-de-historias-historias-do-meu-povo-com-roma-julia",
@@ -598,7 +290,8 @@
       "gratis": null,
       "resumo": "Contação de histórias afro-brasileiras com aromas, sons e objetos, no projeto “A casa de todos”.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DewrRKLIfMC/"
+      "fonte_link": "https://www.instagram.com/p/DewrRKLIfMC/",
+      "bairro": ""
     },
     {
       "id": "cinemasaoluizpe-2026-10-24-cinema-sao-luiz-sessoes-de-sabado",
@@ -615,7 +308,8 @@
       "gratis": false,
       "resumo": "Animação Papaya (Priscilla Kellen), Overman e Virtuosas.",
       "fonte": "Instagram @cinemasaoluizpe",
-      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
+      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/",
+      "bairro": ""
     },
     {
       "id": "emporiobarrozo-2026-10-24-samba-pra-cima-tributo-a-jorge-aragao-e-fundo-de-quintal",
@@ -632,7 +326,8 @@
       "gratis": null,
       "resumo": "Roda do Samba Pra Cima em homenagem a Jorge Aragão e ao Fundo de Quintal.",
       "fonte": "Instagram @emporiobarrozo",
-      "fonte_link": "https://www.instagram.com/p/DesPDscODWd/"
+      "fonte_link": "https://www.instagram.com/p/DesPDscODWd/",
+      "bairro": ""
     },
     {
       "id": "feiradaaurora-2026-10-24-feira-da-aurora-sabado",
@@ -649,7 +344,8 @@
       "gratis": null,
       "resumo": "Feira com arte, polo gastronômico, oficinas, atrações infantis (dinossauro) e show de Andreia Luizza. Neste domingo (25) não haverá o Viver Aurora.",
       "fonte": "Instagram @feiradaaurora",
-      "fonte_link": "https://www.instagram.com/p/DexeIe4lLiZ/"
+      "fonte_link": "https://www.instagram.com/p/DexeIe4lLiZ/",
+      "bairro": ""
     },
     {
       "id": "feiradaaurora-2026-10-24-movimento-jaqueira",
@@ -664,9 +360,10 @@
       "cidade": "Recife",
       "preco": "Entrada gratuita",
       "gratis": true,
-      "resumo": "Feira gourmet e de expositores aos sábados, com aulas gratuitas de pilates (8h), yoga (9h) e dança (10h) e o chef Everton Teixeira a partir das 11h.",
+      "resumo": "Sábado no Parque da Jaqueira: aulas gratuitas de pilates (8h), yoga (9h) e dança (10h); tacho do chef Everton Teixeira (11h–14h, pago) e chorinho com Trio Buteko.",
       "fonte": "Instagram @feiradaaurora",
-      "fonte_link": "https://www.instagram.com/p/DexifPjFhNj/"
+      "fonte_link": "https://www.instagram.com/p/De160anlQc1/",
+      "bairro": ""
     },
     {
       "id": "institutorb-2026-10-24-oficina-de-desenho-de-observacao-com-george-barbosa",
@@ -683,7 +380,8 @@
       "gratis": false,
       "resumo": "Oficina de desenho de observação ligada à exposição Degas/Borges, a partir de 15 anos. Vagas limitadas, inscrição pelo link na bio.",
       "fonte": "Instagram @institutorb",
-      "fonte_link": "https://www.instagram.com/p/Deuha2lh2_H/"
+      "fonte_link": "https://www.instagram.com/p/Deuha2lh2_H/",
+      "bairro": ""
     },
     {
       "id": "livrariadojardim-2026-10-24-encontros-dos-clubes-de-leitura-universos-13h-e-da-aurora-15",
@@ -700,7 +398,8 @@
       "gratis": null,
       "resumo": "Encontros de clubes de leitura na programação de sábado da livraria.",
       "fonte": "Instagram @livrariadojardim",
-      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/"
+      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/",
+      "bairro": ""
     },
     {
       "id": "livrariadojardim-2026-10-24-lancamento-do-livro-projeto-tea-tea-editora-ediluz",
@@ -717,7 +416,8 @@
       "gratis": null,
       "resumo": "Lançamento do livro Projeto Tea Tea, da Editora Ediluz.",
       "fonte": "Instagram @livrariadojardim",
-      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/"
+      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/",
+      "bairro": ""
     },
     {
       "id": "livrariadojardim-2026-10-24-orgulho-nerd-edicao-de-halloween",
@@ -734,7 +434,8 @@
       "gratis": null,
       "resumo": "Encontro temático de Halloween do Orgulho Nerd na livraria.",
       "fonte": "Instagram @livrariadojardim",
-      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/"
+      "fonte_link": "https://www.instagram.com/p/Deuy0CmF9EW/",
+      "bairro": ""
     },
     {
       "id": "murillolagreca-2026-10-24-oficina-de-retrato-a-carvao-com-carlo-blind",
@@ -751,7 +452,8 @@
       "gratis": false,
       "resumo": "Oficina de retrato a carvão; inscrições pela DM de @carloblind_art. Metade das vagas com bolsa para pessoas pretas, indígenas e/ou LGBTQIA+.",
       "fonte": "Instagram @murillolagreca",
-      "fonte_link": "https://www.instagram.com/p/Dew5_SgIJTj/"
+      "fonte_link": "https://www.instagram.com/p/Dew5_SgIJTj/",
+      "bairro": ""
     },
     {
       "id": "pacodofrevo-2026-10-24-orquestra-experimental-de-frevo-da-ufpe-15-anos",
@@ -768,7 +470,8 @@
       "gratis": false,
       "resumo": "Apresentação comemorativa dos 15 anos da OEF-UFPE, primeira orquestra de frevo vinculada a uma universidade.",
       "fonte": "Instagram @pacodofrevo",
-      "fonte_link": "https://www.instagram.com/p/DeuvZUKm1cV/"
+      "fonte_link": "https://www.instagram.com/p/DeuvZUKm1cV/",
+      "bairro": ""
     },
     {
       "id": "pocodasartess-2026-10-24-raissa-leal-trio-jazz-nacional-e-internacional",
@@ -785,7 +488,170 @@
       "gratis": false,
       "resumo": "Raíssa Leal (voz) com Miguel Guerra (baixo) e Guilherme Calado (piano). Reservas por WhatsApp.",
       "fonte": "Instagram @pocodasartess",
-      "fonte_link": "https://www.instagram.com/p/DesLzivpPFc/"
+      "fonte_link": "https://www.instagram.com/p/DesLzivpPFc/",
+      "bairro": ""
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-abertura-da-exposicao-coletiva-amazoniart-o-feitio-da-mata",
+      "eixo": "Museus e exposições",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "18h",
+      "nome": "Abertura da exposição coletiva “AmazoniArt – O Feitio da Mata”",
+      "local": "Raiz Galeria de Arte, Rua da Moeda, 71",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Exposição coletiva sobre arte, território, ancestralidade e gastronomia amazônica.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-belchior-80-tudo-outra-vez",
+      "eixo": "Shows e festas",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "18h",
+      "nome": "Belchior 80 – Tudo outra vez",
+      "local": "Alma arte-café, Ladeira da Misericórdia, 106, Carmo",
+      "bairro": "Carmo",
+      "cidade": "Olinda",
+      "preco": "Ingressos no Sympla",
+      "gratis": false,
+      "resumo": "Tributo aos 80 anos de Belchior com Renato Bandeira, Marina Duarte e convidados.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-cine-apipucos-o-ano-em-que-meus-pais-sairam-de-ferias",
+      "eixo": "Cinema",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "18h",
+      "nome": "Cine Apipucos: O Ano em que Meus Pais Saíram de Férias",
+      "local": "Parque Apipucos",
+      "bairro": "Apipucos",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Exibição dublada do filme de Cao Hamburger (2006) no Parque Apipucos.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-cinema-da-fundacao-museu-sessoes-de-sabado",
+      "eixo": "Cinema",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "15h às 20h30",
+      "nome": "Cinema da Fundação/Museu – sessões de sábado",
+      "local": "Cinema da Fundação – Museu",
+      "bairro": "Casa Forte",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "I Want Your Sex (15h e 20h30), Meu Verão na Sicília (16h50) e Rosebush Pruning (18h40).",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-djs-com-lula",
+      "eixo": "Shows e festas",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "20h",
+      "nome": "DJs com Lula",
+      "local": "Brilho – Rua Ulhoa Cintra, 122",
+      "bairro": "Santo Antônio",
+      "cidade": "Recife",
+      "preco": "Grátis (retirada no Shotgun)",
+      "gratis": true,
+      "resumo": "Festa com DJs no Brilho, gratuita com retirada de ingresso.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-festival-cachaca-na-praca-vamo-mercado-criativo",
+      "eixo": "Eventos gerais",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "14h às 22h",
+      "nome": "Festival Cachaça na Praça – Vamô! Mercado Criativo",
+      "local": "Praça de Casa Forte",
+      "bairro": "Casa Forte",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Feira com música ao vivo, gastronomia e degustação de cachaças na Praça de Casa Forte.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-mercado-no-parque-especial-1-ano",
+      "eixo": "Feiras",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "2026-10-25",
+      "horario": "",
+      "nome": "Mercado no Parque – especial 1 ano",
+      "local": "Área externa do Parque Gourmet, Shopping Recife",
+      "bairro": "Boa Viagem",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Edição de aniversário de 1 ano do Mercado no Parque, com a Feira Foz Andante, na área externa do Parque Gourmet.",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-queijo-e-goiabada",
+      "eixo": "Teatro",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "2026-11-08",
+      "horario": "16h",
+      "nome": "Queijo e Goiabada",
+      "local": "Teatro Arraial Ariano Suassuna",
+      "bairro": "Boa Vista",
+      "cidade": "Recife",
+      "preco": "Gratuito (ingressos no local e em ingressosfundarpe.com.br)",
+      "gratis": true,
+      "resumo": "Espetáculo de classificação livre aos sábados e domingos (24 e 31/10, 01 a 08/11).",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
+    },
+    {
+      "id": "recifequecabenobolso-2026-10-24-sabadona-no-parque-dona-lindu",
+      "eixo": "Feiras",
+      "perfil": "recifequecabenobolso",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "15h às 21h",
+      "nome": "Sabadona no Parque Dona Lindu",
+      "local": "Parque Dona Lindu",
+      "bairro": "Boa Viagem",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Artesanato, variedades, gastronomia e área infantil, com shows de Júnior Araújo (16h) e Rodrigo Morcego Trio (18h30).",
+      "fonte": "Instagram @recifequecabenobolso",
+      "fonte_link": "https://www.instagram.com/p/De4H5tNEfdw/"
     },
     {
       "id": "roda_deforro-2026-10-24-forro-do-vila-recife-sabado",
@@ -802,7 +668,8 @@
       "gratis": null,
       "resumo": "Noite de forró no Vila Recife, que tem programação sexta e sábado.",
       "fonte": "Instagram @roda_deforro",
-      "fonte_link": "https://www.instagram.com/p/Dez_ZpyAfGF/"
+      "fonte_link": "https://www.instagram.com/p/Dez_ZpyAfGF/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2026-10-24-improvavel-cia-barbixas",
@@ -819,7 +686,44 @@
       "gratis": false,
       "resumo": "Espetáculo de improviso e humor da Cia Barbixas. Classificação 14 anos.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DexP483jIat/"
+      "fonte_link": "https://www.instagram.com/p/DexP483jIat/",
+      "bairro": ""
+    },
+    {
+      "id": "visitrecife-2026-10-24-a-invencao-do-nordeste",
+      "eixo": "Teatro",
+      "perfil": "visitrecife",
+      "lugar_id": "caixa-cultural-recife",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "19h30",
+      "nome": "A Invenção do Nordeste",
+      "local": "CAIXA Cultural Recife",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Espetáculo em cartaz na CAIXA Cultural Recife (sessões em 23 e 24/10).",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-arsenal-das-artes",
+      "eixo": "Eventos gerais",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "9h às 20h",
+      "nome": "Arsenal das Artes",
+      "local": "Praça do Arsenal",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Feira de arte e artesanato na Praça do Arsenal, no Recife Antigo.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
     },
     {
       "id": "visitrecife-2026-10-24-aviso-olha-recife-sem-passeios-regulares-em-24-e-25-10",
@@ -836,7 +740,98 @@
       "gratis": null,
       "resumo": "Por causa do 2º turno das eleições, os passeios regulares do Olha! Recife não acontecem nos dias 24 e 25/10; voltam na semana seguinte.",
       "fonte": "Instagram @visitrecife",
-      "fonte_link": "https://www.instagram.com/p/Dew8sPXic0I/"
+      "fonte_link": "https://www.instagram.com/p/Dew8sPXic0I/",
+      "bairro": ""
+    },
+    {
+      "id": "visitrecife-2026-10-24-exposicoes-ecotono-coletiva-e-delicado-e-o-espinho-mozart-sa",
+      "eixo": "Museus e exposições",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "14h às 18h",
+      "nome": "Exposições “Ecótono” (coletiva) e “Delicado é o espinho” – Mozart Santos",
+      "local": "Arte Plural Galeria",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Exposição coletiva Ecótono e individual de Mozart Santos na Arte Plural Galeria.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-ice-breakers",
+      "eixo": "Shows e festas",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "23h",
+      "nome": "Ice Breakers",
+      "local": "Provinha",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Festa Ice Breakers no Provinha.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-luiz-lins",
+      "eixo": "Shows e festas",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "18h",
+      "nome": "Luiz Lins",
+      "local": "Teatro do Parque",
+      "bairro": "Boa Vista",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Show do rapper e cantor pernambucano Luiz Lins no Teatro do Parque.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-monsterball-iii",
+      "eixo": "Shows e festas",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "18h",
+      "nome": "Monsterball III",
+      "local": "Clube Metrópole",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Festa temática de Halloween no Clube Metrópole.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-o-pequeno-principe",
+      "eixo": "Teatro",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "14h30",
+      "nome": "O Pequeno Príncipe",
+      "local": "Teatro Barreto Júnior",
+      "bairro": "Pina",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Montagem infantil de O Pequeno Príncipe no Teatro Barreto Júnior.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
     },
     {
       "id": "visitrecife-2026-10-24-pracinha-cultural-de-boa-viagem",
@@ -853,7 +848,44 @@
       "gratis": null,
       "resumo": "Noites de frevo, samba e música ao vivo na Pracinha de Boa Viagem (quartas, sextas e sábados).",
       "fonte": "Instagram @visitrecife",
-      "fonte_link": "https://www.instagram.com/p/DeuZAlCie-4/"
+      "fonte_link": "https://www.instagram.com/p/DeuZAlCie-4/",
+      "bairro": ""
+    },
+    {
+      "id": "visitrecife-2026-10-24-samba-do-barcha-especial-2-anos",
+      "eixo": "Shows e festas",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "17h",
+      "nome": "Samba do Barcha – especial 2 anos",
+      "local": "Mirante do Paço",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Roda de samba comemora 2 anos no Mirante do Paço, no Recife Antigo.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "visitrecife-2026-10-24-vibe-recife-halloween",
+      "eixo": "Shows e festas",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-24",
+      "data_fim": "",
+      "horario": "22h",
+      "nome": "Vibe Recife Halloween",
+      "local": "Biruta",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Festa de Halloween no Biruta.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
     },
     {
       "id": "caixaculturalrecife-2026-10-25-aviso-caixa-cultural-recife-em-horario-especial-no-domingo-2",
@@ -870,7 +902,8 @@
       "gratis": true,
       "resumo": "Visitação das 12h às 18h no domingo de eleição; exposições de Sérvulo Esmeraldo, “A Casa de Todos” e #AcervoCAIXA.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DezxUxxPLH9/"
+      "fonte_link": "https://www.instagram.com/p/DezxUxxPLH9/",
+      "bairro": ""
     },
     {
       "id": "cinemasaoluizpe-2026-10-25-aviso-cinema-sao-luiz-sem-sessoes-no-domingo-25-10-eleicoes",
@@ -887,7 +920,8 @@
       "gratis": null,
       "resumo": "Não haverá sessões no domingo por causa do 2º turno das eleições.",
       "fonte": "Instagram @cinemasaoluizpe",
-      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
+      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/",
+      "bairro": ""
     },
     {
       "id": "feiradolindu-2026-10-25-feira-do-lindu-domingo",
@@ -904,7 +938,26 @@
       "gratis": null,
       "resumo": "Feirinha de domingo com artesanato, gastronomia, música ao vivo e atrações culturais gratuitas ao ar livre.",
       "fonte": "Instagram @feiradolindu",
-      "fonte_link": "https://www.instagram.com/p/DewmXGvO1IZ/"
+      "fonte_link": "https://www.instagram.com/p/De0Yw4mkSNo/",
+      "bairro": ""
+    },
+    {
+      "id": "fundajoficial-2026-10-25-aviso-engenho-massangana-fechado-no-domingo-25-10-eleicoes",
+      "eixo": "Museus e exposições",
+      "perfil": "fundajoficial",
+      "lugar_id": "",
+      "data": "2026-10-25",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Aviso: Engenho Massangana fechado no domingo 25/10 (eleições)",
+      "local": "Engenho Massangana",
+      "bairro": "",
+      "cidade": "Cabo de Santo Agostinho",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "O Engenho Massangana (Muhne/Fundaj) não funcionará neste domingo por causa do 2º turno das eleições.",
+      "fonte": "Instagram @fundajoficial",
+      "fonte_link": "https://www.instagram.com/p/De1zB9vlhsp/"
     },
     {
       "id": "institutorb-2026-10-25-aviso-instituto-ricardo-brennand-fechado-em-25-26-28-e-29-10",
@@ -921,7 +974,8 @@
       "gratis": null,
       "resumo": "Horários especiais: fechado no domingo 25/10 (eleições), 26, 28, 29/10 e 02/11; abre 27/10 13h–17h com entrada gratuita e de 30/10 a 01/11 das 10h às 17h.",
       "fonte": "Instagram @institutorb",
-      "fonte_link": "https://www.instagram.com/p/Deu_ADlsy5M/"
+      "fonte_link": "https://www.instagram.com/p/Deu_ADlsy5M/",
+      "bairro": ""
     },
     {
       "id": "mac.pe.oficial-2026-10-25-aviso-mac-pe-fechado-no-domingo-25-10-eleicoes",
@@ -938,7 +992,8 @@
       "gratis": null,
       "resumo": "Fechado no 2º turno, como os demais equipamentos culturais da Fundarpe; volta ao funcionamento normal na terça 27/10, às 9h.",
       "fonte": "Instagram @mac.pe.oficial",
-      "fonte_link": "https://www.instagram.com/p/DexXhXHT8O9/"
+      "fonte_link": "https://www.instagram.com/p/DexXhXHT8O9/",
+      "bairro": ""
     },
     {
       "id": "museudotremrec-2026-10-25-aviso-museu-do-trem-fechado-no-domingo-25-10-eleicoes",
@@ -955,7 +1010,8 @@
       "gratis": null,
       "resumo": "Sem visitação no domingo 25/10 por causa do 2º turno; equipamentos da Fundarpe fechados. Reabre na terça 27/10, a partir das 9h.",
       "fonte": "Instagram @museudotremrec",
-      "fonte_link": "https://www.instagram.com/p/DexddWaPxQy/"
+      "fonte_link": "https://www.instagram.com/p/DexddWaPxQy/",
+      "bairro": ""
     },
     {
       "id": "oficinafranciscobrennand-2026-10-25-aviso-oficina-francisco-brennand-fechada-no-domingo-25-10-el",
@@ -972,7 +1028,8 @@
       "gratis": null,
       "resumo": "Museu-ateliê fechado no 2º turno; reabre na terça 27/10, com entrada das 9h às 16h e fechamento às 17h.",
       "fonte": "Instagram @oficinafranciscobrennand",
-      "fonte_link": "https://www.instagram.com/p/DerUM4mFkkg/"
+      "fonte_link": "https://www.instagram.com/p/DerUM4mFkkg/",
+      "bairro": ""
     },
     {
       "id": "pacodofrevo-2026-10-25-aviso-paco-do-frevo-fechado-no-domingo-25-10-eleicoes",
@@ -989,7 +1046,80 @@
       "gratis": null,
       "resumo": "Museu fechado no domingo por causa do 2º turno; reabre na terça (27) com entrada gratuita.",
       "fonte": "Instagram @pacodofrevo",
-      "fonte_link": "https://www.instagram.com/p/Dezu6TVG4H9/"
+      "fonte_link": "https://www.instagram.com/p/Dezu6TVG4H9/",
+      "bairro": ""
+    },
+    {
+      "id": "torremalakoff-2026-10-25-aviso-torre-malakoff-fechada-no-domingo-25-10-eleicoes",
+      "eixo": "Museus e exposições",
+      "perfil": "torremalakoff",
+      "lugar_id": "",
+      "data": "2026-10-25",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Aviso: Torre Malakoff fechada no domingo 25/10 (eleições)",
+      "local": "Torre Malakoff",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Por causa do 2º turno, a Torre Malakoff e os equipamentos culturais geridos pela Fundarpe ficam fechados neste domingo.",
+      "fonte": "Instagram @torremalakoff",
+      "fonte_link": "https://www.instagram.com/p/De2WzaXpBtx/"
+    },
+    {
+      "id": "visitrecife-2026-10-25-aviso-ciclofaixa-de-turismo-e-lazer-nao-sera-montada-no-domi",
+      "eixo": "Eventos gerais",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-25",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Aviso: Ciclofaixa de Turismo e Lazer não será montada no domingo 25/10",
+      "local": "Ciclofaixa de Turismo e Lazer do Recife",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Por causa do 2º turno das eleições, a ciclofaixa de domingo não será montada; atividades retomadas após o período eleitoral.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/DeztecoH8a7/"
+    },
+    {
+      "id": "visitrecife-2026-10-25-feira-bom-jesus-domingo",
+      "eixo": "Feiras",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-25",
+      "data_fim": "",
+      "horario": "10h às 19h",
+      "nome": "Feira Bom Jesus (domingo)",
+      "local": "Rua do Bom Jesus",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Feira de artesanato tradicional da Rua do Bom Jesus, no Recife Antigo, confirmada no domingo 25/10 na agenda do fim de semana.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "cinema.ufpe-2026-10-26-mostra-horrorpedia-3-2a-semana",
+      "eixo": "Cinema",
+      "perfil": "cinema.ufpe",
+      "lugar_id": "",
+      "data": "2026-10-26",
+      "data_fim": "2026-10-29",
+      "horario": "",
+      "nome": "Mostra Horrorpedia 3 – 2ª semana",
+      "local": "Cinema da UFPE, Av. dos Reitores",
+      "bairro": "Cidade Universitária",
+      "cidade": "Recife",
+      "preco": "Gratuito (ingressos no Sympla 1h antes)",
+      "gratis": true,
+      "resumo": "Segunda semana da mostra de horror, com rituais, casas assombradas e sessão surpresa à meia-noite no encerramento.",
+      "fonte": "Instagram @cinema.ufpe",
+      "fonte_link": "https://www.instagram.com/p/De2Xa4eEc5q/"
     },
     {
       "id": "fundajoficial-2026-10-26-seminario-pense-os-desafios-da-saude-escolar",
@@ -1006,7 +1136,26 @@
       "gratis": true,
       "resumo": "Seminário Fundaj/IBGE sobre a Pesquisa Nacional de Saúde do Escolar e políticas públicas para adolescentes.",
       "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/DezXKaLFhuT/"
+      "fonte_link": "https://www.instagram.com/p/DezXKaLFhuT/",
+      "bairro": ""
+    },
+    {
+      "id": "fundajoficial-2026-10-26-quero-ser-cientista-ciencia-delas",
+      "eixo": "Eventos gerais",
+      "perfil": "fundajoficial",
+      "lugar_id": "",
+      "data": "2026-10-26",
+      "data_fim": "2026-10-27",
+      "horario": "",
+      "nome": "“Quero ser cientista: ciência delas”",
+      "local": "Auditório Benício Dias, Campus Gilberto Freyre da Fundaj",
+      "bairro": "Casa Forte",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Encontro para estudantes sobre mulheres na ciência, com filme “Mulheres na Conservação” e cine debate (26, à tarde) e visita ao Engenho Massangana (27).",
+      "fonte": "Instagram @fundajoficial",
+      "fonte_link": "https://www.instagram.com/p/De1uPlSlkLz/"
     },
     {
       "id": "caixaculturalrecife-2026-10-27-oficina-forma-e-luz-abstracionismo-com-cianotipia",
@@ -1023,7 +1172,8 @@
       "gratis": true,
       "resumo": "Oficina de cianotipia em duas turmas (27 e 29/10), 15 vagas cada, sem necessidade de experiência. 16 anos.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DezQLf_obCN/"
+      "fonte_link": "https://www.instagram.com/p/DezQLf_obCN/",
+      "bairro": ""
     },
     {
       "id": "institutorb-2026-10-27-ultima-terca-do-mes-com-entrada-gratuita-no-instituto-ricard",
@@ -1040,7 +1190,8 @@
       "gratis": true,
       "resumo": "Entrada gratuita na última terça do mês, a partir das 13h.",
       "fonte": "Instagram @institutorb",
-      "fonte_link": "https://www.instagram.com/p/Deu-5SxvWX5/"
+      "fonte_link": "https://www.instagram.com/p/Deu-5SxvWX5/",
+      "bairro": ""
     },
     {
       "id": "moviemaxrosaesilva-2026-10-27-pre-estreia-a-terra-do-meu-pai",
@@ -1057,7 +1208,8 @@
       "gratis": false,
       "resumo": "Sessão de pré-estreia do filme (85 min, 12 anos, legendado).",
       "fonte": "Instagram @moviemaxrosaesilva",
-      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/"
+      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/",
+      "bairro": ""
     },
     {
       "id": "oficinafranciscobrennand-2026-10-27-entrada-gratuita-na-oficina-francisco-brennand-encerramento",
@@ -1074,7 +1226,8 @@
       "gratis": true,
       "resumo": "Último dia da itinerância da 36ª Bienal de São Paulo, com entrada gratuita para todos os públicos.",
       "fonte": "Instagram @oficinafranciscobrennand",
-      "fonte_link": "https://www.instagram.com/p/DekFQocMPZk/"
+      "fonte_link": "https://www.instagram.com/p/DekFQocMPZk/",
+      "bairro": ""
     },
     {
       "id": "cinemasaoluizpe-2026-10-28-abertura-do-xvii-janela-internacional-de-cinema-do-recife",
@@ -1091,24 +1244,26 @@
       "gratis": null,
       "resumo": "Abertura do festival Janela de Cinema no São Luiz; mais informações em breve. O festival terá sessão especial de “A Margem do Rio”.",
       "fonte": "Instagram @cinemasaoluizpe",
-      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/"
+      "fonte_link": "https://www.instagram.com/p/DexUaDAFLCe/",
+      "bairro": ""
     },
     {
-      "id": "moviemaxrosaesilva-2026-10-28-festival-de-cinema-frances-do-brasil-2026",
-      "eixo": "Cinema",
-      "perfil": "moviemaxrosaesilva",
+      "id": "livrariadojardim-2026-10-28-lancamento-de-meias-verdades-de-karoline-fernandes",
+      "eixo": "Parques",
+      "perfil": "livrariadojardim",
       "lugar_id": "",
       "data": "2026-10-28",
-      "data_fim": "2026-11-11",
-      "horario": "8 sessões diárias na 1ª semana",
-      "nome": "Festival de Cinema Francês do Brasil 2026",
-      "local": "Moviemax Rosa e Silva",
+      "data_fim": "",
+      "horario": "19h",
+      "nome": "Lançamento de “Meias#Verdades”, de Karoline Fernandes",
+      "local": "Livraria do Jardim, Av. Manoel Borba, 292",
+      "bairro": "Boa Vista",
       "cidade": "Recife",
-      "preco": "Ver post (ingressos já à venda)",
-      "gratis": false,
-      "resumo": "21 filmes franceses, com nomes como Virginie Efira, Isabelle Huppert e Sandrine Kiberlain. Ingressos no app/site Moviemax ou na bilheteria.",
-      "fonte": "Instagram @moviemaxrosaesilva",
-      "fonte_link": "https://www.instagram.com/p/Der5UBoisXe/"
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Lançamento de livro sobre desinformação e fake news, com mediação da jornalista Ana Veloso (UFPE).",
+      "fonte": "Instagram @livrariadojardim",
+      "fonte_link": "https://www.instagram.com/p/De1uNy3l7T5/"
     },
     {
       "id": "moviemaxrosaesilva-2026-10-28-pre-estreia-a-ilustre-desconhecida",
@@ -1125,7 +1280,8 @@
       "gratis": false,
       "resumo": "Sessão de pré-estreia do filme (113 min, 14 anos, legendado).",
       "fonte": "Instagram @moviemaxrosaesilva",
-      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/"
+      "fonte_link": "https://www.instagram.com/p/DezAaH-i3EJ/",
+      "bairro": ""
     },
     {
       "id": "ocaisdosertao-2026-10-28-roda-de-conversa-os-ferros-do-recife-que-contam-historias",
@@ -1142,7 +1298,44 @@
       "gratis": true,
       "resumo": "Conversa ligada à exposição sobre as marcas do ferro no Recife, na programação do Mês do Nordestino.",
       "fonte": "Instagram @ocaisdosertao",
-      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/"
+      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/",
+      "bairro": ""
+    },
+    {
+      "id": "visitrecife-2026-10-28-recife-walking-tour",
+      "eixo": "Eventos gerais",
+      "perfil": "visitrecife",
+      "lugar_id": "",
+      "data": "2026-10-28",
+      "data_fim": "",
+      "horario": "14h",
+      "nome": "Recife Walking Tour",
+      "local": "Saída na Praça do Arsenal",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Passeio a pé guiado pelo centro histórico, com saída da Praça do Arsenal.",
+      "fonte": "Instagram @visitrecife",
+      "fonte_link": "https://www.instagram.com/p/De2KYB8IO3J/"
+    },
+    {
+      "id": "moviemaxrosaesilva-2026-10-29-festival-de-cinema-frances-do-brasil-2026",
+      "eixo": "Cinema",
+      "perfil": "moviemaxrosaesilva",
+      "lugar_id": "",
+      "data": "2026-10-29",
+      "data_fim": "2026-11-11",
+      "horario": "8 sessões diárias na 1ª semana",
+      "nome": "Festival de Cinema Francês do Brasil 2026",
+      "local": "Moviemax Rosa e Silva",
+      "cidade": "Recife",
+      "preco": "Ver post (ingressos já à venda)",
+      "gratis": false,
+      "resumo": "21 filmes franceses, com nomes como Virginie Efira, Isabelle Huppert e Sandrine Kiberlain. Ingressos no app/site Moviemax ou na bilheteria.",
+      "fonte": "Instagram @moviemaxrosaesilva",
+      "fonte_link": "https://www.instagram.com/p/De1gfrsH4Dx/",
+      "bairro": ""
     },
     {
       "id": "ocaisdosertao-2026-10-29-ensaio-aberto-grupo-bote-de-teatro",
@@ -1159,7 +1352,8 @@
       "gratis": true,
       "resumo": "Ensaio aberto do Grupo Bote de Teatro na programação do Mês do Nordestino.",
       "fonte": "Instagram @ocaisdosertao",
-      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/"
+      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-30-barbatuques-25-anos",
@@ -1176,7 +1370,8 @@
       "gratis": false,
       "resumo": "Show do grupo de percussão corporal celebrando 25 anos de trajetória. Ingressos à venda a partir de 23/10, ao meio-dia. Livre.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DexbpV-j6cU/"
+      "fonte_link": "https://www.instagram.com/p/DexbpV-j6cU/",
+      "bairro": ""
     },
     {
       "id": "caixaculturalrecife-2026-10-30-barbatuques-tum-pa-infantil",
@@ -1193,7 +1388,26 @@
       "gratis": false,
       "resumo": "Espetáculo de percussão corporal dos Barbatuques para as infâncias. Ingressos à venda a partir de 23/10, ao meio-dia. Livre.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DexbpV-j6cU/"
+      "fonte_link": "https://www.instagram.com/p/DexbpV-j6cU/",
+      "bairro": ""
+    },
+    {
+      "id": "livrariadojardim-2026-10-30-jardim-das-bruxas-yoga-mistica-no-jardim",
+      "eixo": "Parques",
+      "perfil": "livrariadojardim",
+      "lugar_id": "",
+      "data": "2026-10-30",
+      "data_fim": "",
+      "horario": "19h",
+      "nome": "Jardim das Bruxas – yoga mística no jardim",
+      "local": "Livraria do Jardim, Av. Manoel Borba, 292",
+      "bairro": "Boa Vista",
+      "cidade": "Recife",
+      "preco": "R$ 40",
+      "gratis": false,
+      "resumo": "Prática de yoga no jardim da livraria, com leitura de oráculo.",
+      "fonte": "Instagram @livrariadojardim",
+      "fonte_link": "https://www.instagram.com/p/De19q0zDJUo/"
     },
     {
       "id": "bar.do.ro-2026-10-31-previa-oficial-do-bloco-da-sopa",
@@ -1210,7 +1424,26 @@
       "gratis": false,
       "resumo": "Prévia de carnaval com samba, frevo e cortejo do Bloco da Sopa, que em 2027 homenageia o Maestro Oséas Leão.",
       "fonte": "Instagram @bar.do.ro",
-      "fonte_link": "https://www.instagram.com/p/DevYoQ3DZCP/"
+      "fonte_link": "https://www.instagram.com/p/DevYoQ3DZCP/",
+      "bairro": ""
+    },
+    {
+      "id": "emporiobarrozo-2026-10-31-samba-pra-cima-canta-zeca-pagodinho-e-beth-carvalho",
+      "eixo": "Shows e festas",
+      "perfil": "emporiobarrozo",
+      "lugar_id": "",
+      "data": "2026-10-31",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Samba Pra Cima canta Zeca Pagodinho e Beth Carvalho",
+      "local": "Empório Barrozo, Rua da Aurora",
+      "bairro": "Boa Vista",
+      "cidade": "Recife",
+      "preco": "Ingressos pelo link da bio",
+      "gratis": false,
+      "resumo": "Especial de samba e partido alto que fecha o mês de aniversário do Samba Pra Cima.",
+      "fonte": "Instagram @emporiobarrozo",
+      "fonte_link": "https://www.instagram.com/p/De0lVrtulpX/"
     },
     {
       "id": "mac.pe.oficial-2026-10-31-urban-sketchers-recife-encontro-61-no-mac-pe",
@@ -1227,7 +1460,8 @@
       "gratis": true,
       "resumo": "Encontro aberto de desenho de observação dentro e fora do Museu de Arte Contemporânea de Pernambuco.",
       "fonte": "Instagram @mac.pe.oficial",
-      "fonte_link": "https://www.instagram.com/p/DehQh7YRs5r/"
+      "fonte_link": "https://www.instagram.com/p/DehQh7YRs5r/",
+      "bairro": ""
     },
     {
       "id": "ocaisdosertao-2026-10-31-arrastao-da-longevidade-mes-da-pessoa-idosa",
@@ -1244,7 +1478,8 @@
       "gratis": null,
       "resumo": "Atividade de encerramento da programação de outubro do Cais, em celebração ao Mês da Pessoa Idosa.",
       "fonte": "Instagram @ocaisdosertao",
-      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/"
+      "fonte_link": "https://www.instagram.com/p/DeIH9uCo6qE/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2026-10-31-murilo-couto-show-sobre-casamento-sessao-extra",
@@ -1261,7 +1496,8 @@
       "gratis": false,
       "resumo": "Stand-up de Murilo Couto sobre situações da vida de casado. Classificação 14 anos.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/Dewm13flgyH/"
+      "fonte_link": "https://www.instagram.com/p/Dewm13flgyH/",
+      "bairro": ""
     },
     {
       "id": "feiradaaurora-2026-11-01-feira-da-aurora-domingo",
@@ -1278,7 +1514,8 @@
       "gratis": null,
       "resumo": "Edição de domingo da Feira da Aurora volta em 01/11 (não haverá no domingo 25/10).",
       "fonte": "Instagram @feiradaaurora",
-      "fonte_link": "https://www.instagram.com/p/DexeIe4lLiZ/"
+      "fonte_link": "https://www.instagram.com/p/DexeIe4lLiZ/",
+      "bairro": ""
     },
     {
       "id": "forrobodorecife-2026-11-01-forrobodo-no-cais-1-ano",
@@ -1295,7 +1532,8 @@
       "gratis": null,
       "resumo": "Encontro de forró pé de serra do Forrobodó Recife, em edição de 1 ano no Cais do Sertão.",
       "fonte": "Instagram @forrobodorecife",
-      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/",
+      "bairro": ""
     },
     {
       "id": "orquestradebolso-2026-11-01-chapadinhos-na-praia-odb-banda-desaperreio-e-dj-mau-lopes",
@@ -1312,7 +1550,8 @@
       "gratis": false,
       "resumo": "Festa com Orquestra de Bolso, Banda Desaperreio e DJ Mau Lopes.",
       "fonte": "Instagram @orquestradebolso",
-      "fonte_link": "https://www.instagram.com/p/DecJWQaNMzK/"
+      "fonte_link": "https://www.instagram.com/p/DecJWQaNMzK/",
+      "bairro": ""
     },
     {
       "id": "pacodofrevo-2026-11-01-arrastao-do-frevo-dia-do-frevo-de-bloco",
@@ -1329,7 +1568,8 @@
       "gratis": true,
       "resumo": "Cortejo com a Orquestra Aurora dos Carnavais e mais de 30 agremiações líricas; depois, Coral Edgard Moraes e Grande Orquestra de Pau e Corda em frente ao museu.",
       "fonte": "Instagram @pacodofrevo",
-      "fonte_link": "https://www.instagram.com/p/Deo16QbEThp/"
+      "fonte_link": "https://www.instagram.com/p/Deo16QbEThp/",
+      "bairro": ""
     },
     {
       "id": "fundajoficial-2026-11-03-palestra-abandono-na-educacao-superior-quando-a-evasao-e-um",
@@ -1346,7 +1586,8 @@
       "gratis": null,
       "resumo": "Palestra do prof. Leonardo Barbosa e Silva (UFU) com lançamento do livro “Teorias do abandono na Educação Superior”.",
       "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/DexFlOnIGmj/"
+      "fonte_link": "https://www.instagram.com/p/DexFlOnIGmj/",
+      "bairro": ""
     },
     {
       "id": "fundajoficial-2026-11-04-seminario-de-lancamento-do-atlas-das-praias-atingidas-pelo-d",
@@ -1363,7 +1604,8 @@
       "gratis": null,
       "resumo": "Seminário com mesas sobre impactos geoespaciais, socioeconômicos e ecológicos do derramamento de óleo de 2019 no Nordeste.",
       "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/DewlJWOo_v7/"
+      "fonte_link": "https://www.instagram.com/p/DewlJWOo_v7/",
+      "bairro": ""
     },
     {
       "id": "fundajoficial-2026-11-05-minicurso-acesso-ao-banco-de-dados-ibge-sidra",
@@ -1380,7 +1622,8 @@
       "gratis": true,
       "resumo": "Formação de 3h com o pesquisador Neison Freire sobre acesso aos dados do IBGE. 45 vagas.",
       "fonte": "Instagram @fundajoficial",
-      "fonte_link": "https://www.instagram.com/p/DexKv_RotEB/"
+      "fonte_link": "https://www.instagram.com/p/DexKv_RotEB/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2026-11-12-bruna-louise-stand-up",
@@ -1397,7 +1640,8 @@
       "gratis": false,
       "resumo": "Novo espetáculo de humor ácido e improviso de Bruna Louise. Classificação 16 anos.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DeutAqIEn-s/"
+      "fonte_link": "https://www.instagram.com/p/DeutAqIEn-s/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2026-11-14-nchive-show-de-k-pop",
@@ -1414,7 +1658,8 @@
       "gratis": false,
       "resumo": "Grupo sul-coreano de K-pop com seis integrantes. Pacotes VIP vendidos à parte. Classificação 16 anos.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DesGVyXF7S_/"
+      "fonte_link": "https://www.instagram.com/p/DesGVyXF7S_/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2026-11-15-botando-pilha-marvio-lucio-carioca",
@@ -1431,7 +1676,44 @@
       "gratis": false,
       "resumo": "Show de humor do Carioca com personagens, histórias do cotidiano e interação com a plateia. Classificação livre.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DeuG7r6CPTN/"
+      "fonte_link": "https://www.instagram.com/p/DeuG7r6CPTN/",
+      "bairro": ""
+    },
+    {
+      "id": "fundajoficial-2026-11-16-encontros-inclusivos-mesa-deficiencia-visual-entre-desafios",
+      "eixo": "Eventos gerais",
+      "perfil": "fundajoficial",
+      "lugar_id": "",
+      "data": "2026-11-16",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Encontros Inclusivos: mesa “Deficiência Visual – Entre Desafios e Possibilidades”",
+      "local": "Fundaj",
+      "bairro": "",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Mesa com Mariana Rosa, do Conselho Nacional de Educação, na 4ª edição dos Encontros Inclusivos. Inscrições a divulgar.",
+      "fonte": "Instagram @fundajoficial",
+      "fonte_link": "https://www.instagram.com/p/De1_vtDIR8Z/"
+    },
+    {
+      "id": "fundajoficial-2026-11-17-encontros-inclusivos-sessao-debate-saudade-fez-morada-aqui-d",
+      "eixo": "Cinema",
+      "perfil": "fundajoficial",
+      "lugar_id": "",
+      "data": "2026-11-17",
+      "data_fim": "",
+      "horario": "",
+      "nome": "Encontros Inclusivos: sessão debate “Saudade Fez Morada Aqui Dentro”",
+      "local": "Sala Derby – Cinema da Fundação",
+      "bairro": "Derby",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Exibição do longa de Haroldo Borges seguida de bate-papo sobre deficiência visual, autonomia e inclusão.",
+      "fonte": "Instagram @fundajoficial",
+      "fonte_link": "https://www.instagram.com/p/De1_vtDIR8Z/"
     },
     {
       "id": "teatroriomarrecife-2026-11-20-batista-lima-projeto-acustico",
@@ -1448,7 +1730,26 @@
       "gratis": false,
       "resumo": "Uma das grandes vozes do forró revisita sua trajetória em novos arranjos acústicos. Classificação livre.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DezMYeFFPjr/"
+      "fonte_link": "https://www.instagram.com/p/DezMYeFFPjr/",
+      "bairro": ""
+    },
+    {
+      "id": "teatroriomarrecife-2026-11-21-xinglau-e-a-origem-dos-bots",
+      "eixo": "Teatro",
+      "perfil": "teatroriomarrecife",
+      "lugar_id": "",
+      "data": "2026-11-21",
+      "data_fim": "",
+      "horario": "15h",
+      "nome": "Xinglau e a Origem dos Bots",
+      "local": "Teatro RioMar Recife",
+      "bairro": "Pina",
+      "cidade": "Recife",
+      "preco": "Ver post (ingressos na bilheteria e na Uhuu)",
+      "gratis": false,
+      "resumo": "Espetáculo infantil interativo do universo do Xinglau; classificação livre.",
+      "fonte": "Instagram @teatroriomarrecife",
+      "fonte_link": "https://www.instagram.com/p/De1wEByCDOA/"
     },
     {
       "id": "forrobodorecife-2026-11-27-36o-baile-do-forrobodo-7-anos-do-forrobodorecife",
@@ -1465,7 +1766,8 @@
       "gratis": null,
       "resumo": "Baile de aniversário de 7 anos do Forrobodó Recife.",
       "fonte": "Instagram @forrobodorecife",
-      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/",
+      "bairro": ""
     },
     {
       "id": "espacocienciape-2026-12-01-32a-ciencia-jovem-feira-de-ciencias-da-educacao-basica",
@@ -1482,7 +1784,8 @@
       "gratis": null,
       "resumo": "Uma das maiores feiras de ciências da educação básica do país, pela primeira vez no interior. Inscrições para o corpo de votantes até 25/10.",
       "fonte": "Instagram @espacocienciape",
-      "fonte_link": "https://www.instagram.com/p/Deb8F0FJaOy/"
+      "fonte_link": "https://www.instagram.com/p/Deb8F0FJaOy/",
+      "bairro": ""
     },
     {
       "id": "forrobodorecife-2026-12-08-forrobodo-no-cais-dezembro",
@@ -1499,7 +1802,8 @@
       "gratis": null,
       "resumo": "Encontro de forró do Forrobodó Recife no Cais do Sertão.",
       "fonte": "Instagram @forrobodorecife",
-      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/",
+      "bairro": ""
     },
     {
       "id": "forrobodorecife-2026-12-12-forrobodo-na-aurora",
@@ -1516,7 +1820,8 @@
       "gratis": null,
       "resumo": "Encontro de forró do Forrobodó Recife na Rua da Aurora.",
       "fonte": "Instagram @forrobodorecife",
-      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/"
+      "fonte_link": "https://www.instagram.com/p/De0NNboDpt8/",
+      "bairro": ""
     },
     {
       "id": "casaestacaodaluz-2027-01-10-ensaios-de-carnaval-com-spok-convidados",
@@ -1533,7 +1838,8 @@
       "gratis": false,
       "resumo": "Ensaios de carnaval com o maestro Spok e convidados nos dias 10, 17, 24 e 31 de janeiro de 2027.",
       "fonte": "Instagram @casaestacaodaluz",
-      "fonte_link": "https://www.instagram.com/p/DeZXTqlv_Tu/"
+      "fonte_link": "https://www.instagram.com/p/DeZXTqlv_Tu/",
+      "bairro": ""
     },
     {
       "id": "casaestacaodaluz-2027-02-06-carnaval-estacao-da-luz-2027",
@@ -1550,7 +1856,8 @@
       "gratis": false,
       "resumo": "Carnaval na Casa Estação da Luz, de 6 a 9 de fevereiro de 2027, com frevo, metais e folia.",
       "fonte": "Instagram @casaestacaodaluz",
-      "fonte_link": "https://www.instagram.com/p/Dew56dGvb3X/"
+      "fonte_link": "https://www.instagram.com/p/Dew56dGvb3X/",
+      "bairro": ""
     },
     {
       "id": "teatroriomarrecife-2027-02-26-iron-maiden-symphonic-the-beast-experience",
@@ -1567,7 +1874,8 @@
       "gratis": false,
       "resumo": "Banda e orquestra sinfônica em homenagem ao Iron Maiden, com Raphael Mendes nos vocais. Classificação livre.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/Dez0cwBjOaU/"
+      "fonte_link": "https://www.instagram.com/p/Dez0cwBjOaU/",
+      "bairro": ""
     }
   ]
 }
