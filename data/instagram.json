@@ -1,8 +1,33 @@
 {
-  "lido_em": "2026-11-15T08:30:12-03:00",
+  "lido_em": "2026-11-15T13:35:17-03:00",
   "falhas": [
     "agendaculturaldorecife: página indisponível (\"Sorry, this page isn't available\")",
-    "museuabolicao: página indisponível (\"Sorry, this page isn't available\")"
+    "bonecosgigantesdeolinda: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "fortedobrum: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "map.recife: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "museudoestadope: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "museuabolicao: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "museudohomemdonordeste: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "fundacao.gilbertofreyre: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "oficinafranciscobrennand: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "mac.pe.oficial: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "museuregionaldeolinda: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "cinemasaoluizpe: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "cinepeoficial: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "cinema.ufpe: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "moviemaxrosaesilva: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "casaestacaodaluz: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "pocodasartess: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "roda_deforro: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "turmadapitombeira: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "orquestradebolso: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "bar.do.ro: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "ororabar: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "emporiobarrozo: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "forrobodorecife: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "euachoepouco: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "livrariadojardim: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje",
+    "espacocienciape: não lido nesta execução (extensão Claude in Chrome desconectou às ~13h55); mantidos os eventos lidos às 08h30 de hoje"
   ],
   "eventos": [
     {
@@ -759,7 +784,7 @@
       "gratis": null,
       "resumo": "Espetáculo de humor de Carioca, apresentação única. Classificação livre.",
       "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DfkIgnXjkCu/"
+      "fonte_link": "https://www.instagram.com/p/Dfwwv9glyB1/"
     },
     {
       "id": "turmadapitombeira-2026-11-15-desfile-pitombeira-80-anos-eu-acho-e-pouco-50-anos",
@@ -796,6 +821,24 @@
       "resumo": "Saída conjunta das troças Pitombeira dos Quatro Cantos e Eu Acho É Pouco, com frevo pelas ruas de Olinda.",
       "fonte": "Instagram @recifequecabenobolso",
       "fonte_link": "https://www.instagram.com/p/DfwjD_OFoEt/"
+    },
+    {
+      "id": "museudotremrec-2026-11-15-aviso-museu-do-trem-reabriu-apos-requalificacao",
+      "eixo": "Museus e exposições",
+      "perfil": "museudotremrec",
+      "lugar_id": "museu-do-trem",
+      "data": "2026-11-15",
+      "data_fim": "",
+      "horario": "ter a sex 9h às 17h; sáb e dom 10h às 14h",
+      "nome": "Aviso: Museu do Trem reabriu após requalificação",
+      "local": "Museu do Trem - Estação Central Capiba, Rua Floriano Peixoto, s/n",
+      "bairro": "São José",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Reaberto com nova expografia: cerca de 700 peças, 16 salas temáticas e locomotivas históricas, incluindo uma a vapor de 1952.",
+      "fonte": "Instagram @museudotremrec",
+      "fonte_link": "https://www.instagram.com/p/DfjvJIMvNFy/"
     },
     {
       "id": "museudohomemdonordeste-2026-11-16-atravessando-mundos-modulo-de-criacao-em-argila",
@@ -870,6 +913,24 @@
       "fonte_link": "https://www.instagram.com/p/DfcBizTDYCL/"
     },
     {
+      "id": "caixaculturalrecife-2026-11-17-exposicao-arqueteria-e-luteria",
+      "eixo": "Museus e exposições",
+      "perfil": "caixaculturalrecife",
+      "lugar_id": "caixa-cultural-recife",
+      "data": "2026-11-17",
+      "data_fim": "2026-11-19",
+      "horario": "10h às 17h",
+      "nome": "Exposição Arqueteria e Luteria",
+      "local": "CAIXA Cultural Recife - Galeria 2",
+      "bairro": "Bairro do Recife",
+      "cidade": "Recife",
+      "preco": "Gratuito",
+      "gratis": true,
+      "resumo": "Exposição da Orquestra Criança Cidadã sobre a criação de arcos e instrumentos de corda, com alunos e professores mostrando o processo. Ter a qui, 10h às 17h.",
+      "fonte": "Instagram @caixaculturalrecife",
+      "fonte_link": "https://www.instagram.com/p/Dfpnc7gIvZe/"
+    },
+    {
       "id": "moviemaxrosaesilva-2026-11-17-festival-de-cinema-frances-do-brasil-2026-no-moviemax-rosa-e",
       "eixo": "Cinema",
       "perfil": "moviemaxrosaesilva",
@@ -940,24 +1001,6 @@
       "resumo": "Exibição do filme Saudade Fez Morada Aqui Dentro (dir. Haroldo Borges) seguida de debate, dentro dos Encontros Inclusivos na Fundaj.",
       "fonte": "Instagram @fundajoficial",
       "fonte_link": "https://www.instagram.com/p/DfcBizTDYCL/"
-    },
-    {
-      "id": "caixaculturalrecife-2026-11-17-exposicao-arqueteria-e-luteria",
-      "eixo": "Museus e exposições",
-      "perfil": "caixaculturalrecife",
-      "lugar_id": "caixa-cultural-recife",
-      "data": "2026-11-17",
-      "data_fim": "2026-11-19",
-      "horario": "19h30",
-      "nome": "Exposição Arqueteria e Luteria",
-      "local": "CAIXA Cultural Recife",
-      "bairro": "Bairro do Recife",
-      "cidade": "Recife",
-      "preco": "Gratuito",
-      "gratis": true,
-      "resumo": "Exposição de arcos e instrumentos de corda (arqueteria e luteria), de 17 a 19/11, quarta a sábado às 19h30.",
-      "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DfItlPqEoV7/"
     },
     {
       "id": "culturadorecife-2026-11-17-orquestra-sinfonica-do-recife-pedro-e-o-lobo",
@@ -1140,6 +1183,24 @@
       "fonte_link": "https://www.instagram.com/p/DfX7ug1Ae7X/"
     },
     {
+      "id": "fundajoficial-2026-11-18-ii-seminario-de-educacao-ambiental-de-pernambuco",
+      "eixo": "Eventos gerais",
+      "perfil": "fundajoficial",
+      "lugar_id": "",
+      "data": "2026-11-18",
+      "data_fim": "",
+      "horario": "8h às 17h",
+      "nome": "II Seminário de Educação Ambiental de Pernambuco",
+      "local": "Auditório do NIATE/CB/CCS - UFPE (Av. Reitor Joaquim Amazonas, 570)",
+      "bairro": "Cidade Universitária",
+      "cidade": "Recife",
+      "preco": "Ver post (inscrição pelo link na bio)",
+      "gratis": null,
+      "resumo": "Tema \"Cultura Oceânica, Desertificação e Alterações Climáticas\": mesas-redondas, curta e minicurso; Fundaj media a mesa Desertificação e Clima.",
+      "fonte": "Instagram @fundajoficial",
+      "fonte_link": "https://www.instagram.com/p/DfwrVblIJt4/"
+    },
+    {
       "id": "moviemaxrosaesilva-2026-11-19-estreia-josephine-fragmentos-de-um-crime",
       "eixo": "Cinema",
       "perfil": "moviemaxrosaesilva",
@@ -1200,7 +1261,7 @@
       "lugar_id": "caixa-cultural-recife",
       "data": "2026-11-19",
       "data_fim": "2026-11-20",
-      "horario": "10h30",
+      "horario": "10h30 às 14h30",
       "nome": "Laboratório de interpretação Palavra-Feitiço, com Beatriz Barros",
       "local": "CAIXA Cultural Recife",
       "bairro": "Bairro do Recife",
@@ -1209,7 +1270,25 @@
       "gratis": true,
       "resumo": "Laboratório de interpretação ligado ao Coletivo Ocutá, quinta e sexta às 10h30.",
       "fonte": "Instagram @caixaculturalrecife",
-      "fonte_link": "https://www.instagram.com/p/DfItlPqEoV7/"
+      "fonte_link": "https://www.instagram.com/p/DfskKHlSnwR/"
+    },
+    {
+      "id": "culturadorecife-2026-11-19-um-ensaio-sobre-a-cegueira-mg-festival-recife-do-teatro-naci",
+      "eixo": "Eventos gerais",
+      "perfil": "culturadorecife",
+      "lugar_id": "",
+      "data": "2026-11-19",
+      "data_fim": "",
+      "horario": "19h",
+      "nome": "(Um) Ensaio sobre a Cegueira (MG) – Festival Recife do Teatro Nacional",
+      "local": "Teatro de Santa Isabel",
+      "bairro": "Santo Antônio",
+      "cidade": "Recife",
+      "preco": "Gratuito (ingresso com 1 kg de alimento, 1h antes na bilheteria)",
+      "gratis": true,
+      "resumo": "Grupo Galpão (MG) abre o 25º Festival Recife do Teatro Nacional. 140 min, 16 anos. Ingresso na bilheteria 1h antes, com 1 kg de alimento.",
+      "fonte": "Instagram @culturadorecife",
+      "fonte_link": "https://www.instagram.com/p/DfsulFVFC8e/"
     },
     {
       "id": "pacodofrevo-2026-11-19-brasil-guitarras-especial-recife-show-com-armandinho-macedo",
@@ -1246,24 +1325,6 @@
       "resumo": "Pré-estreia do 1º episódio da animação infantil Universo Calunguinha, com contação de histórias, orquestra de frevo, passistas e agremiações. Venha de verde e branco!",
       "fonte": "Instagram @cinemasaoluizpe",
       "fonte_link": "https://www.instagram.com/p/DfcrzcfBtVS/"
-    },
-    {
-      "id": "teatrodesantaisabel-2026-11-19-abertura-do-festival-recife-do-teatro-nacional-grupo-galpao",
-      "eixo": "Teatro",
-      "perfil": "teatrodesantaisabel",
-      "lugar_id": "",
-      "data": "2026-11-19",
-      "data_fim": "",
-      "horario": "20h",
-      "nome": "Abertura do Festival Recife do Teatro Nacional: Grupo Galpão em (Um) Ensaio sobre a Cegueira",
-      "local": "Teatro de Santa Isabel",
-      "bairro": "Santo Antônio",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Abertura do festival com o Grupo Galpão (MG). Programação completa no site do Conecta Recife.",
-      "fonte": "Instagram @teatrodesantaisabel",
-      "fonte_link": "https://www.instagram.com/p/DfX7ug1Ae7X/"
     },
     {
       "id": "teatroriomarrecife-2026-11-20-batista-lima-acustico",
@@ -1861,7 +1922,7 @@
     },
     {
       "id": "culturadorecife-2026-11-23-iii-offrec-festival-recife-do-teatro-nacional",
-      "eixo": "Teatro",
+      "eixo": "Eventos gerais",
       "perfil": "culturadorecife",
       "lugar_id": "",
       "data": "2026-11-23",
@@ -2670,24 +2731,6 @@
       "fonte_link": "https://www.instagram.com/p/DfsulFVFC8e/"
     },
     {
-      "id": "teatroriomarrecife-2026-11-29-vitor-kley",
-      "eixo": "Shows e festas",
-      "perfil": "teatroriomarrecife",
-      "lugar_id": "",
-      "data": "2026-11-29",
-      "data_fim": "",
-      "horario": "",
-      "nome": "Vitor Kley",
-      "local": "Teatro RioMar Recife",
-      "bairro": "Pina",
-      "cidade": "Recife",
-      "preco": "Ver post",
-      "gratis": null,
-      "resumo": "Show de Vitor Kley no Teatro RioMar (agenda de próximos eventos).",
-      "fonte": "Instagram @teatroriomarrecife",
-      "fonte_link": "https://www.instagram.com/p/DfR8H_SikrU/"
-    },
-    {
       "id": "caixaculturalrecife-2026-11-29-historias-na-caixa-uma-aventura-do-velho-baoba-de-inaldete-p",
       "eixo": "Eventos gerais",
       "perfil": "caixaculturalrecife",
@@ -2704,6 +2747,24 @@
       "resumo": "Contação de histórias do projeto mensal 'Histórias na CAIXA'.",
       "fonte": "Instagram @caixaculturalrecife",
       "fonte_link": "https://www.instagram.com/p/DfItlPqEoV7/"
+    },
+    {
+      "id": "institutorb-2026-11-29-oficina-de-fotografia-experimental-com-icaro-galvao",
+      "eixo": "Museus e exposições",
+      "perfil": "institutorb",
+      "lugar_id": "instituto-ricardo-brennand",
+      "data": "2026-11-29",
+      "data_fim": "",
+      "horario": "14h às 16h",
+      "nome": "Oficina de Fotografia Experimental com Ícaro Galvão",
+      "local": "Instituto Ricardo Brennand",
+      "bairro": "Várzea",
+      "cidade": "Recife",
+      "preco": "R$ 100 (inclui ingresso e materiais)",
+      "gratis": false,
+      "resumo": "Oficina ligada à exposição Degas/Borges, com visita mediada. A partir de 15 anos, vagas limitadas, inscrição pelo link na bio.",
+      "fonte": "Instagram @institutorb",
+      "fonte_link": "https://www.instagram.com/p/DfsSHX2BCC-/"
     },
     {
       "id": "teatroriomarrecife-2026-11-29-lance-de-escola-de-volta-as-aulas-todo-mundo-junto",
@@ -2866,6 +2927,24 @@
       "resumo": "Espetáculo do 25º Festival Recife do Teatro Nacional. 70 min, livre, com audiodescrição e Libras.",
       "fonte": "Instagram @culturadorecife",
       "fonte_link": "https://www.instagram.com/p/DfsulFVFC8e/"
+    },
+    {
+      "id": "teatroriomarrecife-2026-11-29-vitor-kley",
+      "eixo": "Shows e festas",
+      "perfil": "teatroriomarrecife",
+      "lugar_id": "",
+      "data": "2026-11-29",
+      "data_fim": "",
+      "horario": "20h",
+      "nome": "Vitor Kley",
+      "local": "Teatro RioMar Recife",
+      "bairro": "Pina",
+      "cidade": "Recife",
+      "preco": "Ver post",
+      "gratis": null,
+      "resumo": "Turnê \"Sozinho e Bem Acompanhado: Voz, Violão e Vocês\". Classificação livre. Ingressos na bilheteria e na Uhuu.",
+      "fonte": "Instagram @teatroriomarrecife",
+      "fonte_link": "https://www.instagram.com/p/DfsuhN-Db3R/"
     },
     {
       "id": "fundajoficial-2026-11-30-v-seminario-pernambucano-sobre-natalidade-e-mortalidade",
